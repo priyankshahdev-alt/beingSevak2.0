@@ -210,12 +210,19 @@ const ContactUs = () => {
             <div className="info-card">
               <div className="icon-box"><i className="fas fa-university"></i></div>
               <div>
-                <h4>Bank Details</h4>
+                <h4>Bank Details:1</h4>
                 <p><strong>Name:</strong> Being Sevak Charitable Trust</p>
                 <p><strong>Bank:</strong> Axis Bank, Kandivali (West), Mumbai</p>
                 <p><strong>A/C No:</strong> 920010066029137</p>
                 <p><strong>IFSC:</strong> UTIB0000201</p>
+                  <br/>
+                <h4>Bank Details:2</h4>
+                <p><strong>Name:</strong> Being Sevak Charitable Trust</p>
+                <p><strong>Bank:</strong> Saraswat Bank, Kandivali (West), Mumbai</p>
+                <p><strong>A/C No:</strong>130200100119387</p>
+                <p><strong>IFSC:</strong> SRCB0000130</p>
               </div>
+             
             </div>
 
             <div className="info-card visit-card">
