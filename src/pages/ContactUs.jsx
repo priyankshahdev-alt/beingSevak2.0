@@ -228,12 +228,7 @@ const ContactUs = () => {
                     <p>New Delights CHS Ltd, A Wing, 4th Floor, Office No 401, Chandavarkar Road, Borivali West, Mumbai,
                       Maharashtra, 400092.</p>
                   </div>
-                  <div className="visit-item">
-                    <strong>Mumbai Office 2</strong>
-                    <p>D-45/380, DEVDAYA CHS, SECTOR NO -3 CHARKOP KANDIVALI WEST,
-                      MUMBAI, Maharashtra, 400067, IN,
-                      D-45/380, DEVDAYA CHS, MUMBAI, 400067, IN</p>
-                  </div>
+                 
                   <div className="visit-item">
                     <strong>Gujarat Office</strong>
                     <p>Bharat Min, Next to Maruti Mobile Home Guard Chowk, Home Guard Chowk Road, Dwarka, Gujarat,
