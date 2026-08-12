@@ -232,7 +232,7 @@ const ContactUs = () => {
                 <div className="visit-accordion">
                   <div className="visit-item">
                     <strong>Mumbai Office</strong>
-                    <p>New Delights CHS Ltd, A Wing, 4th Floor, Office No 401, Chandavarkar Road, Borivali West, Mumbai,
+                    <p>New Delight CHS Ltd, A Wing, 4th Floor, Office No 401, Chandavarkar Road, Borivali West, Mumbai,
                       Maharashtra, 400092.</p>
                   </div>
                  
