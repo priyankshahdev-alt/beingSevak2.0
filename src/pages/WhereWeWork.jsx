@@ -13,6 +13,7 @@ const locations = [
   { loc: 'madhya-pradesh', top: '46%', left: '32%', name: 'Madhya Pradesh', projects: 8, beneficiaries: '1.3L+', desc: 'Environment & animal welfare programs', icon: 'fas fa-tree' },
   { loc: 'odisha', top: '54%', left: '58%', name: 'Odisha', projects: 7, beneficiaries: '1.1L+', desc: 'Disaster relief & community support', icon: 'fas fa-fish' },
   { loc: 'tamil-nadu', top: '78%', left: '34%', name: 'Tamil Nadu', projects: 10, beneficiaries: '1.6L+', desc: 'Multi-focus community outreach', icon: 'fas fa-praying-hands' },
+  { loc: 'mizoram', top: '48%', left: '83%', name: 'Mizoram', projects: 5, beneficiaries: '60K+', desc: 'Rural development & community welfare', icon: 'fas fa-mountain' },
 ];
 
 const WhereWeWork = () => {
@@ -22,7 +23,6 @@ const WhereWeWork = () => {
   const activateLocation = useCallback((loc) => {
     const pins = document.querySelectorAll('.www-pin');
     const cards = document.querySelectorAll('.www-card');
-    const mapWrap = document.querySelector('.www-map-wrap');
 
     pins.forEach(p => p.classList.remove('active', 'faded'));
     cards.forEach(c => c.classList.remove('active-card'));
@@ -35,16 +35,6 @@ const WhereWeWork = () => {
     if (activePin) {
       activePin.classList.add('active');
       pins.forEach(p => { if (p !== activePin) p.classList.add('faded'); });
-      if (mapWrap) {
-        const pinLeft = parseFloat(activePin.style.left);
-        const pinTop = parseFloat(activePin.style.top);
-        if (!isNaN(pinLeft) && !isNaN(pinTop)) {
-          mapWrap.style.transformOrigin = `${pinLeft}% ${pinTop}%`;
-        } else {
-          mapWrap.style.transformOrigin = '50% 50%';
-        }
-        mapWrap.classList.add('zoomed');
-      }
     }
 
     if (activeCard) {
@@ -200,17 +190,16 @@ const WhereWeWork = () => {
         body{font-family:'Open Sans',sans-serif;color:var(--text-dark);scroll-behavior:smooth}
         .tax-box{width:100%;height:70px;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#009BD4 0%,#0285C3 25%,#046FB1 50%,#074D97 75%,#083D8B 100%);color:#fff;border-radius:0;margin:20px 0;padding:10px}
         .tax-box h1{font-family:'Montserrat',sans-serif;font-size:28px;font-weight:800;letter-spacing:2px;color:#fff;margin:0}
-        .hero{min-height:80vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0;position:relative;overflow:hidden;padding:10px 8%}
-        .hero-content{position:relative;z-index:2;overflow:hidden}
+        .hero{min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:30px;position:relative;overflow:hidden;padding:40px 8%}
+        .hero-content{position:relative;z-index:2;overflow:hidden;display:flex;flex-direction:column;align-items:center;text-align:center;padding:40px 30px;max-width:900px;background:rgba(255,255,255,0.6);border-radius:24px}
         .hero-content .tag{background:transparent;color:#00a3da;padding:0;border-radius:0;display:inline-block;margin-bottom:25px;font-weight:800;font-size:30px;letter-spacing:1px}
         .hero h1{font-size:62px;line-height:1.1;margin-bottom:25px;color:var(--navy)}
         .hero h1 span{color:#00a3da}
-        .hero p{font-size:18px;line-height:1.9;color:#66788a;margin-bottom:35px}
-        .hero-buttons{display:flex;gap:18px;flex-wrap:wrap}
+        .hero p{font-size:18px;line-height:1.9;color:#66788a;margin-bottom:0}
+        .hero-buttons{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
         .hero-buttons .donate-btn{display:inline-block;padding:15px 36px;background:#00a3da;color:#fff;text-decoration:none;border-radius:6px;font-weight:700;transition:0.4s;box-shadow:0 10px 25px rgba(11,77,120,0.25)}
         .hero-buttons .donate-btn:hover{background:#007d94;transform:translateY(-1px)}
-        .hero-image{position:relative;z-index:2;display:flex;justify-content:center}
-        .hero-image img{width:100%;max-width:500px;border-radius:30px;box-shadow:0 25px 50px rgba(0,0,0,0.15);transition:0.5s ease}
+        .hero-image{position:relative;z-index:2;display:flex;justify-content:center}        .hero-image img{width:100%;max-width:500px;border-radius:30px;box-shadow:0 25px 50px rgba(0,0,0,0.15);transition:0.5s ease}
         .hero-image img:hover{transform:scale(1.02)}
         .floating-card{position:absolute;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);padding:18px 24px;border-radius:18px;box-shadow:0 15px 35px rgba(0,0,0,0.12);text-align:center;z-index:3;animation:floatCard 3s ease-in-out infinite alternate}
         .floating-card.card1{top:5%;left:-10px}
@@ -221,7 +210,7 @@ const WhereWeWork = () => {
         .blur{position:absolute;width:500px;height:500px;border-radius:50%;filter:blur(120px);opacity:0.15;z-index:0;pointer-events:none}
         .blur1{background:#00a3da;top:-100px;left:-100px}
         .blur2{background:#315270;bottom:-100px;right:-100px}
-        @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center}.hero h1{font-size:42px}.hero p{font-size:16px}.hero-buttons{justify-content:center}.hero-image img{max-width:90%}.floating-card.card1{left:5%}.floating-card.card2{right:5%}}
+        @media(max-width:900px){.hero h1{font-size:42px}.hero p{font-size:16px}.hero-buttons{justify-content:center}.hero-image img{max-width:90%}.floating-card.card1{left:5%}.floating-card.card2{right:5%}}
         @media(max-width:550px){.hero h1{font-size:28px}.hero p{font-size:13px}.hero-image img{max-width:100%;border-radius:16px}.floating-card{padding:6px 10px;border-radius:12px}.floating-card h3{font-size:14px}.floating-card p{font-size:10px}.floating-card.card1{top:0;left:0;border-radius:0 0 12px 0}.floating-card.card2{bottom:0;right:0;border-radius:12px 0 0 0}.blur{display:none}}
         .www-section{width:100%;background:#ffffff;padding:80px 24px;position:relative;overflow:hidden}
         .www-container{max-width:1300px;margin:0 auto}
@@ -236,35 +225,39 @@ const WhereWeWork = () => {
         .www-counter-suffix{font-family:'Montserrat',sans-serif;font-size:1.8rem;font-weight:700;color:#00a3da}
         .www-counter-label{display:block;width:100%;font-size:0.9rem;font-weight:600;color:#4a5568;text-align:center;margin-top:4px}
         .www-counter-divider{width:2px;height:50px;background:linear-gradient(180deg,transparent,#00a3da,transparent)}
-        .www-grid{display:grid;grid-template-columns:1.8fr 1fr;gap:40px;align-items:start}
+        .www-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
         .www-map-col{position:relative}
         .www-map-wrap{position:relative;width:100%;border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.1);background:#f8fafc;transition:transform 0.5s ease,overflow 0s}
-        .www-map-wrap.zoomed{transform:scale(1.3);overflow:visible;transition:transform 0.5s ease,overflow 0s}
         .www-map-img{width:100%;display:block}
-        .www-pin{position:absolute;width:18px;height:18px;transform:translate(-50%,-50%);cursor:pointer;z-index:5;transition:opacity 0.4s ease}
-        .www-pin-dot{width:100%;height:100%;border-radius:50%;background:#00a3da;border:3px solid #fff;box-shadow:0 2px 10px rgba(0,163,218,0.5);position:relative;z-index:2;transition:all 0.3s ease}
+        .www-pin{position:absolute;width:20px;height:20px;transform:translate(-50%,-50%);cursor:pointer;z-index:5;transition:opacity 0.4s ease}
+        .www-pin-dot{width:100%;height:100%;border-radius:50% 50% 50% 0;background:#00a3da;border:2.5px solid #fff;box-shadow:0 3px 12px rgba(0,163,218,0.6);position:relative;z-index:2;transition:all 0.3s ease;transform:rotate(-45deg);display:flex;align-items:center;justify-content:center}
+        .www-pin-dot i{font-size:11px;color:#fff;transform:rotate(45deg)}
         .www-pin-pulse{position:absolute;top:50%;left:50%;width:100%;height:100%;border-radius:50%;background:rgba(0,163,218,0.3);transform:translate(-50%,-50%) scale(1);animation:wwwPulse 2s ease-out infinite;z-index:1;pointer-events:none}
         @keyframes wwwPulse{0%{transform:translate(-50%,-50%) scale(1);opacity:0.8}70%{transform:translate(-50%,-50%) scale(2.5);opacity:0}100%{transform:translate(-50%,-50%) scale(2.5);opacity:0}}
-        .www-pin.active .www-pin-dot{background:#ff6b00;box-shadow:0 0 20px rgba(255,107,0,0.6);transform:scale(1.3)}
+        .www-pin.active .www-pin-dot{background:#ff6b00;box-shadow:0 0 20px rgba(255,107,0,0.6);transform:rotate(-45deg) scale(1.3)}
         .www-pin.active .www-pin-pulse{background:rgba(255,107,0,0.4);animation-duration:1.2s}
         .www-pin.faded{opacity:0.3}
-        .www-pin-tooltip{position:absolute;bottom:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(8px);background:#fff;padding:14px 18px;border-radius:14px;box-shadow:0 12px 35px rgba(0,0,0,0.18);min-width:170px;opacity:0;visibility:hidden;transition:all 0.35s ease;z-index:20;pointer-events:none}
-        .www-pin-tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:8px solid transparent;border-top-color:#fff}
+        .www-pin-tooltip{position:absolute;bottom:calc(100% + 16px);left:50%;transform:translateX(-50%) translateY(8px);background:#fff;padding:0;border-radius:16px;box-shadow:0 18px 50px rgba(0,0,0,0.22);min-width:230px;max-width:260px;opacity:0;visibility:hidden;transition:all 0.35s ease;z-index:30;pointer-events:none;overflow:hidden;border:1px solid #e8eef5}
+        .www-pin-tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:9px solid transparent;border-top-color:#fff}
         .www-pin.active .www-pin-tooltip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
-        .www-pin-tooltip h4{font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:800;color:#00a3da;margin-bottom:8px}
-        .www-pin-tooltip p{font-size:0.82rem;color:#4a5568;margin-bottom:4px;line-height:1.4}
-        .www-pin-tooltip p strong{color:#1a1a2e}
+        .www-tip-head{display:flex;align-items:center;gap:10px;padding:14px 16px;background:linear-gradient(135deg,#00a3da,#0072a0);}
+        .www-tip-icon{width:34px;height:34px;border-radius:10px;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;flex-shrink:0}
+        .www-tip-name{font-family:'Montserrat',sans-serif;font-size:1.05rem;font-weight:800;color:#fff;letter-spacing:0.5px}
+        .www-tip-desc{padding:12px 16px 8px;font-size:0.8rem;color:#4a5568;line-height:1.5;margin:0}
+        .www-tip-stats{display:flex;justify-content:space-between;gap:8px;padding:10px 16px 14px;border-top:1px solid #eef2f6}
+        .www-tip-stats span{font-size:0.72rem;color:#66788a;text-align:center}
+        .www-tip-stats strong{display:block;font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:800;color:#03163E}
         .www-legend{position:absolute;bottom:16px;left:16px;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);padding:14px 18px;border-radius:14px;box-shadow:0 6px 20px rgba(0,0,0,0.08);z-index:10}
         .www-legend-title{display:block;font-size:0.8rem;font-weight:700;color:#1a1a2e;margin-bottom:8px;letter-spacing:0.5px}
         .www-legend-items{display:flex;flex-wrap:wrap;gap:10px}
         .www-legend-item{font-size:0.72rem;font-weight:600;color:#4a5568;display:flex;align-items:center;gap:5px}
         .www-legend-item i{font-size:0.8rem}
-        .www-list-col{background:#ffffff;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.08);border:1px solid #eef2f6}
+        .www-list-col{background:#ffffff;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.08);border:1px solid #eef2f6;display:flex;flex-direction:column}
         .www-list-header{padding:24px 24px 16px;border-bottom:1px solid #e8ecf0;background:#fafcfe}
         .www-list-header h3{font-family:'Montserrat',sans-serif;font-size:1.4rem;font-weight:800;color:#03163E;margin-bottom:4px}
         .www-list-header h3 span{color:#00a3da}
         .www-list-header p{font-size:0.85rem;color:#6b7f8f}
-        .www-list-scroll{max-height:520px;overflow-y:auto;padding:8px 12px;background:#ffffff}
+        .www-list-scroll{max-height:640px;overflow-y:auto;padding:0;background:#ffffff;flex:1}
         .www-list-scroll::-webkit-scrollbar{width:5px}
         .www-list-scroll::-webkit-scrollbar-track{background:#f0f2f5;border-radius:8px}
         .www-list-scroll::-webkit-scrollbar-thumb{background:#c0c8d0;border-radius:8px}
@@ -317,7 +310,6 @@ const WhereWeWork = () => {
           <span className="tag">BEING SEVAK CHARITABLE TRUST</span>
           <h1>Where We <span>Work</span></h1>
           <p>Actively working across multiple states in India through initiatives focused on education, nourishment, healthcare, empowerment and social welfare.</p>
-          <div className="hero-buttons"><a href="#locations" className="donate-btn">Explore Locations</a></div>
           <div className="blur blur1"></div><div className="blur blur2"></div>
         </div>
         <div className="hero-image">
@@ -325,6 +317,7 @@ const WhereWeWork = () => {
           <div className="floating-card card2"><h3>5,000+</h3><p>Volunteers Connected</p></div>
           <img src="/images/Where We Work1.jpeg" alt="Where We Work" />
         </div>
+        <div className="hero-buttons"><a href="#locations" className="donate-btn">Explore Locations</a></div>
       </section>
 
       <section className="www-section">
@@ -343,12 +336,18 @@ const WhereWeWork = () => {
                 <img src="/images/Map2.jpeg" alt="India Map" className="www-map-img" />
                 {locations.map(loc => (
                   <div key={loc.loc} className="www-pin" data-loc={loc.loc} style={{ top: loc.top, left: loc.left }}>
-                    <div className="www-pin-dot"></div>
+                    <div className="www-pin-dot"><i className="fas fa-map-marker-alt"></i></div>
                     <div className="www-pin-pulse"></div>
                     <div className="www-pin-tooltip">
-                      <h4>{loc.name}</h4>
-                      <p><strong>Projects:</strong> {loc.projects}</p>
-                      <p><strong>Beneficiaries:</strong> {loc.beneficiaries}</p>
+                      <div className="www-tip-head">
+                        <span className="www-tip-icon"><i className={loc.icon}></i></span>
+                        <span className="www-tip-name">{loc.name}</span>
+                      </div>
+                      <p className="www-tip-desc">{loc.desc}</p>
+                      <div className="www-tip-stats">
+                        <span><strong>{loc.projects}</strong> Projects</span>
+                        <span><strong>{loc.beneficiaries}</strong> Beneficiaries</span>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -356,12 +355,16 @@ const WhereWeWork = () => {
               </div>
             </div>
             <div className="www-list-col" id="locations">
-              <div className="www-list-header"><h3>Our <span>States</span></h3><p>Hover a location to see its impact</p></div>
+              <div className="www-list-header"><h3>Our <span>States</span></h3><p>Click a location to see its impact</p></div>
               <div className="www-list-scroll">
                 {locations.map(loc => (
                   <div key={loc.loc} className="www-card" data-loc={loc.loc}>
                     <div className="www-card-icon"><i className={loc.icon}></i></div>
-                    <div className="www-card-text"><h4>{loc.name}</h4><p>{loc.desc}</p></div>
+                    <div className="www-card-text">
+                      <h4>{loc.name}</h4>
+                      <p><strong>Projects:</strong> {loc.projects} &nbsp;&nbsp; <strong>Beneficiaries:</strong> {loc.beneficiaries}</p>
+                      <p>{loc.desc}</p>
+                    </div>
                   </div>
                 ))}
               </div>

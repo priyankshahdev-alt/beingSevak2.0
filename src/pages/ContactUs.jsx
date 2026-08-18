@@ -131,10 +131,11 @@ const ContactUs = () => {
         @keyframes shine{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
         .tax-box h1{font-size:1.4rem;font-weight:700;line-height:1.6;font-family:'Montserrat',sans-serif;position:relative;z-index:2;}
         .tax-box:hover{transform:translateY(-5px) scale(1.01);box-shadow:0 25px 60px rgba(0,163,218,0.35);}
-        .contact-container{max-width:1100px;margin:0 auto;padding:60px 24px;}
-        .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start;}
+        .contact-container{max-width:100%;margin:0;padding:60px 24px;}
+        .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch;}
+        .contact-info{background:var(--white);border:1px solid #e2ecf5;border-radius:20px;padding:32px;box-shadow:0 8px 30px rgba(0,0,0,0.05);display:flex;flex-direction:column;}
         .contact-info h2{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.6rem;color:var(--navy);margin-bottom:8px;}
-        .contact-info > p{color:var(--text-mid);font-size:0.95rem;margin-bottom:30px;line-height:1.7;}
+        .contact-info > p{color:var(--text-mid);font-size:0.95rem;margin-bottom:24px;line-height:1.7;}
         .info-card{display:flex;align-items:flex-start;gap:16px;background:var(--white);border:1px solid #e2ecf5;border-radius:16px;padding:20px 22px;margin-bottom:16px;transition:all 0.4s cubic-bezier(0.22,1,0.36,1);box-shadow:0 2px 12px rgba(0,0,0,0.04);}
         .info-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.08);border-color:var(--cyan);background:#00a3da;}
         .info-card:hover h4,.info-card:hover p,.info-card:hover a,.info-card:hover strong,.info-card:hover .visit-item p{color:#fff;}
@@ -143,6 +144,14 @@ const ContactUs = () => {
         .info-card h4{font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;color:var(--navy);margin-bottom:4px;}
         .info-card p,.info-card a{font-size:0.88rem;color:var(--text-mid);line-height:1.6;text-decoration:none;}
         .info-card a:hover{color:var(--cyan);}
+        .info-cards-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+        .info-cards-row .info-card{margin-bottom:0;}
+        .info-cards-row .info-card h4{font-size:0.82rem;}
+        .info-cards-row .info-card p{font-size:0.78rem;line-height:1.5;}
+        .info-cards-row .info-card .icon-box{width:42px;height:42px;font-size:1rem;}
+        .visit-card{flex:1;}
+        .contact-form-wrap form{flex:1;display:flex;flex-direction:column;}
+        .contact-form-wrap form .submit-btn{margin-top:auto;}
         .visit-card .icon-box{align-self:flex-start;margin-top:4px;}
         .visit-accordion{margin-top:6px;}
         .visit-item{padding:8px 0;border-bottom:1px solid #eef4f8;}
@@ -151,10 +160,10 @@ const ContactUs = () => {
         .visit-item p{font-size:0.8rem;color:var(--text-mid);line-height:1.5;margin:0;}
         .social-section{margin-top:30px;}
         .social-section h3{font-family:'Montserrat',sans-serif;font-weight:700;font-size:1rem;color:var(--navy);margin-bottom:14px;}
-        .social-links{display:flex;gap:12px;}
-        .social-links a{width:44px;height:44px;border-radius:12px;background:var(--light-bg);border:1px solid #e2ecf5;display:flex;align-items:center;justify-content:center;font-size:1.15rem;color:var(--mid);text-decoration:none;transition:all 0.35s cubic-bezier(0.22,1,0.36,1);}
-        .social-links a:hover{background:var(--cyan);color:var(--white);border-color:var(--cyan);transform:translateY(-4px) scale(1.05);box-shadow:0 8px 20px rgba(0,162,217,0.25);}
-        .contact-form-wrap{background:var(--white);border:1px solid #e2ecf5;border-radius:20px;padding:36px 32px;box-shadow:0 8px 30px rgba(0,0,0,0.05);transition:box-shadow 0.4s ease;}
+        .social-links{display:flex;gap:8px;}
+        .social-links a{width:36px;height:36px;border-radius:10px;background:var(--light-bg);border:1px solid #e2ecf5;display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--mid);text-decoration:none;transition:all 0.35s cubic-bezier(0.22,1,0.36,1);}
+        .social-links a:hover{background:var(--cyan);color:var(--white);border-color:var(--cyan);transform:translateY(-3px) scale(1.05);box-shadow:0 6px 16px rgba(0,162,217,0.25);}
+        .contact-form-wrap{background:var(--white);border:1px solid #e2ecf5;border-radius:20px;padding:32px;box-shadow:0 8px 30px rgba(0,0,0,0.05);transition:box-shadow 0.4s ease;display:flex;flex-direction:column;}
         .contact-form-wrap:hover{box-shadow:0 16px 50px rgba(0,0,0,0.08);}
         .contact-form-wrap h3{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.3rem;color:var(--navy);margin-bottom:6px;}
         .contact-form-wrap > p{font-size:0.88rem;color:var(--text-mid);margin-bottom:24px;}
@@ -174,10 +183,23 @@ const ContactUs = () => {
         .map-section{background:var(--light-bg);padding:60px 24px;}
         .map-section .section-label{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.5rem;color:var(--navy);margin-bottom:24px;text-align:center;}
         .map-section .section-label::after{content:'';display:block;width:60px;height:4px;background:var(--gold);margin:10px auto 0;border-radius:2px;}
-        .map-wrap{max-width:1100px;margin:0 auto;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,0.1);}
+        .map-wrap{max-width:100%;margin:0 auto;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,0.1);}
         .map-wrap iframe{width:100%;height:400px;display:block;border:none;}
-        @media(max-width:768px){.contact-grid{grid-template-columns:1fr;gap:32px;}.form-row{grid-template-columns:1fr;}.contact-form-wrap{padding:24px 18px;}.map-wrap iframe{height:280px;}}
-        @media(max-width:480px){.contact-container{padding:40px 18px;}}
+        .contact-map-wrap{position:relative;max-width:500px;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.12);background:#f8fafc}
+        .contact-map-img{width:100%;display:block}
+        .contact-pin{position:absolute;width:22px;height:22px;transform:translate(-50%,-50%);cursor:pointer;z-index:5}
+        .contact-pin-dot{width:100%;height:100%;border-radius:50% 50% 50% 0;background:#e03e3e;border:2.5px solid #fff;box-shadow:0 3px 12px rgba(224,62,62,0.6);display:flex;align-items:center;justify-content:center;transform:rotate(-45deg);transition:all 0.3s ease}
+        .contact-pin-dot i{font-size:10px;color:#fff;transform:rotate(45deg)}
+        .contact-pin-pulse{position:absolute;top:50%;left:50%;width:100%;height:100%;border-radius:50%;background:rgba(224,62,62,0.3);transform:translate(-50%,-50%) scale(1);animation:contactPulse 2s ease-out infinite;pointer-events:none}
+        @keyframes contactPulse{0%{transform:translate(-50%,-50%) scale(1);opacity:0.8}70%{transform:translate(-50%,-50%) scale(2.5);opacity:0}100%{transform:translate(-50%,-50%) scale(2.5);opacity:0}}
+        .contact-pin:hover .contact-pin-dot{transform:rotate(-45deg) scale(1.3);box-shadow:0 0 20px rgba(224,62,62,0.6)}
+        .contact-pin-tooltip{position:absolute;bottom:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(6px);background:#fff;padding:10px 14px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.2);min-width:180px;opacity:0;visibility:hidden;transition:all 0.3s ease;z-index:20;pointer-events:none;border:1px solid #e8eef5;text-align:center}
+        .contact-pin-tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:7px solid transparent;border-top-color:#fff}
+        .contact-pin:hover .contact-pin-tooltip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+        .contact-pin-tooltip strong{display:block;color:#e03e3e;font-size:0.8rem;margin-bottom:2px}
+        .contact-pin-tooltip span{font-size:0.7rem;color:#666}
+        @media(max-width:768px){.contact-grid{grid-template-columns:1fr;gap:32px;}.form-row{grid-template-columns:1fr;}.info-cards-row{grid-template-columns:1fr;}.contact-form-wrap{padding:24px 18px;}.map-wrap iframe{height:280px;}.contact-map-wrap{max-width:100%}}
+        @media(max-width:480px){.contact-container{padding:40px 18px;}.contact-info,.contact-form-wrap{padding:24px 16px;}}
       `}</style>
 
       <section className="tax-box">
@@ -188,41 +210,42 @@ const ContactUs = () => {
         <div className="contact-grid">
           <div className="contact-info">
             <h2>Let's Connect</h2>
-            <p>Whether you want to volunteer, collaborate, or learn more about our work, we're just a message away. Visit
-              any of our offices across India.</p>
+            <p>Whether you want to volunteer, collaborate, or learn more about our work, we're just a message away. Visit any of our offices across India.</p>
 
-            <div className="info-card">
-              <div className="icon-box"><i className="fas fa-phone"></i></div>
-              <div>
-                <h4>Phone</h4>
-                <p><a href="tel:+918879035035" style={{color:'inherit',textDecoration:'none'}}>+91 8879035035</a></p>
+            <div className="info-cards-row">
+              <div className="info-card">
+                <div className="icon-box"><i className="fas fa-phone"></i></div>
+                <div>
+                  <h4>Phone</h4>
+                  <p><a href="tel:+918879035035" style={{color:'inherit',textDecoration:'none'}}>+91 8879035035</a></p>
+                </div>
+              </div>
+
+              <div className="info-card">
+                <div className="icon-box"><i className="fas fa-envelope"></i></div>
+                <div>
+                  <h4>Email</h4>
+                  <p><a href="mailto:being.sevak@gmail.com">being.sevak@gmail.com</a></p>
+                </div>
               </div>
             </div>
 
-            <div className="info-card">
-              <div className="icon-box"><i className="fas fa-envelope"></i></div>
-              <div>
-                <h4>Email</h4>
-                <p><a href="mailto:being.sevak@gmail.com">being.sevak@gmail.com</a></p>
+            <div className="info-cards-row">
+              <div className="info-card">
+                <div className="icon-box"><i className="fas fa-building"></i></div>
+                <div>
+                  <h4>Head Office</h4>
+                  <p>Being Sevak Charitable Trust, Kandivali (West), Mumbai - 400092, Maharashtra, India</p>
+                </div>
               </div>
-            </div>
 
-            <div className="info-card">
-              <div className="icon-box"><i className="fas fa-university"></i></div>
-              <div>
-                <h4>Bank Details:1</h4>
-                <p><strong>Name:</strong> Being Sevak Charitable Trust</p>
-                <p><strong>Bank:</strong> Axis Bank, Kandivali (West), Mumbai</p>
-                <p><strong>A/C No:</strong> 920010066029137</p>
-                <p><strong>IFSC:</strong> UTIB0000201</p>
-                  <br/>
-                <h4>Bank Details:2</h4>
-                <p><strong>Name:</strong> Being Sevak Charitable Trust</p>
-                <p><strong>Bank:</strong> Saraswat Bank, Kandivali (West), Mumbai</p>
-                <p><strong>A/C No:</strong>130200100119387</p>
-                <p><strong>IFSC:</strong> SRCB0000130</p>
+              <div className="info-card">
+                <div className="icon-box"><i className="fas fa-building"></i></div>
+                <div>
+                  <h4>Registered Office</h4>
+                  <p>Shop no 2, Sundar Complex, Chandavarkar Road, Near CRPF camp, Sarojini Nagar, Lucknow - 226002, UP, India</p>
+                </div>
               </div>
-             
             </div>
 
             <div className="info-card visit-card">
@@ -232,47 +255,40 @@ const ContactUs = () => {
                 <div className="visit-accordion">
                   <div className="visit-item">
                     <strong>Mumbai Office</strong>
-                    <p>New Delight CHS Ltd, A Wing, 4th Floor, Office No 401, Chandavarkar Road, Borivali West, Mumbai,
-                      Maharashtra, 400092.</p>
+                    <p>New Delight CHS Ltd, A Wing, 4th Floor, Office No 401, Chandavarkar Road, Borivali West, Mumbai, Maharashtra, 400092.</p>
                   </div>
-                 
                   <div className="visit-item">
                     <strong>Gujarat Office</strong>
-                    <p>Bharat Min, Next to Maruti Mobile Home Guard Chowk, Home Guard Chowk Road, Dwarka, Gujarat,
-                      Pin-361335</p>
+                    <p>Bharat Min, Next to Maruti Mobile Home Guard Chowk, Home Guard Chowk Road, Dwarka, Gujarat, Pin-361335.</p>
                   </div>
                   <div className="visit-item">
                     <strong>Tamil Nadu Office</strong>
                     <p>No:85, Tansi, opposite G.S.T Road, Marai Malai Nagar, Chengalpattu, Tamil Nadu, Pin-603209.</p>
                   </div>
-                  <div className="visit-item">
-                    <strong>West Bengal Office</strong>
-                    <p>Vill+po-Harishpur, P.S-Basirhat, Dist-North 24 Parganas, West Bengal, Pin-743412.</p>
-                  </div>
-                  <div className="visit-item">
-                    <strong>Uttar Pradesh Office</strong>
-                    <p>Shop no 2, Sundar Complex, Sundar City, Chandrawal Bijnor Road, Near CRPF camp Sarojni Nagar, Lucknow
-                      UP, Pin-226002</p>
-                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="info-card">
-              <div className="icon-box"><i className="fas fa-clock"></i></div>
-              <div>
-                <h4>Office Hours</h4>
-                <p>Monday – Saturday: 10:00 AM – 6:30 PM</p>
+            <div className="info-cards-row">
+              <div className="info-card">
+                <div className="icon-box"><i className="fas fa-clock"></i></div>
+                <div>
+                  <h4>Office Hours</h4>
+                  <p>Monday – Saturday: 10:00 AM – 6:30 PM</p>
+                </div>
               </div>
-            </div>
 
-            <div className="social-section">
-              <h3>Follow Us</h3>
-              <div className="social-links">
-                <a href="https://www.facebook.com/share/1P33YzE6HM/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/beingsevak?igsh=MTRjam5nNjU4a2w1Mw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-                <a href="https://youtube.com/@beingsevak?si=T_qcPUg699KmS8_2" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/company/www-linkedin-cominshwetashah2658ba102/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+              <div className="info-card">
+                <div className="icon-box"><i className="fas fa-share-alt"></i></div>
+                <div>
+                  <h4>Follow Us</h4>
+                  <div className="social-links">
+                    <a href="https://www.facebook.com/share/1P33YzE6HM/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/beingsevak?igsh=MTRjam5nNjU4a2w1Mw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@beingsevak?si=T_qcPUg699KmS8_2" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/www-linkedin-cominshetashah2658ba102/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -319,7 +335,8 @@ const ContactUs = () => {
                 </div>
                 <div className="form-group">
                   <label>Message <span className="req">*</span></label>
-                    <textarea id="cf_message" name="message" placeholder="Write your message here..." value={formData.message} onChange={handleChange} required></textarea>
+                    <textarea id="cf_message" name="message" placeholder="Write your message here..." value={formData.message} onChange={handleMessageChange} required></textarea>
+                    {messageErr && <span className="field-err">{messageErr}</span>}
                 </div>
                 <button type="submit" className="submit-btn">
                   <i className="fas fa-paper-plane"></i> Send Message
@@ -330,6 +347,23 @@ const ContactUs = () => {
                 <i className="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
               </div>
             )}
+
+            <div className="info-card visit-card" style={{marginTop:20}}>
+              <div className="icon-box"><i className="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Our Offices</h4>
+                <div className="visit-accordion">
+                  <div className="visit-item">
+                    <strong>West Bengal Office</strong>
+                    <p>Vill+po-Harishpur, P.S-Basirhat, Dist-North 24 Parganas, West Bengal, Pin-743412.</p>
+                  </div>
+                  <div className="visit-item">
+                    <strong>Uttar Pradesh Office</strong>
+                    <p>Shop no 2, Sundar Complex, Sundar City, Chandrawal Bijnor Road, Near CRPF camp Sarojni Nagar, Lucknow UP, Pin-226002.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

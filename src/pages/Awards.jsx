@@ -23,14 +23,14 @@ const Awards = () => {
         :root{--navy:#03163E;--mid:#315371;--cyan:#00A2D9;--cyan-light:#33bce8;--green:#2eb85c;--white:#ffffff;--light-bg:#f4f7fb;--text-dark:#1a1a2e;--text-mid:#4a5568;--gold:#D4AF37}
         body{font-family:'Open Sans',sans-serif;color:var(--text-dark);background:#fff;scroll-behavior:smooth}
         .section-title{text-align:center;font-size:34px;font-weight:800;margin:55px auto 25px;color:var(--cyan);font-family:'Montserrat',sans-serif;display:block;width:100%;max-width:1400px;padding:0 60px}
-        .awards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;padding:20px 60px 70px;max-width:1400px;margin:auto}
-        .award-card{background:#fff;border-radius:14px;box-shadow:0 5px 18px rgba(0,0,0,0.1);overflow:hidden;text-align:center;transition:0.3s}
-        .award-card:hover{transform:translateY(-6px)}
-        .award-card img{width:100%;height:240px;object-fit:contain;padding:15px;background:#fff}
-        .award-name{background:#00a3da;color:#fff;padding:14px;font-weight:700;font-size:16px;font-family:'Montserrat',sans-serif;text-align:center}
-        .letter-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;padding:20px 60px 80px;max-width:1400px;margin:auto}
-        .letter-grid img{width:100%;height:340px;object-fit:contain;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.1);transition:0.3s;background:#fff}
-        .letter-grid img:hover{transform:scale(1.03)}
+        .awards-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;padding:20px 60px 70px;max-width:1400px;margin:auto}
+        .award-card{background:#fff;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,0.08);overflow:hidden;text-align:center;transition:0.3s;display:flex;flex-direction:column;border:1px solid #f0f0f0}
+        .award-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,163,218,0.15)}
+        .award-card img{width:100%;height:220px;object-fit:contain;padding:20px;background:#fafcfe;box-sizing:border-box;flex:1}
+        .award-name{background:linear-gradient(135deg,#00a3da,#0285c3);color:#fff;padding:14px 10px;font-weight:700;font-size:11px;letter-spacing:0.3px;font-family:'Montserrat',sans-serif;text-align:center;line-height:1.4;min-height:44px;display:flex;align-items:center;justify-content:center}
+        .letter-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:20px 60px 80px;max-width:1400px;margin:auto}
+        .letter-grid img{width:100%;height:320px;object-fit:contain;padding:16px;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,0.08);transition:0.3s;background:#fafcfe;box-sizing:border-box;border:1px solid #f0f0f0}
+        .letter-grid img:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,163,218,0.15)}
         .tax-box{width:100%;height:70px;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#009BD4 0%,#0285C3 25%,#046FB1 50%,#074D97 75%,#083D8B 100%);color:#fff;border-radius:0;margin:20px 0;padding:10px}
         .tax-box h1{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;letter-spacing:2px;color:#fff;margin:0;padding:10px}
         .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0;position:relative;overflow:hidden;padding:10px 8%}
@@ -84,7 +84,9 @@ const Awards = () => {
         .testimonial-card:hover .quote-icon{color:rgba(255,255,255,0.6)}
         .reveal{opacity:0;transform:translateY(40px);transition:opacity 0.7s ease,transform 0.7s ease}
         .reveal.visible{opacity:1;transform:translateY(0)}
-        @media(max-width:768px){.awards-grid{padding:20px;grid-template-columns:1fr}.letter-grid{padding:20px;grid-template-columns:1fr}.values-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr}}
+        @media(max-width:1100px){.awards-grid{grid-template-columns:repeat(3,1fr)}.letter-grid{grid-template-columns:repeat(3,1fr)}}
+        @media(max-width:768px){.awards-grid{padding:20px;grid-template-columns:repeat(2,1fr)}.letter-grid{padding:20px;grid-template-columns:repeat(2,1fr)}.values-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr}}
+        @media(max-width:480px){.awards-grid{grid-template-columns:1fr}.letter-grid{grid-template-columns:1fr}}
       `}</style>
 
       <section className="tax-box"><h1>Awards &amp; Achievements</h1></section>
@@ -106,19 +108,27 @@ const Awards = () => {
 
       <h2 className="section-title reveal" id="achievements">Our Achievements</h2>
       <div className="awards-grid reveal">
-        <div className="award-card"><img src="/images/IIIA AWARD.jpg" alt="IIIA Award"/><div className="award-name">IIIA AWARD</div></div>
-        <div className="award-card"><img src="/images/COVID WARRIOR.jpg" alt="Covid Warrior"/><div className="award-name">COVID WARRIOR</div></div>
-        <div className="award-card"><img src="/images/BUSINESS AWARD 2023.jpg" alt="Business Award 2023"/><div className="award-name">BUSINESS AWARD 2023</div></div>
-        <div className="award-card"><img src="/images/ACHIEVEMENT AWARD.jpg" alt="Achievement Award"/><div className="award-name">ACHIEVEMENT AWARD</div></div>
-        <div className="award-card"><img src="/images/SEVAK STAR AWARD.jpg" alt="Sevak Star Award"/><div className="award-name">SEVAK STAR AWARD</div></div>
-        <div className="award-card"><img src="/images/POPULAR CIVILIAN   AWARD.jpg" alt="Popular Civilian Award"/><div className="award-name">POPULAR CIVILIAN AWARD</div></div>
-        <div className="award-card"><img src="/images/DADA SAHEB.jpg" alt="Dada Saheb Phalke Award"/><div className="award-name">DADA SAHEB PHALKE AWARD</div></div>
-        <div className="award-card"><img src="/images/PRIDE OF INDIA ICON AWARD.jpg" alt="Pride of India Icon Award"/><div className="award-name">PRIDE OF INDIA ICON AWARD</div></div>
-        <div className="award-card"><img src="/images/BUSINESS AWARD 2023 (1).jpg" alt="Business Award 2023"/><div className="award-name">BUSINESS AWARD <br/>2023</div></div>
-        <div className="award-card"><img src="/images/MAHATMA GANDHI RATNA AWARD.jpg" alt="Mahatma Gandhi Ratna Award"/><div className="award-name">MAHATMA GANDHI RATNA AWARD</div></div>
-        <div className="award-card"><img src="/images/CHHATRAPATI SHIVAJI   MAHARAJ GAURAV AWARD 2021.jpg" alt="Shivaji Maharaj Gaurav Award"/><div className="award-name">SHIVAJI MAHARAJ GAURAV AWARD</div></div>
-        <div className="award-card"><img src="/images/BORIVALI BLOOD CENTRE  AWARD.jpg" alt="Borivali Blood Centre Award"/><div className="award-name">BORIVALI BLOOD CENTRE AWARD</div></div>
-        <div className="award-card"><img src="/images/MARATHA LIFE FOUNDATION AWARD.jpg" alt="Maratha Life Foundation"/><div className="award-name">MARATHA LIFE FOUNDATION</div></div>
+        <div className="award-card"><img src="/images/IIIA AWARD.jpg" alt="IIIA AWARD"/><div className="award-name">IIIA AWARD</div></div>
+        <div className="award-card"><img src="/images/RO1.png" alt="RASHTRA SEVA SAMMAN"/><div className="award-name">RASHTRA SEVA SAMMAN</div></div>
+        <div className="award-card"><img src="/images/RO2.png" alt="BEING SEVAK CHARITABLE TRUST"/><div className="award-name">BEING SEVAK CHARITABLE TRUST</div></div>
+        <div className="award-card"><img src="/images/COVID WARRIOR.jpg" alt="COVID WARRIOR"/><div className="award-name">COVID WARRIOR</div></div>
+        <div className="award-card"><img src="/images/BUSINESS AWARD 2023.jpg" alt="BUSINESS AWARD 2023"/><div className="award-name">BUSINESS AWARD 2023</div></div>
+        <div className="award-card"><img src="/images/ACHIEVEMENT AWARD.jpg" alt="ACHIEVEMENT AWARD"/><div className="award-name">ACHIEVEMENT AWARD</div></div>
+        <div className="award-card"><img src="/images/SEVAK STAR AWARD.jpg" alt="SEVAK STAR AWARD"/><div className="award-name">SEVAK STAR AWARD</div></div>
+        <div className="award-card"><img src="/images/POPULAR CIVILIAN   AWARD.jpg" alt="POPULAR CIVILIAN AWARD"/><div className="award-name">POPULAR CIVILIAN AWARD</div></div>
+        <div className="award-card"><img src="/images/DADA SAHEB.jpg" alt="DADA SAHEB"/><div className="award-name">DADA SAHEB</div></div>
+        <div className="award-card"><img src="/images/PRIDE OF INDIA ICON AWARD.jpg" alt="PRIDE OF INDIA ICON AWARD"/><div className="award-name">PRIDE OF INDIA ICON AWARD</div></div>
+        <div className="award-card"><img src="/images/BUSINESS AWARD 2023 (1).jpg" alt="BUSINESS AWARD 2023"/><div className="award-name">BUSINESS AWARD 2023</div></div>
+        <div className="award-card"><img src="/images/MAHATMA GANDHI RATNA AWARD.jpg" alt="MAHATMA GANDHI RATNA AWARD"/><div className="award-name">MAHATMA GANDHI RATNA AWARD</div></div>
+        <div className="award-card"><img src="/images/CHHATRAPATI SHIVAJI   MAHARAJ GAURAV AWARD 2021.jpg" alt="CHHATRAPATI SHIVAJI MAHARAJ GAURAV AWARD 2021"/><div className="award-name">CHHATRAPATI SHIVAJI MAHARAJ GAURAV AWARD 2021</div></div>
+        <div className="award-card"><img src="/images/BORIVALI BLOOD CENTRE  AWARD.jpg" alt="BORIVALI BLOOD CENTRE AWARD"/><div className="award-name">BORIVALI BLOOD CENTRE AWARD</div></div>
+        <div className="award-card"><img src="/images/MARATHA LIFE FOUNDATION AWARD.jpg" alt="MARATHA LIFE FOUNDATION AWARD"/><div className="award-name">MARATHA LIFE FOUNDATION AWARD</div></div>
+        <div className="award-card"><img src="/images/GURU BHARAT BHARTI   AWARD.jpg" alt="GURU BHARAT BHARTI AWARD"/><div className="award-name">GURU BHARAT BHARTI AWARD</div></div>
+        <div className="award-card"><img src="/images/PRIDE AWARDS.png" alt="PRIDE AWARDS"/><div className="award-name">PRIDE AWARDS</div></div>
+        <div className="award-card"><img src="/images/SOCIAL WORKER AND TRUSTEE.png" alt="SOCIAL WORKER AND TRUSTEE"/><div className="award-name">SOCIAL WORKER AND TRUSTEE</div></div>
+        <div className="award-card"><img src="/images/TASVEER WELFARE FOUNDATION.png" alt="TASVEER WELFARE FOUNDATION"/><div className="award-name">TASVEER WELFARE FOUNDATION</div></div>
+
+        <div className="award-card"><img src="/images/BHARAT BUSINESS AWARD.jpeg" alt="BHARAT BUSINESS AWARD"/><div className="award-name">BHARAT BUSINESS AWARD</div></div>
       </div>
 
       <h2 className="section-title reveal">Appreciation Letters</h2>
@@ -132,6 +142,8 @@ const Awards = () => {
         <img src="/images/appre7.jpeg" alt="Appreciation 7"/>
         <img src="/images/appre8.jpeg" alt="Appreciation 8"/>
         <img src="/images/appre9.jpeg" alt="Appreciation 9"/>
+        <img src="/images/MO2.jpeg" alt="MO2"/>
+        <img src="/images/O1.jpeg" alt="O1"/>
         <img src="/images/appre11.jpg" alt="Appreciation 11"/>
       </div>
 

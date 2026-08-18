@@ -38,9 +38,9 @@ const Management = () => {
         body{font-family:'Open Sans',sans-serif;color:var(--text-dark)}
         .tax-box{width:100%;height:70px;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#009BD4 0%,#0285C3 25%,#046FB1 50%,#074D97 75%,#083D8B 100%);color:#fff;border-radius:0;margin:20px 0;padding:10px}
         .tax-box h1{font-family:'Montserrat',sans-serif;font-size:28px;font-weight:800;letter-spacing:2px;color:#fff;margin:0}
-        .leadership-section{max-width:1200px;margin:0 auto;padding:30px 28px}
+        .leadership-section{padding:30px 28px}
         .section-title{font-family:'Montserrat',sans-serif;font-weight:900;font-size:2.2rem;color:var(--cyan);text-align:center;margin-bottom:12px}
-        .section-subtitle{text-align:center;font-size:0.95rem;color:var(--text-mid);margin-bottom:56px;line-height:1.7;max-width:600px;margin-left:auto;margin-right:auto}
+        .section-subtitle{text-align:center;font-size:0.95rem;color:var(--text-mid);margin-bottom:56px;line-height:1.7}
         .section-subtitle::after{content:'';display:block;width:60px;height:4px;background:var(--cyan);margin:18px auto 0;border-radius:2px}
         .team-circles{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:40px 30px;margin-top:10px}
         .team-member{text-align:center;transition:transform 0.4s ease}
@@ -69,7 +69,7 @@ const Management = () => {
         .animate-zoom.show{opacity:1;transform:scale(1)}
         @media(max-width:768px){.founder-grid{flex-direction:column}.founder-col{gap:40px}}
         .values-section{background:var(--light-bg);padding:80px 24px}
-        .values-inner{max-width:1200px;margin:0 auto}
+        .values-inner{padding:30px 28px}
         .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;margin-top:50px}
         .value-card{background:#fff;padding:35px 28px;border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,0.05);text-align:center;position:relative;overflow:hidden;cursor:pointer;transition:0.5s ease}
         .value-card::before{content:'';position:absolute;left:0;bottom:0;width:100%;height:0%;background:var(--cyan);transition:0.5s ease;z-index:1}
@@ -81,7 +81,7 @@ const Management = () => {
         .value-card p{font-size:0.88rem;line-height:1.7;color:var(--text-mid)}
         .value-card:hover .val-icon,.value-card:hover h3,.value-card:hover p{color:#fff}
         .testimonials-section{padding:80px 24px;background:#fff}
-        .testimonials-inner{max-width:1200px;margin:0 auto}
+        .testimonials-inner{padding:30px 28px}
         .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:50px;align-items:stretch}
         .testimonial-card{background:#fff;padding:30px;border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,0.07);transition:0.4s ease;overflow:hidden;position:relative;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between}
         .testimonial-card::before{content:'';position:absolute;left:0;bottom:0;width:100%;height:0%;background:var(--cyan);transition:0.4s ease;z-index:1;border-radius:28px}

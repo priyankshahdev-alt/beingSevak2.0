@@ -77,7 +77,9 @@ export default function Home() {
     { id: 'month-feb', label: 'Feb 2026', img: 'latesUpdates/FEB 2026.jpg' },
     { id: 'month-mar', label: 'Mar 2026', img: 'latesUpdates/MARCH 2026.jpg' },
     { id: 'month-apr', label: 'Apr 2026', img: 'latesUpdates/APRIL 2026.jpg' },
-    { id: 'month-may', label: 'May 2026', img: '' }
+    { id: 'month-may', label: 'May 2026', img: 'images/MAY.jpeg' },
+    { id: 'month-jun', label: 'Jun 2026', img: 'images/JUNE.jpeg' },
+    { id: 'month-jul', label: 'Jul 2026', img: 'images/JULY.jpeg' }
   ];
 
   // Hero Slider Autoplay

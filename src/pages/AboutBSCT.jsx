@@ -89,7 +89,7 @@ const AboutBSCT = () => {
 
         .about-page .about-grid-wrap {
           display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
-          max-width: 1200px; margin: 0 auto; padding: 80px 24px;
+          padding: 80px 24px;
         }
         .about-page .about-image-col { position: relative; }
         .about-page .about-image-col img {
@@ -123,7 +123,7 @@ const AboutBSCT = () => {
         }
 
         .about-page .values-section { background: var(--light-bg); padding: 80px 24px; }
-        .about-page .values-inner { max-width: 1200px; margin: 0 auto; }
+        .about-page .values-inner { padding: 80px 24px; }
         .about-page .values-grid {
           display: grid; grid-template-columns: repeat(5, 1fr); gap: 25px; margin-top: 50px;
         }
@@ -150,8 +150,7 @@ const AboutBSCT = () => {
 
         .about-page .stats-section { background: var(--light-bg); padding: 60px 24px; }
         .about-page .stats-grid {
-          max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap;
-          gap: 30px; justify-content: center;
+          display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;
         }
         .about-page .stat-item {
           display: flex; flex-direction: column; align-items: center; gap: 10px; min-width: 130px;
@@ -170,7 +169,7 @@ const AboutBSCT = () => {
         }
 
         .about-page .testimonials-section { background: #fff; }
-        .about-page .testimonials-inner { max-width: 1200px; margin: 0 auto; }
+        .about-page .testimonials-inner { padding: 80px 24px; }
         .about-page .testimonial-grid {
           display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
           gap: 25px; margin-top: 50px; align-items: stretch;
@@ -208,7 +207,7 @@ const AboutBSCT = () => {
         }
         .about-page .tax-banner p {
           font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.35rem;
-          color: white; max-width: 700px; margin: 0 auto; line-height: 1.5;
+          color: white; margin: 0 auto; line-height: 1.5;
         }
         .about-page .tax-banner span { color: var(--gold); }
 

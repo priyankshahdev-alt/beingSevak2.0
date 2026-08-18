@@ -114,13 +114,13 @@ const TrustDocuments = () => {
         body{font-family:'Open Sans',sans-serif;background:#f6fbff;color:var(--text)}
         .tax-box{width:100%;height:70px;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#009BD4 0%,#0285C3 25%,#046FB1 50%,#074D97 75%,#083D8B 100%);color:#fff;border-radius:0;margin:20px 0;padding:10px}
         .tax-box h1{font-family:'Montserrat',sans-serif;font-size:28px;font-weight:800;letter-spacing:2px;color:#fff;margin:0}
-        .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0;position:relative;overflow:hidden;padding:10px 8%}
-        .hero-content{position:relative;z-index:2;overflow:hidden}
+        .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:30px;position:relative;overflow:hidden;padding:10px 8%}
+        .hero-content{position:relative;z-index:2;overflow:hidden;display:flex;flex-direction:column;align-items:center}
         .hero-content .tag{background:transparent;color:#00a3da;padding:0;border-radius:0;display:inline-block;margin-bottom:25px;font-weight:800;font-size:30px;letter-spacing:1px}
         .hero h1{font-size:62px;line-height:1.1;margin-bottom:25px;color:var(--navy)}
         .hero h1 span{color:#00a3da}
-        .hero p{font-size:18px;line-height:1.9;color:#66788a;margin-bottom:35px}
-        .hero-buttons{display:flex;gap:18px;flex-wrap:wrap}
+        .hero p{font-size:18px;line-height:1.9;color:#66788a;margin-bottom:35px;max-width:700px}
+        .hero-buttons{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
         .hero-buttons .donate-btn{display:inline-block;padding:15px 36px;background:#00a3da;color:#fff;text-decoration:none;border-radius:6px;font-weight:700;transition:0.4s;box-shadow:0 10px 25px rgba(11,77,120,0.25)}
         .hero-buttons .donate-btn:hover{background:#007d94;transform:translateY(-1px)}
         .hero-image{position:relative;z-index:2;display:flex;justify-content:center}
@@ -135,7 +135,7 @@ const TrustDocuments = () => {
         .blur{position:absolute;width:500px;height:500px;border-radius:50%;filter:blur(120px);opacity:0.15;z-index:0;pointer-events:none}
         .blur1{background:#00a3da;top:-100px;left:-100px}
         .blur2{background:#315270;bottom:-100px;right:-100px}
-        @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center}.hero h1{font-size:42px}.hero p{font-size:16px}.hero-buttons{justify-content:center}.hero-image img{max-width:90%}.floating-card.card1{left:5%}.floating-card.card2{right:5%}}
+        @media(max-width:900px){.hero h1{font-size:42px}.hero p{font-size:16px}.hero-image img{max-width:90%}.floating-card.card1{left:5%}.floating-card.card2{right:5%}}
         @media(max-width:550px){.hero h1{font-size:28px}.hero p{font-size:13px}.hero-image img{max-width:100%;border-radius:16px}.floating-card{padding:6px 10px;border-radius:12px}.floating-card h3{font-size:14px}.floating-card p{font-size:10px}.floating-card.card1{top:0;left:0;border-radius:0 0 12px 0}.floating-card.card2{bottom:0;right:0;border-radius:12px 0 0 0}.blur{display:none}}
         .doc-portal{padding:60px 6%;background:#f4f7fb}
         .doc-portal-inner{max-width:1100px;margin:0 auto}
@@ -219,7 +219,6 @@ const TrustDocuments = () => {
           <span className="tag">BEING SEVAK CHARITABLE TRUST</span>
           <h1>Trust <span>Documents</span></h1>
           <p>View important legal certificates, registrations, compliance documents, and annual activity reports of Being Sevak Charitable Trust.</p>
-          <div className="hero-buttons"><a href="#documents" className="donate-btn">View Documents</a></div>
           <div className="blur blur1"></div><div className="blur blur2"></div>
         </div>
         <div className="hero-image">
@@ -227,6 +226,7 @@ const TrustDocuments = () => {
           <div className="floating-card card2"><h3>80G</h3><p>Tax Exemption</p></div>
           <img src="/images/trustdocumentspng.png" alt="Trust Documents" />
         </div>
+        <div className="hero-buttons"><a href="#documents" className="donate-btn">View Documents</a></div>
       </section>
 
       <section className="doc-portal" id="documents">

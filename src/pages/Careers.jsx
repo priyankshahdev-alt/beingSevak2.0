@@ -81,20 +81,24 @@ const Careers = () => {
         .section-title h2{font-family:'Montserrat',sans-serif;font-size:38px;font-weight:800;color:#03163E;margin-bottom:10px}
         .section-title h2 span{color:#00A2D9}
         .section-title p{font-size:16px;color:#4a5568;max-width:600px;margin:0 auto;line-height:1.6}
-        .careers-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+        .careers-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
         .info-card{background:#fff;border-radius:20px;padding:35px;box-shadow:0 10px 30px rgba(0,0,0,0.06);margin-bottom:24px;transition:0.4s ease}
         .info-card:hover{background:#00a3da;transform:translateY(-4px);box-shadow:0 15px 40px rgba(0,163,218,0.2)}
         .info-card:hover h3,.info-card:hover p,.info-card:hover ul li,.info-card:hover ul li i{color:#fff}
         .info-card:hover h3 i{background:rgba(255,255,255,0.2)}
         .info-card h3{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:700;color:#03163E;margin-bottom:12px;display:flex;align-items:center;gap:12px}
         .info-card h3 i{width:44px;height:44px;background:linear-gradient(135deg,#00A2D9,#0072a0);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px}
-        .info-card p{font-size:14px;color:#4a5568;line-height:1.7;margin-left:56px}
-        .info-card ul{list-style:none;margin-left:56px}
+        .info-card p{font-size:14px;color:#4a5568;line-height:1.7;margin-left:0}
+        .info-card ul{list-style:none;margin-left:0}
         .info-card ul li{font-size:14px;color:#4a5568;padding:6px 0;display:flex;align-items:center;gap:10px}
         .info-card ul li i{color:#00A2D9;font-size:12px}
-        .form-card{background:#fff;border-radius:20px;padding:35px;box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+        .form-card{background:#fff;border-radius:20px;padding:35px;box-shadow:0 10px 30px rgba(0,0,0,0.06);display:flex;flex-direction:column}
         .form-card h3{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;color:#03163E;margin-bottom:8px;text-align:center}
         .form-card > p{text-align:center;font-size:14px;color:#4a5568;margin-bottom:28px}
+        .form-card form{display:flex;flex-direction:column;flex:1}
+        .form-card form .submit-btn{margin-top:auto}
+        .form-card .form-group.motivation-group{flex:1;display:flex;flex-direction:column}
+        .form-card .form-group.motivation-group textarea{flex:1;min-height:140px}
         .form-group{margin-bottom:20px}
         .form-group label{display:block;font-size:13px;font-weight:600;color:#03163E;margin-bottom:6px}
         .form-group label span{color:#e74c3c}
@@ -228,7 +232,7 @@ const Careers = () => {
                     <option>Flexible</option>
                   </select>
                 </div>
-                <div className="form-group">
+                <div className="form-group motivation-group">
                   <label>Why do you want to join us? <span>*</span></label>
                   <textarea required placeholder="Tell us about your motivation and experience..."></textarea>
                 </div>
