@@ -66,7 +66,7 @@ export default function NGOCollaboration() {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 40px;
-          align-items: start;
+          align-items: stretch;
         }
         .ngo-left-content,
         .ngo-right-content {
@@ -122,7 +122,7 @@ export default function NGOCollaboration() {
           border-left: 6px solid #00a3d4;
           border-radius: 30px;
           box-shadow: 0 15px 35px rgba(0,0,0,0.05), 0 0 25px rgba(0,163,212,0.08);
-          margin-top: 60px;
+          margin-top: 0;
           transition: 0.4s;
         }
         .ngo-floating-box:hover { transform: translateX(12px); }

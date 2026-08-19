@@ -10,8 +10,8 @@ export default function ImpactBottleCrusher() {
     body { font-family: 'Open Sans', sans-serif; color: var(--text-dark); overflow-x: hidden; }
 
     .crusher-section { background: #fff; padding: 100px 8%; overflow: hidden; }
-    .crusher-container { max-width: 1300px; margin: auto; }
-    .crusher-heading { text-align: center; max-width: 850px; margin: 0 auto 70px; }
+    .dialysis-container { margin: auto; }
+    .crusher-heading { text-align: center; margin: 0 auto 70px; }
     .crusher-tag { display: inline-block; padding: 10px 24px; background: rgba(0,163,218,.12); color: #00a3da; border-radius: 50px; font-size: 13px; font-weight: 700; letter-spacing: 1px; margin-bottom: 20px; }
     .crusher-heading h2 { font-size: 52px; color: #111; margin-bottom: 20px; }
     .crusher-heading p { color: #666; line-height: 1.9; font-size: 17px; }

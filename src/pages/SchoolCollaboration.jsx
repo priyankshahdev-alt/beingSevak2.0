@@ -37,9 +37,9 @@ export default function SchoolCollaboration() {
         }
         .school-collab-container {
           display: grid;
-          grid-template-columns: 1.2fr 0.8fr;
-          gap: 60px;
-          align-items: center;
+          grid-template-columns: 1fr 1fr;
+          gap: 40px;
+          align-items: stretch;
         }
         .school-tag {
           display: inline-block;
@@ -51,6 +51,11 @@ export default function SchoolCollaboration() {
           font-weight: 600;
           margin-bottom: 20px;
           box-shadow: 0 10px 25px rgba(0,163,212,0.35);
+        }
+        .school-collab-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
         .school-collab-left h2 {
           font-size: 55px;
@@ -72,72 +77,72 @@ export default function SchoolCollaboration() {
         .school-highlight-box {
           background: #fff;
           border-left: 6px solid #00a3d4;
-          padding: 30px;
-          border-radius: 25px;
-          margin: 35px 0;
-          box-shadow: 0 12px 30px rgba(0,0,0,0.05), 0 0 25px rgba(0,163,212,0.10);
+          padding: 24px 28px;
+          border-radius: 20px;
+          margin: 0;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.06);
           transition: 0.4s;
         }
         .school-highlight-box:hover { transform: translateY(-8px); }
         .school-highlight-box h3 {
-          font-size: 28px;
+          font-size: 22px;
           color: #00a3d4;
-          margin-bottom: 15px;
+          margin-bottom: 10px;
         }
         .school-points {
-          margin-top: 40px;
+          margin-top: 0;
           display: flex;
           flex-direction: column;
-          gap: 25px;
+          gap: 16px;
         }
         .school-point {
           display: flex;
           align-items: flex-start;
-          gap: 20px;
+          gap: 16px;
           background: #fff;
-          padding: 22px;
-          border-radius: 25px;
-          box-shadow: 0 10px 25px rgba(0,0,0,0.05), 0 0 20px rgba(0,163,212,0.08);
+          padding: 18px;
+          border-radius: 20px;
+          box-shadow: 0 6px 20px rgba(0,0,0,0.05);
           transition: 0.4s;
         }
         .school-point:hover { transform: translateX(10px); }
         .school-icon {
-          min-width: 65px;
-          height: 65px;
+          min-width: 50px;
+          height: 50px;
           background: #00a3d4;
           color: #fff;
-          border-radius: 18px;
+          border-radius: 14px;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 20px;
+          font-size: 16px;
           font-weight: 700;
-          box-shadow: 0 12px 25px rgba(0,163,212,0.35);
+          box-shadow: 0 8px 20px rgba(0,163,212,0.35);
         }
-        .school-point h4 { font-size: 22px; margin-bottom: 8px; color: #111; }
-        .school-point p { margin: 0; font-size: 15px; }
+        .school-point h4 { font-size: 18px; margin-bottom: 6px; color: #111; }
+        .school-point p { margin: 0; font-size: 14px; }
         .school-bottom-box {
-          margin-top: 45px;
+          margin-top: auto;
           background: linear-gradient(135deg, #00a3d4, #0085ad);
-          padding: 40px;
-          border-radius: 30px;
+          padding: 32px;
+          border-radius: 25px;
           color: #fff;
-          box-shadow: 0 20px 40px rgba(0,163,212,0.30);
+          box-shadow: 0 15px 35px rgba(0,163,212,0.30);
         }
         .school-bottom-box p { color: #fff; margin-bottom: 18px; }
         .school-bottom-box h4 { font-size: 28px; line-height: 1.5; font-weight: 700; }
         .school-collab-right {
           display: flex;
           flex-direction: column;
-          gap: 30px;
+          gap: 16px;
         }
         .school-card {
           background: #fff;
-          padding: 40px 35px;
-          border-radius: 30px;
+          padding: 24px 28px;
+          border-radius: 20px;
           position: relative;
           overflow: hidden;
-          box-shadow: 0 15px 35px rgba(0,0,0,0.06), 0 0 25px rgba(0,163,212,0.08);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.06);
           transition: 0.4s;
         }
         .school-card::before {
@@ -151,22 +156,27 @@ export default function SchoolCollaboration() {
         }
         .school-card:hover { transform: translateY(-10px); }
         .school-card h3 {
-          font-size: 30px;
-          margin-bottom: 15px;
+          font-size: 22px;
+          margin-bottom: 10px;
           color: #00a3d4;
           position: relative;
           z-index: 2;
         }
         .school-card p {
-          font-size: 16px;
-          line-height: 1.8;
+          font-size: 14px;
+          line-height: 1.7;
           color: #555;
           position: relative;
           z-index: 2;
         }
-        .school-card-one { margin-top: 40px; }
-        .school-card-two { margin-left: 40px; }
-        .school-card-three { margin-top: 10px; }
+        .school-card-one { margin-top: 0; }
+        .school-card-two { margin-top: 0; }
+        .school-card-three { margin-top: 0; }
+        .school-stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+        .school-stat{background:#fff;padding:20px 12px;border-radius:20px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.05);transition:0.4s;}
+        .school-stat:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,163,212,0.2);}
+        .school-stat-num{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:800;color:#00a3d4;margin-bottom:6px;}
+        .school-stat p{font-size:12px;color:#555;margin:0;line-height:1.4;}
         @media(max-width: 991px) {
           .school-collab-container { grid-template-columns: 1fr; }
           .school-collab-left h2 { font-size: 40px; }
@@ -203,14 +213,6 @@ export default function SchoolCollaboration() {
               </p>
             </div>
 
-            <p>
-              Through interactive sessions, awareness activities, and meaningful engagements conducted in schools and educational institutions, the JOG Program helps students understand the realities faced by underprivileged communities.
-            </p>
-
-            <p>
-              The initiative encourages children to value their privileges, develop empathy for others, and contribute positively towards society.
-            </p>
-
             <div className="school-points">
               <div className="school-point">
                 <div className="school-icon">01</div>
@@ -246,6 +248,10 @@ export default function SchoolCollaboration() {
           </div>
 
           <div className="school-collab-right">
+            <p style={{fontSize:'15px',lineHeight:'1.8',color:'#555'}}>
+              Through interactive sessions, awareness activities, and meaningful engagements conducted in schools and educational institutions, the JOG Program helps students understand the realities faced by underprivileged communities. The initiative encourages children to value their privileges, develop empathy for others, and contribute positively towards society.
+            </p>
+
             <div className="school-card school-card-one">
               <h3>Awareness Sessions</h3>
               <p>
@@ -262,6 +268,28 @@ export default function SchoolCollaboration() {
               <h3>Social Responsibility</h3>
               <p>
                 Inspiring children to become responsible citizens dedicated to building a better society.
+              </p>
+            </div>
+
+            <div className="school-stat-row">
+              <div className="school-stat">
+                <div className="school-stat-num">100+</div>
+                <p>Schools Engaged</p>
+              </div>
+              <div className="school-stat">
+                <div className="school-stat-num">10,000+</div>
+                <p>Students Reached</p>
+              </div>
+              <div className="school-stat">
+                <div className="school-stat-num">5+</div>
+                <p>States Covered</p>
+              </div>
+            </div>
+
+            <div className="school-card">
+              <h3>Impact Beyond the Classroom</h3>
+              <p>
+                Every session and activity is designed to leave a lasting impression, shaping students into compassionate, responsible, and socially aware citizens who carry the spirit of service into their everyday lives.
               </p>
             </div>
           </div>

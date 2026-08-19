@@ -26,7 +26,7 @@ export default function Anndaan() {
           text-align: center; padding: 80px 8% 50px; overflow: hidden;
           background: linear-gradient(to bottom right, #ffffff, #f3fbff);
         }
-        .anndaan-page .annaseva-hero-content { max-width: 900px; position: relative; z-index: 5; }
+        .anndaan-page .annaseva-hero-content { position: relative; z-index: 5; }
         .anndaan-page .annaseva-mini-title {
           display: inline-block; background: #00a3da15; color: #00a3da; padding: 12px 25px;
           border-radius: 50px; font-weight: 700; letter-spacing: 2px; margin-bottom: 25px;
@@ -34,6 +34,12 @@ export default function Anndaan() {
         .anndaan-page .annaseva-hero-content h1 { font-size: 75px; line-height: 1.1; font-weight: 900; color: #111; margin-bottom: 25px; }
         .anndaan-page .annaseva-hero-content p { font-size: 20px; line-height: 1.8; color: #555; margin-bottom: 40px; }
         .anndaan-page .annaseva-hero-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .anndaan-page .annaseva-80g {
+          margin: 35px auto 0; display: inline-block; text-align: center; padding: 14px 28px;
+          background: #00a3da12; border: 1px solid #00a3da35; border-radius: 50px;
+          color: #111; font-size: 17px; font-weight: 600; letter-spacing: 0.5px;
+        }
+        .anndaan-page .annaseva-80g b { color: #00a3da; }
         .anndaan-page .annaseva-btn-main {
           padding: 18px 38px; border-radius: 60px; text-decoration: none; font-weight: 700; transition: 0.4s;
           background: #00a3da; color: #fff; box-shadow: 0 15px 40px #00a3da50;
@@ -80,7 +86,7 @@ export default function Anndaan() {
         .anndaan-page .mealwave-gallery { grid-template-columns: 1fr 1fr; }
         .anndaan-page .sweetmeal-grid { grid-template-columns: repeat(4,1fr); margin-top: 50px; }
         .anndaan-page .snackdrive-container { grid-template-columns: 1fr; text-align: center; }
-        .anndaan-page .snackdrive-content { max-width: 800px; margin: 0 auto; }
+        .anndaan-page .snackdrive-content { padding: 0 8%; }
         .anndaan-page .snackdrive-images { grid-template-columns: repeat(3,1fr); }
         .anndaan-page .nutritioncare-gallery { grid-template-columns: 1fr 1fr; }
 
@@ -118,7 +124,7 @@ export default function Anndaan() {
         .anndaan-page .kitcare-btn:hover { transform: translateY(-7px); }
 
         .anndaan-page .sweetmeal-section { padding: 20px 8% 40px; background: linear-gradient(to bottom, #f9fdff, #ffffff); }
-        .anndaan-page .sweetmeal-top { text-align: center; max-width: 900px; margin: auto; }
+        .anndaan-page .sweetmeal-top { text-align: center; }
 
         .anndaan-page .nutritioncare-card-row { display: flex; gap: 20px; margin-top: 30px; flex-wrap: wrap; }
         .anndaan-page .nutrition-mini-card { background: #fff; border-radius: 25px; padding: 30px 50px 30px 30px; min-width: 300px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); }
@@ -129,7 +135,7 @@ export default function Anndaan() {
         .anndaan-page .section-header span { color: #00a3da; font-weight: 700; letter-spacing: 2px; }
         .anndaan-page .section-header h2 { font-size: 42px; margin: 18px 0; }
         .anndaan-page .testimonial-grid {
-          width: 100%; max-width: 1200px; margin: auto; display: grid;
+          width: 100%; display: grid;
           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; align-items: stretch;
         }
         .anndaan-page .testimonial-card {
@@ -217,6 +223,7 @@ export default function Anndaan() {
               <div className="annaseva-hero-buttons">
                 <Link to="/donate" className="annaseva-btn-main">Join The Mission</Link>
               </div>
+              <p className="annaseva-80g">Get <b>50% Tax Exemption</b> on your donation under <b>Section 80G of Income Tax Act 1961</b></p>
             </div>
           </div>
 

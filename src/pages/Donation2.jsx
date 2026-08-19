@@ -195,7 +195,8 @@ export default function Donation2() {
           padding: 35px;
           border-radius: 25px;
           text-align: center;
-          max-width: 720px;
+          width: 100%;
+          max-width: none;
           margin: 0 auto 25px;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
           transition: 0.4s;
@@ -216,7 +217,7 @@ export default function Donation2() {
         }
         .project-card:hover .card-icon { transform: scale(1.1); }
         .project-card h3 { font-size: 24px; color: #315270; margin-bottom: 12px; }
-        .project-card p { color: #6b7d8f; line-height: 1.8; font-size: 15px; max-width: 560px; margin: 0 auto; }
+        .project-card p { color: #6b7d8f; line-height: 1.8; font-size: 15px; }
         .tax-box {
           width: 100%;
           height: 70px;

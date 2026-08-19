@@ -11,7 +11,7 @@ const CSR = () => {
         @keyframes shine{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
         .tax-box h1{font-family:'Montserrat',sans-serif;font-size:28px;font-weight:800;letter-spacing:2px;color:#fff;margin:0;position:relative;z-index:2}
         .tax-box:hover{transform:translateY(-5px) scale(1.01);box-shadow:0 25px 60px rgba(0,163,218,0.35)}
-        .csr-section{padding:80px 8%;max-width:1200px;margin:0 auto}
+        .csr-section{padding:80px 8%;}
         .csr-card{background:#fff;border-radius:20px;padding:50px;box-shadow:0 20px 50px rgba(0,0,0,0.08);margin-bottom:40px;transition:transform 0.4s ease,box-shadow 0.4s ease;animation:fadeUp 0.8s ease;border-left:5px solid #00a3da;position:relative;overflow:hidden}
         .csr-card::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:radial-gradient(circle,rgba(0,163,218,0.06),transparent);border-radius:50%}
         .csr-card:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(0,163,218,0.15)}
@@ -29,7 +29,7 @@ const CSR = () => {
         .csr-tagline{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;font-style:italic;margin-top:20px;opacity:0.9}
         @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
         .bs-initiatives{background:#f4f6f9;padding:70px 20px;font-family:'Segoe UI',Arial,sans-serif}
-        .bs-initiatives__inner{max-width:1100px;margin:0 auto}
+        .bs-initiatives__inner{max-width:100%;margin:0 auto}
         .bs-initiatives__head{text-align:center;margin-bottom:50px}
         .bs-initiatives__tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:3px;color:#00a3da;text-transform:uppercase;margin-bottom:10px}
         .bs-initiatives__title{font-size:2.2rem;font-weight:800;color:#1a1a2e;margin:0 0 12px}

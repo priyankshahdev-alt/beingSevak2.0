@@ -152,7 +152,7 @@ const MissionBezubaan = () => {
         .mission-bezubaan .impact-image:hover img { transform: scale(1.04); }
         .mission-bezubaan .impact-content h2 { font-size: 52px; line-height: 1.15; margin-bottom: 20px; font-weight: 800; }
         .mission-bezubaan .impact-content span { color: #00a3da; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 15px; }
-        .mission-bezubaan .impact-content p { color: #6b7280; line-height: 1.9; font-size: 16px; }
+        .mission-bezubaan .impact-content p { color: #fff; line-height: 1.8; font-size: 16px; }
         .mission-bezubaan .impact-stats { display: flex; gap: 22px; margin-top: 35px; flex-wrap: wrap; }
         .mission-bezubaan .impact-stats div {
           background: #f8fbfd; padding: 24px 26px; border-radius: 22px; min-width: 160px;
@@ -161,7 +161,7 @@ const MissionBezubaan = () => {
         .mission-bezubaan .impact-stats div:hover { background: #00a3da; transform: translateY(-6px); }
         .mission-bezubaan .impact-stats div:hover h3, .mission-bezubaan .impact-stats div:hover p { color: #fff; }
         .mission-bezubaan .impact-stats h3 { font-size: 34px; color: #00a3da; margin-bottom: 6px; }
-        .mission-bezubaan .impact-stats p { font-size: 14px; }
+        .mission-bezubaan .impact-stats p { font-size: 14px; line-height: 1.8; }
 
         .mission-bezubaan .gallery-section { width: 100%; padding: 10px 7%; background: #f8fbfd; }
         .mission-bezubaan .gallery-title { text-align: center; margin-bottom: 60px; }

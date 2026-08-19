@@ -288,7 +288,7 @@ export default function IndividualDonation() {
           background: linear-gradient(135deg, #f4f6f8, #eef8ff);
         }
         .individual-hero h1 { font-size: 42px; font-weight: 800; color: #003b73; margin-bottom: 16px; }
-        .individual-hero p { font-size: 18px; color: #555; max-width: 700px; margin: 0 auto; line-height: 1.7; }
+        .individual-hero p { font-size: 18px; color: #555; line-height: 1.7; }
         .individual-content { padding: 60px 8%; }
         .individual-grid {
           display: grid;
