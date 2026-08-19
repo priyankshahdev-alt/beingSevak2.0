@@ -4,13 +4,13 @@ const bookletData = [
   { year: '2016', img: '/BSCT Trust Document/booklet/2016.png', pdf: '/BSCT Trust Document/activity report/BSCT Activity Report 2016.pdf' },
   { year: '2017', img: '/BSCT Trust Document/booklet/2017.png', pdf: '/BSCT Trust Document/activity report/Activity-Report-2017 UPDATED.pdf' },
   { year: '2018', img: '/BSCT Trust Document/booklet/2018.png', pdf: '/BSCT Trust Document/activity report/Activity-Report-2018 UPDATED.pdf' },
-  { year: '2019', img: '/BSCT Trust Document/booklet/2019.png', pdf: '' },
-  { year: '2020', img: '/BSCT Trust Document/booklet/2020.png', pdf: '' },
+  { year: '2019', img: '/BSCT Trust Document/booklet/2019.png', pdf: '/BSCT Trust Document/activity report/April 2019 to March 2020.pdf' },
+  { year: '2020', img: '/BSCT Trust Document/booklet/2020.png', pdf: '/BSCT Trust Document/activity report/Being Sevak Activity Report  26-Apr-2020 to 28-Feb-21 (1).pdf' },
   { year: '2021', img: '/BSCT Trust Document/booklet/2021.png', pdf: '/BSCT Trust Document/activity report/Activity Report 2021.pdf' },
   { year: '2022', img: '/BSCT Trust Document/booklet/2022.png', pdf: '/BSCT Trust Document/activity report/Activity Report 2022.pdf' },
   { year: '2023', img: '/BSCT Trust Document/booklet/2023.png', pdf: '/BSCT Trust Document/activity report/Activity Report 2023.pdf' },
   { year: '2024', img: '/BSCT Trust Document/booklet/2024.png', pdf: '/BSCT Trust Document/activity report/Activity Report Jan 2024 To Dec 2024).pdf' },
-  { year: '2025', img: '/BSCT Trust Document/booklet/2025.png', pdf: '' },
+  { year: '2025', img: '/BSCT Trust Document/booklet/2025.png', pdf: '/BSCT Trust Document/activity report/2025.pdf' },
 ];
 
 const legalDocs = [
@@ -88,7 +88,8 @@ const TrustDocuments = () => {
         document.querySelectorAll('.doc-tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.doc-cards').forEach(c => c.classList.remove('active'));
         this.classList.add('active');
-        document.getElementById(this.dataset.tab).classList.add('active');
+        const target = document.getElementById(this.dataset.tab);
+        if (target) target.classList.add('active');
       });
     });
 
@@ -114,30 +115,30 @@ const TrustDocuments = () => {
         body{font-family:'Open Sans',sans-serif;background:#f6fbff;color:var(--text)}
         .tax-box{width:100%;height:70px;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#009BD4 0%,#0285C3 25%,#046FB1 50%,#074D97 75%,#083D8B 100%);color:#fff;border-radius:0;margin:20px 0;padding:10px}
         .tax-box h1{font-family:'Montserrat',sans-serif;font-size:28px;font-weight:800;letter-spacing:2px;color:#fff;margin:0}
-        .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:30px;position:relative;overflow:hidden;padding:10px 8%}
-        .hero-content{position:relative;z-index:2;overflow:hidden;display:flex;flex-direction:column;align-items:center}
+        .hero{min-height:auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;position:relative;overflow:hidden;padding:40px 6%}
+        .hero-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-start;text-align:left}
         .hero-content .tag{background:transparent;color:#00a3da;padding:0;border-radius:0;display:inline-block;margin-bottom:25px;font-weight:800;font-size:30px;letter-spacing:1px}
         .hero h1{font-size:62px;line-height:1.1;margin-bottom:25px;color:var(--navy)}
         .hero h1 span{color:#00a3da}
-        .hero p{font-size:18px;line-height:1.9;color:#66788a;margin-bottom:35px;max-width:700px}
-        .hero-buttons{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+        .hero p{font-size:18px;line-height:1.9;color:#66788a;margin-bottom:35px}
+        .hero-buttons{display:flex;gap:18px;flex-wrap:wrap}
         .hero-buttons .donate-btn{display:inline-block;padding:15px 36px;background:#00a3da;color:#fff;text-decoration:none;border-radius:6px;font-weight:700;transition:0.4s;box-shadow:0 10px 25px rgba(11,77,120,0.25)}
         .hero-buttons .donate-btn:hover{background:#007d94;transform:translateY(-1px)}
-        .hero-image{position:relative;z-index:2;display:flex;justify-content:center}
-        .hero-image img{width:100%;max-width:700px;border-radius:30px;box-shadow:0 25px 50px rgba(0,0,0,0.15);transition:0.5s ease}
+        .hero-image{position:relative;z-index:2;display:flex;justify-content:center;align-items:center}
+        .hero-image img{width:100%;max-width:550px;height:auto;border-radius:30px;box-shadow:0 25px 50px rgba(0,0,0,0.15);transition:0.5s ease;object-fit:cover}
         .hero-image img:hover{transform:scale(1.02)}
         .floating-card{position:absolute;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);padding:18px 24px;border-radius:18px;box-shadow:0 15px 35px rgba(0,0,0,0.12);text-align:center;z-index:3;animation:floatCard 3s ease-in-out infinite alternate}
-        .floating-card.card1{top:5%;left:-10px;--float-rot:-4deg}
-        .floating-card.card2{bottom:10%;right:-10px;animation-delay:2s;--float-rot:4deg}
+        .floating-card.card1{top:20px;left:20px}
+        .floating-card.card2{bottom:20px;right:20px;animation-delay:2s}
         .floating-card h3{font-size:28px;font-weight:800;color:#00a3da}
         .floating-card p{font-size:13px;color:#555;margin:0}
         @keyframes floatCard{0%{transform:translateY(0) rotate(var(--float-rot,0deg));}100%{transform:translateY(-15px) rotate(var(--float-rot,0deg));}}
         .blur{position:absolute;width:500px;height:500px;border-radius:50%;filter:blur(120px);opacity:0.15;z-index:0;pointer-events:none}
         .blur1{background:#00a3da;top:-100px;left:-100px}
         .blur2{background:#315270;bottom:-100px;right:-100px}
-        @media(max-width:900px){.hero h1{font-size:42px}.hero p{font-size:16px}.hero-image img{max-width:90%}.floating-card.card1{left:5%}.floating-card.card2{right:5%}}
-        @media(max-width:550px){.hero h1{font-size:28px}.hero p{font-size:13px}.hero-image img{max-width:100%;border-radius:16px}.floating-card{padding:6px 10px;border-radius:12px}.floating-card h3{font-size:14px}.floating-card p{font-size:10px}.floating-card.card1{top:0;left:0;border-radius:0 0 12px 0}.floating-card.card2{bottom:0;right:0;border-radius:12px 0 0 0}.blur{display:none}}
-        .doc-portal{padding:60px 6%;background:#f4f7fb}
+        @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center;gap:40px}.hero-content{align-items:center;text-align:center}.hero h1{font-size:42px}.hero p{font-size:16px}.hero-buttons{justify-content:center}.hero-image img{max-width:90%}.floating-card.card1{top:10px;left:10px}.floating-card.card2{bottom:10px;right:10px}}
+        @media(max-width:550px){.hero h1{font-size:28px}.hero p{font-size:13px}.hero-image img{max-width:100%;border-radius:16px}.floating-card{padding:6px 10px;border-radius:12px}.floating-card h3{font-size:14px}.floating-card p{font-size:10px}.floating-card.card1{top:8px;left:8px}.floating-card.card2{bottom:8px;right:8px}.blur{display:none}}
+        .doc-portal{padding:80px 6%;background:#f4f7fb}
         .doc-portal-inner{max-width:1100px;margin:0 auto}
         .doc-portal-title{text-align:center;margin-bottom:40px}
         .doc-portal-title h2{font-family:'Montserrat',sans-serif;font-size:36px;font-weight:800;color:var(--navy);margin-bottom:8px}
@@ -158,16 +159,16 @@ const TrustDocuments = () => {
         .doc-card-body p{font-size:13px;color:#66788a;margin:0}
         .doc-card-arrow{width:40px;height:40px;min-width:40px;background:#f0f4f8;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#00a3da;font-size:18px;transition:0.3s ease}
         .doc-card:hover .doc-card-arrow{transform:translateX(6px);background:#00a3da;color:#fff}
-        .booklet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+        .booklet-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
         .booklet-item{position:relative;overflow:hidden;cursor:pointer;border-radius:6px;border:2px solid #00a3da}
         .booklet-item img{width:100%;display:block;transition:transform 0.5s ease}
         .booklet-item:hover img{transform:scale(1.06)}
         .booklet-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.7));padding:40px 20px 16px;pointer-events:none}
         .booklet-overlay .year{font-family:'Montserrat',sans-serif;font-weight:700;font-size:22px;color:#fff;letter-spacing:2px}
         .booklet-overlay .status{font-size:11px;color:rgba(255,255,255,0.6);font-style:italic;margin-top:2px}
-        @media(max-width:900px){.booklet-grid{grid-template-columns:repeat(2,1fr);gap:20px}}
-        @media(max-width:768px){.doc-portal{padding:36px 4%}.doc-tabs{flex-direction:column;gap:2px;border-radius:10px}.doc-tab{font-size:12px;padding:12px}.doc-card{padding:12px 14px}.doc-card-icon{width:40px;height:40px}.doc-card-body h4{font-size:13px}.doc-card-body p{font-size:12px}.doc-card-arrow{width:30px;height:30px}.doc-portal-title h2{font-size:28px}.booklet-grid{gap:14px}}
-        .values-section{background:var(--light-bg);padding:80px 24px}
+        @media(max-width:900px){.booklet-grid{grid-template-columns:repeat(3,1fr);gap:16px}}
+        @media(max-width:768px){.doc-portal{padding:50px 4%}.doc-tabs{flex-direction:column;gap:2px;border-radius:10px}.doc-tab{font-size:12px;padding:12px}.doc-card{padding:12px 14px}.doc-card-icon{width:40px;height:40px}.doc-card-body h4{font-size:13px}.doc-card-body p{font-size:12px}.doc-card-arrow{width:30px;height:30px}.doc-portal-title h2{font-size:28px}.booklet-grid{gap:14px}}
+        .values-section{background:var(--light-bg);padding:80px 6%}
         .values-inner{max-width:1200px;margin:0 auto}
         .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;margin-top:50px}
         .value-card{background:#fff;padding:35px 28px;border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,0.05);text-align:center;position:relative;overflow:hidden;cursor:pointer;transition:0.5s ease}
@@ -179,7 +180,7 @@ const TrustDocuments = () => {
         .value-card h3{font-family:'Montserrat',sans-serif;font-size:1.15rem;color:var(--navy);margin-bottom:12px}
         .value-card p{font-size:0.88rem;line-height:1.7;color:var(--text-mid)}
         .value-card:hover .val-icon,.value-card:hover h3,.value-card:hover p{color:#fff}
-        .testimonials-section{padding:80px 24px;background:#fff}
+        .testimonials-section{padding:80px 6%;background:#fff}
         .testimonials-inner{max-width:1200px;margin:0 auto}
         .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:50px;align-items:stretch}
         .testimonial-card{background:#fff;padding:30px;border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,0.07);transition:0.4s ease;overflow:hidden;position:relative;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between}
@@ -219,6 +220,7 @@ const TrustDocuments = () => {
           <span className="tag">BEING SEVAK CHARITABLE TRUST</span>
           <h1>Trust <span>Documents</span></h1>
           <p>View important legal certificates, registrations, compliance documents, and annual activity reports of Being Sevak Charitable Trust.</p>
+          <div className="hero-buttons"><a href="#documents" className="donate-btn">View Documents</a></div>
           <div className="blur blur1"></div><div className="blur blur2"></div>
         </div>
         <div className="hero-image">
@@ -226,7 +228,6 @@ const TrustDocuments = () => {
           <div className="floating-card card2"><h3>80G</h3><p>Tax Exemption</p></div>
           <img src="/images/trustdocumentspng.png" alt="Trust Documents" />
         </div>
-        <div className="hero-buttons"><a href="#documents" className="donate-btn">View Documents</a></div>
       </section>
 
       <section className="doc-portal" id="documents">

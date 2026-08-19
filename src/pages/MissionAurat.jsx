@@ -147,7 +147,7 @@ const MissionAurat = () => {
         }
         .mission-aurat .sevak-btn:hover { transform: translateY(-2px); }
 
-        .mission-aurat .testimonial-section { padding: 4px 4%; }
+        .mission-aurat .testimonial-section { padding: 40px 4% 60px; }
         .mission-aurat .section-header { text-align: center; margin-bottom: 60px; }
         .mission-aurat .section-header span { color: #00a3da; font-weight: 700; letter-spacing: 2px; }
         .mission-aurat .section-header h2 { font-size: 42px; margin: 18px 0; }

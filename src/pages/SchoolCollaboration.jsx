@@ -122,19 +122,20 @@ export default function SchoolCollaboration() {
         .school-point h4 { font-size: 18px; margin-bottom: 6px; color: #111; }
         .school-point p { margin: 0; font-size: 14px; }
         .school-bottom-box {
-          margin-top: auto;
+          margin-top: 30px;
           background: linear-gradient(135deg, #00a3d4, #0085ad);
-          padding: 32px;
+          padding: 36px 36px;
           border-radius: 25px;
           color: #fff;
           box-shadow: 0 15px 35px rgba(0,163,212,0.30);
         }
-        .school-bottom-box p { color: #fff; margin-bottom: 18px; }
-        .school-bottom-box h4 { font-size: 28px; line-height: 1.5; font-weight: 700; }
+        .school-bottom-box p { color: #fff; margin-bottom: 18px; font-size: 16px; line-height: 1.8; }
+        .school-bottom-box h4 { font-size: 28px; line-height: 1.5; font-weight: 700; margin-top: 10px; }
         .school-collab-right {
           display: flex;
           flex-direction: column;
           gap: 16px;
+          justify-content: center;
         }
         .school-card {
           background: #fff;
@@ -206,13 +207,6 @@ export default function SchoolCollaboration() {
               Instilling compassion, empathy, and social responsibility at an early age helps shape responsible individuals and future leaders.
             </p>
 
-            <div className="school-highlight-box">
-              <h3>Joy Of Giving (JOG) Program</h3>
-              <p>
-                Launched in 2022, the JOG Program is a unique student engagement initiative designed to create awareness about social inequalities and encourage kindness, gratitude, and community participation among students.
-              </p>
-            </div>
-
             <div className="school-points">
               <div className="school-point">
                 <div className="school-icon">01</div>
@@ -248,6 +242,12 @@ export default function SchoolCollaboration() {
           </div>
 
           <div className="school-collab-right">
+            <div className="school-highlight-box">
+              <h3>Joy Of Giving (JOG) Program</h3>
+              <p>
+                Launched in 2022, the JOG Program is a unique student engagement initiative designed to create awareness about social inequalities and encourage kindness, gratitude, and community participation among students.
+              </p>
+            </div>
             <p style={{fontSize:'15px',lineHeight:'1.8',color:'#555'}}>
               Through interactive sessions, awareness activities, and meaningful engagements conducted in schools and educational institutions, the JOG Program helps students understand the realities faced by underprivileged communities. The initiative encourages children to value their privileges, develop empathy for others, and contribute positively towards society.
             </p>
