@@ -225,9 +225,9 @@ const WhereWeWork = () => {
         .www-counter-suffix{font-family:'Montserrat',sans-serif;font-size:1.8rem;font-weight:700;color:#00a3da}
         .www-counter-label{display:block;width:100%;font-size:0.9rem;font-weight:600;color:#4a5568;text-align:center;margin-top:4px}
         .www-counter-divider{width:2px;height:50px;background:linear-gradient(180deg,transparent,#00a3da,transparent)}
-        .www-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+        .www-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
         .www-map-col{position:relative}
-        .www-map-wrap{position:relative;width:100%;border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.1);background:#f8fafc;transition:transform 0.5s ease,overflow 0s}
+        .www-map-wrap{position:relative;width:100%;border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.1);background:#f8fafc}
         .www-map-img{width:100%;display:block}
         .www-pin{position:absolute;width:20px;height:20px;transform:translate(-50%,-50%);cursor:pointer;z-index:5;transition:opacity 0.4s ease}
         .www-pin-dot{width:100%;height:100%;border-radius:50% 50% 50% 0;background:#00a3da;border:2.5px solid #fff;box-shadow:0 3px 12px rgba(0,163,218,0.6);position:relative;z-index:2;transition:all 0.3s ease;transform:rotate(-45deg);display:flex;align-items:center;justify-content:center}
@@ -253,11 +253,11 @@ const WhereWeWork = () => {
         .www-legend-item{font-size:0.72rem;font-weight:600;color:#4a5568;display:flex;align-items:center;gap:5px}
         .www-legend-item i{font-size:0.8rem}
         .www-list-col{background:#ffffff;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.08);border:1px solid #eef2f6;display:flex;flex-direction:column}
-        .www-list-header{padding:24px 24px 16px;border-bottom:1px solid #e8ecf0;background:#fafcfe}
+        .www-list-header{padding:24px 24px 16px;border-bottom:1px solid #e8ecf0;background:#fafcfe;flex-shrink:0}
         .www-list-header h3{font-family:'Montserrat',sans-serif;font-size:1.4rem;font-weight:800;color:#03163E;margin-bottom:4px}
         .www-list-header h3 span{color:#00a3da}
         .www-list-header p{font-size:0.85rem;color:#6b7f8f}
-        .www-list-scroll{max-height:640px;overflow-y:auto;padding:0;background:#ffffff;flex:1}
+        .www-list-scroll{overflow-y:auto;padding:0;background:#ffffff;flex:1}
         .www-list-scroll::-webkit-scrollbar{width:5px}
         .www-list-scroll::-webkit-scrollbar-track{background:#f0f2f5;border-radius:8px}
         .www-list-scroll::-webkit-scrollbar-thumb{background:#c0c8d0;border-radius:8px}
@@ -269,7 +269,7 @@ const WhereWeWork = () => {
         .www-card:hover,.www-card.active-card{background:#00a3da;transform:translateX(8px);box-shadow:0 8px 25px rgba(0,163,218,0.3);border-color:#00a3da}
         .www-card:hover .www-card-icon,.www-card.active-card .www-card-icon{background:rgba(255,255,255,0.3);color:#fff;box-shadow:none}
         .www-card:hover .www-card-text h4,.www-card:hover .www-card-text p,.www-card.active-card .www-card-text h4,.www-card.active-card .www-card-text p{color:#ffffff}
-        @media(max-width:1024px){.www-grid{grid-template-columns:1fr;gap:30px}.www-title{font-size:2.4rem}.www-counter{gap:20px;padding:20px;flex-wrap:wrap}.www-counter-num{font-size:2.2rem}.www-counter-divider{display:none}.www-counter-item{flex:1;min-width:120px}}
+        @media(max-width:1024px){.www-grid{grid-template-columns:1fr;gap:30px}.www-title{font-size:2.4rem}.www-counter{gap:20px;padding:20px;flex-wrap:wrap}.www-counter-num{font-size:2.2rem}.www-counter-divider{display:none}.www-counter-item{flex:1;min-width:120px}.www-list-scroll{max-height:450px}}
         @media(max-width:768px){.www-section{padding:50px 16px}.www-title{font-size:1.8rem}.www-subtitle{font-size:0.95rem}.www-counter{flex-direction:row;gap:20px;padding:20px}.www-counter-num{font-size:2rem}.www-list-scroll{max-height:350px}.www-legend{position:relative;bottom:auto;left:auto;margin-top:12px;border-radius:12px;padding:12px 14px}}
         @media(max-width:600px){.www-section{padding:40px 14px}.www-title{font-size:1.6rem}.www-subtitle{font-size:0.9rem}.www-counter{padding:16px;gap:14px}.www-counter-num{font-size:1.6rem}.www-counter-label{font-size:0.78rem}.www-list-header h3{font-size:1.1rem}.www-card{padding:10px 12px;min-height:50px;gap:10px}.www-card-icon{width:36px;height:36px;font-size:1rem}.www-card-text h4{font-size:14px}.www-card-text p{font-size:11px}.www-list-scroll{max-height:320px;padding:6px 8px}.www-pin{width:14px;height:14px}.www-pin-dot{border-width:2px}.www-map-wrap.zoomed{transform:scale(1.1)}}
         .values-section{background:var(--light-bg);padding:30px 24px}
