@@ -133,7 +133,7 @@ const MissionAnnapurna = () => {
 
         .mission-annapurna .sevak-donation {
           width: 100%; background: linear-gradient(to right, #009BD4 0%, #0285C3 25%, #046FB1 50%, #074D97 75%, #083D8B 100%);
-          padding: 55px 4%; min-height: 120px; display: flex; align-items: center;
+          padding: 55px 5%; min-height: 120px; display: flex; align-items: center; margin: 40px 0;
         }
         .mission-annapurna .sevak-donation-content { width: 100%; display: flex; justify-content: space-between; align-items: center; min-height: 120px; padding: 0; }
         .mission-annapurna .sevak-left { display: flex; flex-direction: column; gap: 4px; }
@@ -146,7 +146,7 @@ const MissionAnnapurna = () => {
         }
         .mission-annapurna .sevak-btn:hover { transform: translateY(-2px); }
 
-        .mission-annapurna .testimonial-section { padding: 4px 4%; }
+        .mission-annapurna .testimonial-section { padding: 40px 4% 60px; }
         .mission-annapurna .testimonial-grid {
           width: 100%; max-width: 1200px; margin: auto; display: grid;
           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; align-items: stretch; grid-auto-rows: 1fr;

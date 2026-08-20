@@ -152,7 +152,7 @@ const MissionVidhya = () => {
         }
         .mission-vidhya .sevak-btn:hover { transform: translateY(-2px); }
 
-        .mission-vidhya .testimonial-section { padding: 4px 4%; }
+        .mission-vidhya .testimonial-section { padding: 40px 4% 60px; }
         .mission-vidhya .section-header { text-align: center; margin-bottom: 60px; }
         .mission-vidhya .section-header span { color: #00a3da; font-weight: 700; letter-spacing: 2px; }
         .mission-vidhya .section-header h2 { font-size: 42px; margin: 18px 0; }
