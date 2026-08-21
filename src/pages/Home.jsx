@@ -98,6 +98,14 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
 
+  // Impact Stories Auto Scroll (3 seconds)
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImpact((prev) => (prev + 1) % totalImpactSlides);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
   // Impact Stats Animation with IntersectionObserver
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -701,9 +709,6 @@ export default function Home() {
           <p>Real Change Through Our Work</p>
         </div>
         <div className="being-slider-box">
-          <button className="being-nav being-nav-prev" onClick={() => setCurrentImpact((prev) => (prev === 0 ? totalImpactSlides - 1 : prev - 1))} aria-label="Previous story">
-            <i className="fas fa-chevron-left"></i>
-          </button>
           <Link to="/impact/rozgaar-booth" className={`being-slide ${currentImpact === 0 ? 'active' : ''}`}>
             <img src="images/q1.jpeg" alt="Rozgaar Booth" />
             <div className="being-text">
@@ -774,18 +779,6 @@ export default function Home() {
               <p>Read More</p>
             </div>
           </Link>
-          <button className="being-nav being-nav-next" onClick={() => setCurrentImpact((prev) => (prev === totalImpactSlides - 1 ? 0 : prev + 1))} aria-label="Next story">
-            <i className="fas fa-chevron-right"></i>
-          </button>
-        </div>
-        <div className="being-dots">
-          {[...Array(totalImpactSlides)].map((_, i) => (
-            <span
-              key={i}
-              className={`being-dot ${currentImpact === i ? 'active' : ''}`}
-              onClick={() => setCurrentImpact(i)}
-            ></span>
-          ))}
         </div>
       </section>
 
@@ -1480,7 +1473,7 @@ export default function Home() {
               </div>
             </div>
             <div className="featured-card">
-              <div className="feat-img" style={{ backgroundImage: "url('images/physiotherepy.jpeg')" }}></div>
+              <div className="feat-img" style={{ backgroundImage: "url('images/y1.jpeg')" }}></div>
               <div className="feat-overlay">
                 <span className="feat-tag">HEALTH</span>
                 <h3>Physiotherapy Centre</h3>
@@ -1491,7 +1484,7 @@ export default function Home() {
           </div>
           <div className={`featured-slide ${currentFeatured === 2 ? 'active' : ''}`}>
             <div className="featured-card">
-              <div className="feat-img" style={{ backgroundImage: "url('images/i11.jpeg')" }}></div>
+              <div className="feat-img" style={{ backgroundImage: "url('images/l2.jpeg')" }}></div>
               <div className="feat-overlay">
                 <span className="feat-tag">EDUCATION</span>
                 <h3>Library Centre</h3>

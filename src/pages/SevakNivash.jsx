@@ -6,7 +6,7 @@ const facilities = [
     desc: 'Professional guidance, emotional support and counseling services for individuals in need.',
     fullDesc: 'Your support helps us provide professional counseling, emotional assistance, guidance, and rehabilitation services for visually impaired, disabled, and underprivileged individuals. Through this facility, we empower beneficiaries to overcome challenges, build confidence, and lead independent lives with dignity and hope.',
     amount: '',
-    img: '/images/nivash9.jpeg',
+    img: '/images/z1.jpeg',
     side: 'left',
   },
   {
@@ -14,7 +14,7 @@ const facilities = [
     desc: 'Supporting skill development and livelihood opportunities for a brighter future.',
     fullDesc: 'This facility provides vocational education, practical skill training, and career guidance to youth and individuals from underserved communities. Your contribution helps create employment opportunities, encourage self-reliance, and empower beneficiaries with the skills needed for a sustainable future.',
     amount: '',
-    img: '/images/nivash6.jpeg',
+    img: '/images/j11.jpeg',
     side: 'right',
   },
   {
@@ -30,7 +30,7 @@ const facilities = [
     desc: 'Creating employment opportunities through professional training and workplace readiness.',
     fullDesc: 'This facility equips visually impaired, disabled, and underprivileged individuals with professional communication, computer, and workplace skills required for BPO and corporate employment opportunities. Your support helps beneficiaries gain industry-relevant training, improve employability, and achieve financial independence through sustainable careers.',
     amount: '',
-    img: '/images/nivash3.jpeg',
+    img: '/images/l1.jpeg',
     side: 'right',
   },
   {
@@ -38,7 +38,7 @@ const facilities = [
     desc: 'Providing digital education, computer skills, and technology-based learning opportunities.',
     fullDesc: "This facility equips visually impaired, disabled, and underprivileged individuals with essential computer and digital skills required in today's technology-driven world. Your support helps provide access to computers, assistive technologies, software training, and digital literacy programs, enabling beneficiaries to pursue education, employment, and greater independence.",
     amount: '',
-    img: '/images/nivash2.jpeg',
+    img: '/images/u1.jpeg',
     side: 'left',
   },
   {
@@ -46,7 +46,7 @@ const facilities = [
     desc: 'Building confidence, communication skills, and leadership qualities for a brighter future.',
     fullDesc: 'This facility helps individuals enhance their communication, leadership, confidence, and interpersonal skills through structured training and personal development programs. Your support empowers beneficiaries to build self-confidence, improve public interaction, and prepare for educational, professional, and social success.',
     amount: '',
-    img: '/images/nivash7.jpeg',
+    img: '/images/pr1.jpg',
     side: 'right',
   },
   {
@@ -54,7 +54,7 @@ const facilities = [
     desc: 'Guiding individuals towards meaningful careers and sustainable employment opportunities.',
     fullDesc: 'This facility provides career counseling, job readiness training, placement support, and professional guidance for visually impaired, disabled, and underprivileged individuals. Your support helps beneficiaries identify suitable career paths, develop workplace skills, and connect with employment opportunities, paving the way for financial independence and long-term success.',
     amount: '',
-    img: '/images/nivash6.jpeg',
+    img: '/images/j11.jpeg',
     side: 'left',
   },
   {
@@ -62,7 +62,7 @@ const facilities = [
     desc: 'Empowering future innovators through AI, technology, and digital skill development.',
     fullDesc: 'This facility provides access to emerging technologies, artificial intelligence, digital tools, and innovation-driven learning opportunities. Your support helps individuals develop future-ready skills, explore digital careers, and participate in a technology-enabled world with confidence and independence.',
     amount: '',
-    img: '/images/nivash4.jpeg',
+    img: '/images/ui.jpeg',
     side: 'right',
   },
   {
@@ -70,7 +70,7 @@ const facilities = [
     desc: 'Supporting physical well-being, mobility, and rehabilitation through specialized care.',
     fullDesc: 'This facility provides physiotherapy, rehabilitation support, and wellness services for visually impaired, disabled, and underprivileged individuals. Your contribution helps improve mobility, physical health, independence, and overall quality of life by ensuring access to essential therapeutic care and wellness resources.',
     amount: '',
-    img: '/images/nivash10.jpeg',
+    img: '/images/y1.jpeg',
     side: 'left',
   },
   {
@@ -88,14 +88,6 @@ const facilities = [
     amount: '',
     img: '/images/s1.jpeg',
     side: 'left',
-  },
-  {
-    title: 'Sevak Nivas (Temporary Accommodation for Blind Students)',
-    desc: 'Providing a safe and supportive home for visually impaired students.',
-    fullDesc: 'This facility provides safe, accessible, and comfortable temporary accommodation for visually impaired students pursuing education and skill development opportunities. Your support helps create a secure living environment where students can focus on learning, personal growth, and building a brighter future with dignity and independence.',
-    amount: '',
-    img: '/images/nivash11.jpeg',
-    side: 'right',
   },
 ];
 
