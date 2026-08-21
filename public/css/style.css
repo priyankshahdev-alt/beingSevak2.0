@@ -19,7 +19,12 @@
 }
 
 html { scroll-behavior: smooth; }
-body{font-family: "Times New Roman", Times, serif; }
+body{
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
@@ -1347,6 +1352,42 @@ input, select { font-family: inherit; outline: none; border: none; }
 @media(max-width:768px){.partners-track .duplicate{display:none}}
 @media(max-width:600px){.partners-track .duplicate{display:none}}
 
+/* PROJECTS SECTION - MOBILE RESPONSIVE */
+@media (max-width: 991px) {
+  .projects-hero { height: 120px; }
+  .projects-hero h1 { font-size: 32px; }
+  .projects-hero p { font-size: 14px; }
+  .projects-grid { padding: 40px 20px; gap: 16px; }
+  .partners-marquee .project-card { min-width: 140px; height: 140px; padding: 16px; }
+}
+
+@media (max-width: 768px) {
+  .projects-section { padding-bottom: 20px; }
+  .projects-hero { height: 100px; }
+  .projects-hero h1 { font-size: 26px; letter-spacing: 1px; }
+  .projects-hero p { font-size: 13px; }
+  .projects-grid { padding: 30px 16px; gap: 14px; }
+  .partners-marquee .project-card { min-width: 120px; height: 130px; padding: 14px; }
+  .partners-marquee .project-card img { border-radius: 6px; }
+}
+
+@media (max-width: 600px) {
+  .projects-hero { height: 80px; }
+  .projects-hero h1 { font-size: 20px; letter-spacing: 0.5px; }
+  .projects-hero p { font-size: 11px; }
+  .projects-grid { padding: 24px 12px; gap: 10px; }
+  .partners-marquee .project-card { min-width: 100px; height: 110px; padding: 10px; }
+  .partners-marquee .project-card img { border-radius: 4px; }
+}
+
+@media (max-width: 480px) {
+  .projects-hero { height: 70px; }
+  .projects-hero h1 { font-size: 18px; }
+  .projects-hero p { font-size: 10px; }
+  .projects-grid { padding: 20px 10px; gap: 8px; }
+  .partners-marquee .project-card { min-width: 90px; height: 100px; padding: 8px; }
+}
+
 /* CARD */
 .project-card{
   background:#ffffff;
@@ -2051,24 +2092,98 @@ body{
 
 }
 
+@media(max-width:768px){
+    .donation-section{
+        gap: 32px;
+        padding: 50px 5%;
+    }
+    .donation-images{
+        max-width: 380px;
+        height: 380px;
+        border-radius: 24px;
+    }
+    .img-box{
+        border-radius: 24px;
+    }
+    .img-box img{
+        border-radius: 24px;
+    }
+    .donation-content{
+        max-width: 100%;
+    }
+    .donation-content h1{
+        font-size: 36px;
+        line-height: 1.3;
+        margin: 12px 0 24px;
+    }
+    .small-title{
+        font-size: 16px;
+    }
+    .info-card{
+        padding: 20px;
+        border-radius: 16px;
+        margin-bottom: 16px;
+    }
+    .info-card h3{
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+    .info-card p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .give-btn-btn{
+        padding: 14px 32px;
+        font-size: 16px;
+        border-radius: 40px;
+    }
+}
+
 @media(max-width:600px){
 
+    .donation-section{
+        gap: 24px;
+        padding: 40px 4%;
+    }
     .donation-images{
-        height:300px;
+        max-width: 100%;
+        height: 280px;
+        border-radius: 20px;
     }
-
+    .img-box{
+        border-radius: 20px;
+    }
+    .img-box img{
+        border-radius: 20px;
+    }
     .donation-content h1{
-        font-size:34px;
+        font-size: 28px;
+        line-height: 1.3;
+        margin: 10px 0 20px;
     }
-
+    .small-title{
+        font-size: 14px;
+    }
+    .info-card{
+        padding: 18px;
+        border-radius: 14px;
+        margin-bottom: 14px;
+    }
     .info-card h3{
-        font-size:20px;
+        font-size: 18px;
+        margin-bottom: 5px;
     }
-
     .info-card p{
-        font-size:16px;
+        font-size: 15px;
+        line-height: 1.5;
     }
-
+    .give-btn-btn{
+        width: 100%;
+        padding: 16px 24px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 30px;
+    }
 }
 /* ================= SUPPORT EDUCATION ================= */
 
@@ -2915,7 +3030,6 @@ body{
 .being-dot{
   width:14px;
   height:14px;
-
   border-radius:50%;
 
   background:#cbd5e1;
@@ -2997,6 +3111,30 @@ body{
     font-size:18px;
   }
   .being-nav-prev{
+    left:10px;
+  }
+  .being-nav-next{
+    right:10px;
+  }
+}
+
+@media(max-width:600px){
+  .being-impact-slider { padding: 50px 12px; }
+  .being-slider-box { height: 280px; border-radius: 20px; }
+  .being-text { left: 12px; right: 12px; bottom: 12px; padding: 14px; border-radius: 16px; }
+  .being-text h3 { font-size: 20px; margin-bottom: 6px; }
+  .being-text p { font-size: 12px; }
+  .being-dots { gap: 10px; margin-top: 20px; }
+  .being-dot { width: 10px; height: 10px; }
+  .being-dot.active { width: 26px; }
+}
+  .being-text p{font-size:12px;}
+}
+  height:14px;
+
+  border-radius:50%;
+
+  
     left:10px;
   }
   .being-nav-next{
@@ -4777,6 +4915,33 @@ body{
 @media (max-width: 768px) {
   .about-section { min-height: auto; padding: 30px 5%; }
   .donation-section { min-height: auto; padding: 40px 5%; }
+  .featured-section { padding: 50px 16px; }
+  .featured-nav { width: 40px; height: 40px; font-size: 16px; }
+  .featured-nav-prev { left: -16px; }
+  .featured-nav-next { right: -16px; }
+  .featured-slider-wrap { gap: 12px; }
+  .featured-dots { margin-top: 24px; gap: 10px; }
+  .featured-dot { width: 12px; height: 12px; }
+  .featured-dot.active { width: 32px; }
+}
+
+@media (max-width: 600px) {
+  .about-section { padding: 24px 4%; }
+  .donation-section { padding: 32px 4%; }
+  .featured-section { padding: 40px 12px; }
+  .featured-nav { width: 36px; height: 36px; font-size: 14px; }
+  .featured-nav-prev { left: -12px; }
+  .featured-nav-next { right: -12px; }
+  .featured-slider-wrap { gap: 8px; }
+  .featured-card { height: 280px; border-radius: 12px; }
+  .feat-overlay { padding: 20px; }
+  .feat-overlay h3 { font-size: 18px; }
+  .feat-overlay p { font-size: 13px; margin-bottom: 12px; }
+  .feat-tag { font-size: 10px; padding: 3px 10px; margin-bottom: 8px; }
+  .feat-btn { font-size: 12px; padding: 8px 18px; }
+  .featured-dots { margin-top: 20px; gap: 8px; }
+  .featured-dot { width: 10px; height: 10px; }
+  .featured-dot.active { width: 28px; }
 }
 @media (max-width: 600px) {
   .logo-marquee-section { height: auto; }
@@ -5051,9 +5216,6 @@ body{
   }
   .being-text h3 { font-size: 20px; margin-bottom: 6px; }
   .being-text p { font-size: 12px; }
-  .being-dots { gap: 10px; margin-top: 20px; }
-  .being-dot { width: 10px; height: 10px; }
-  .being-dot.active { width: 26px; }
   .about-section { min-height: auto; padding: 30px 5%; gap: 30px; }
   .single-image-box { max-width: 100%; }
   .about-img { border-radius: 16px; transform: none; }
