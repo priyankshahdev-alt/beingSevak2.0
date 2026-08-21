@@ -232,18 +232,23 @@ const ContactUs = () => {
 
             <div className="info-cards-row">
               <div className="info-card">
-                <div className="icon-box"><i className="fas fa-building"></i></div>
+                <div className="icon-box"><i className="fas fa-university"></i></div>
                 <div>
-                  <h4>Head Office</h4>
-                  <p>Being Sevak Charitable Trust, Kandivali (West), Mumbai - 400092, Maharashtra, India</p>
+                  <h4>Bank Details 1</h4>
+                  <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>Name: Being Sevak Charitable Trust</p>
+                  <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>Bank: Axis Bank, Kandivali (West), Mumbai</p>
+                  <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>A/C No: 920010066029137</p>
+                  <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>IFSC: UTIB0000201</p>
                 </div>
               </div>
-
               <div className="info-card">
-                <div className="icon-box"><i className="fas fa-building"></i></div>
+                <div className="icon-box"><i className="fas fa-university"></i></div>
                 <div>
-                  <h4>Registered Office</h4>
-                  <p>Shop no 2, Sundar Complex, Chandavarkar Road, Near CRPF camp, Sarojini Nagar, Lucknow - 226002, UP, India</p>
+                  <h4>Bank Details 2</h4>
+                  <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>Name: Being Sevak Charitable Trust</p>
+                  <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>Bank: Saraswat Bank, Kandivali (West), Mumbai</p>
+                  <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>A/C No: 130200100119387</p>
+                  <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>IFSC: SRCB0000130</p>
                 </div>
               </div>
             </div>
@@ -253,6 +258,10 @@ const ContactUs = () => {
               <div>
                 <h4>Visit Us</h4>
                 <div className="visit-accordion">
+                  <div className="visit-item">
+                    <strong>Center Office</strong>
+                    <p>Gokuldas Khimji Bunglow, 1st Floor, V.L. Road, Opp. Lata Hotel, Jethava Nagar, Kandivali (West), Mumbai, Maharashtra - 400067.</p>
+                  </div>
                   <div className="visit-item">
                     <strong>Mumbai Office</strong>
                     <p>New Delight CHS Ltd, A Wing, 4th Floor, Office No 401, Chandavarkar Road, Borivali West, Mumbai, Maharashtra, 400092.</p>

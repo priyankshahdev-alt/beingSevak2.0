@@ -256,7 +256,7 @@ export default function SevakSevaKendra() {
 
         <section className="about-section" id="about">
           <div className="about-image">
-            <img src="/images/library.jpeg" alt="Library" />
+            <img src="/images/p12.jpg" alt="Library" />
           </div>
           <div className="about-content">
             <span className="mini-title">Library</span>

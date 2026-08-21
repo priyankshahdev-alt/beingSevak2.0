@@ -125,13 +125,13 @@ const TrustDocuments = () => {
         .hero-buttons .donate-btn{display:inline-block;padding:15px 36px;background:#00a3da;color:#fff;text-decoration:none;border-radius:6px;font-weight:700;transition:0.4s;box-shadow:0 10px 25px rgba(11,77,120,0.25)}
         .hero-buttons .donate-btn:hover{background:#007d94;transform:translateY(-1px)}
         .hero-image{position:relative;z-index:2;display:flex;justify-content:center;align-items:center}
-        .hero-image img{width:100%;max-width:550px;height:auto;border-radius:30px;box-shadow:0 25px 50px rgba(0,0,0,0.15);transition:0.5s ease;object-fit:cover}
+        .hero-image img{width:100%;max-width:700px;height:auto;border-radius:30px;box-shadow:0 25px 50px rgba(0,0,0,0.15);transition:0.5s ease;object-fit:cover}
         .hero-image img:hover{transform:scale(1.02)}
-        .floating-card{position:absolute;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);padding:18px 24px;border-radius:18px;box-shadow:0 15px 35px rgba(0,0,0,0.12);text-align:center;z-index:3;animation:floatCard 3s ease-in-out infinite alternate}
+        .floating-card{position:absolute;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);padding:12px 18px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,0.1);text-align:center;z-index:3;animation:floatCard 3s ease-in-out infinite alternate;min-width:180px}
         .floating-card.card1{top:20px;left:20px}
         .floating-card.card2{bottom:20px;right:20px;animation-delay:2s}
-        .floating-card h3{font-size:28px;font-weight:800;color:#00a3da}
-        .floating-card p{font-size:13px;color:#555;margin:0}
+        .floating-card h3{font-size:22px;font-weight:800;color:#00a3da}
+        .floating-card p{font-size:11px;color:#555;margin:0}
         @keyframes floatCard{0%{transform:translateY(0) rotate(var(--float-rot,0deg));}100%{transform:translateY(-15px) rotate(var(--float-rot,0deg));}}
         .blur{position:absolute;width:500px;height:500px;border-radius:50%;filter:blur(120px);opacity:0.15;z-index:0;pointer-events:none}
         .blur1{background:#00a3da;top:-100px;left:-100px}

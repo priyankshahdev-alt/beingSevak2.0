@@ -131,20 +131,27 @@ export default function Donation2() {
         }
         .floating-card {
           position: absolute;
-          padding: 15px 20px;
+          padding: 20px 24px;
           background: #fff;
-          border-radius: 12px;
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+          border-radius: 22px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
           animation: floatUpDown 3s ease-in-out infinite;
           z-index: 10;
+          width: 180px;
+          height: 90px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
         }
-        .floating-card h3 { color: #00a3da; font-size: 34px; margin: 0; }
-        .floating-card p { color: #66788a; margin: 0; font-size: 14px; }
-        .card1 { top: 40px; left: -60px; }
-        .card2 { bottom: 50px; right: -40px; }
+        .floating-card h3 { color: #00a3da; font-size: 30px; margin: 0 0 4px; line-height: 1.2; }
+        .floating-card p { color: #66788a; margin: 0; font-size: 13px; font-weight: 500; line-height: 1.3; }
+        .card1 { top: 20px; left: 20px; }
+        .card2 { bottom: 20px; right: 20px; }
         @keyframes floatUpDown {
           0% { transform: translateY(0px); }
-          50% { transform: translateY(-15px); }
+          50% { transform: translateY(-8px); }
           100% { transform: translateY(0px); }
         }
         .blur { position: absolute; border-radius: 50%; filter: blur(120px); }
@@ -338,7 +345,7 @@ export default function Donation2() {
             <h3>1000+</h3>
             <p>Lives Impacted</p>
           </div>
-          <img src="/images/bs.png" alt="Being Sevak" />
+          <img src="/images/w1.jpeg" alt="Being Sevak" />
         </div>
         <div className="blur blur1"></div>
         <div className="blur blur2"></div>
@@ -373,6 +380,41 @@ export default function Donation2() {
             <iframe src={tab.src} className="donation-frame" scrolling="no" title={tab.title}></iframe>
           </div>
         ))}
+      </section>
+
+      <section className="bank-details-section" style={{padding: '60px 8%', background: '#f4f7fb'}}>
+        <div style={{maxWidth: '1200px', margin: '0 auto', textAlign: 'center', marginBottom: '40px'}}>
+          <h2 style={{fontFamily: "'Montserrat',sans-serif", fontWeight: 800, fontSize: '2rem', color: '#03163E', marginBottom: '8px'}}>Bank Details</h2>
+          <p style={{fontSize: '1rem', color: '#4a5568', maxWidth: '600px', margin: '0 auto'}}>You can make your donation directly to our bank accounts below.</p>
+        </div>
+        <div style={{maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px'}}>
+          <div style={{background: '#fff', borderRadius: '20px', padding: '30px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid #e2ecf5'}}>
+            <h3 style={{fontFamily: "'Montserrat',sans-serif", fontWeight: 800, fontSize: '1.3rem', color: '#03163E', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px'}}><i className="fas fa-university" style={{color: '#00a3da'}}></i>Bank Details 1</h3>
+            <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: 0}}>Name: Being Sevak Charitable Trust</p>
+            <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>Bank: Axis Bank, Kandivali (West), Mumbai</p>
+            <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>A/C No: 920010066029137</p>
+            <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>IFSC: UTIB0000201</p>
+          </div>
+          <div style={{background: '#fff', borderRadius: '20px', padding: '30px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid #e2ecf5'}}>
+            <h3 style={{fontFamily: "'Montserrat',sans-serif", fontWeight: 800, fontSize: '1.3rem', color: '#03163E', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px'}}><i className="fas fa-university" style={{color: '#00a3da'}}></i>Bank Details 2</h3>
+            <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: 0}}>Name: Being Sevak Charitable Trust</p>
+            <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>Bank: Saraswat Bank, Kandivali (West), Mumbai</p>
+            <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>A/C No: 130200100119387</p>
+            <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>IFSC: SRCB0000130</p>
+          </div>
+          <div style={{background: '#fff', borderRadius: '20px', padding: '30px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid #e2ecf5', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+            <h3 style={{fontFamily: "'Montserrat',sans-serif", fontWeight: 800, fontSize: '1.3rem', color: '#03163E', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px'}}><i className="fas fa-qrcode" style={{color: '#00a3da'}}></i>Donation QR Code</h3>
+            <div style={{width: '200px', height: '200px', border: '2px dashed #cbd5e1', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#fafafa', marginBottom: '16px', overflow: 'hidden'}}>
+              <img src="/images/Qrcode.jpeg" alt="UPI QR Code for Donation" style={{width: '100%', height: '100%', objectFit: 'cover'}} onError={(e) => { e.target.style.display = 'none'; e.target.nextElementSibling.style.display = 'flex'; }} />
+              <div style={{display: 'none', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#94a3b8', fontSize: '0.9rem', padding: '20px', textAlign: 'center'}}>
+                <i className="fas fa-qrcode" style={{fontSize: '3rem', marginBottom: '8px', color: '#cbd5e1'}}></i>
+                <span>QR Code Image</span>
+                <small style={{marginTop: '8px'}}>Place upi-qr-code.png in public/images/</small>
+              </div>
+            </div>
+            <p style={{fontSize: '0.9rem', color: '#4a5568', margin: 0, fontWeight: 500}}>Scan to Donate via UPI</p>
+          </div>
+        </div>
       </section>
 
       <section className="tax-box">

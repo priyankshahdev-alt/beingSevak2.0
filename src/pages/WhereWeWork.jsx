@@ -199,8 +199,8 @@ const WhereWeWork = () => {
         .hero-buttons{display:flex;gap:18px;flex-wrap:wrap}
         .hero-buttons .donate-btn{display:inline-block;padding:15px 36px;background:#00a3da;color:#fff;text-decoration:none;border-radius:6px;font-weight:700;transition:0.4s;box-shadow:0 10px 25px rgba(11,77,120,0.25)}
         .hero-buttons .donate-btn:hover{background:#007d94;transform:translateY(-1px)}
-        .hero-image{position:relative;z-index:2;display:flex;justify-content:center}
-        .hero-image img{width:100%;max-width:500px;border-radius:30px;box-shadow:0 25px 50px rgba(0,0,0,0.15);transition:0.5s ease}
+        .hero-image{position:relative;z-index:2;display:flex;justify-content:center;align-items:center}
+        .hero-image img{width:100%;max-width:650px;border-radius:30px;box-shadow:0 25px 50px rgba(0,0,0,0.15);transition:0.5s ease}
         .hero-image img:hover{transform:scale(1.02)}
         .floating-card{position:absolute;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);padding:14px 20px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.15);text-align:center;z-index:3;animation:floatCard 3s ease-in-out infinite alternate}
         .floating-card.card1{top:20px;left:20px}
@@ -371,6 +371,62 @@ const WhereWeWork = () => {
                   );
                 })}
                 <div className="www-legend"><span className="www-legend-title">Map Legend</span><div className="www-legend-items"><span className="www-legend-item"><i className="fas fa-map-marker-alt" style={{ color: '#e53e3e' }}></i> NGO Location</span><span className="www-legend-item"><i className="fas fa-book-open" style={{ color: '#00a3da' }}></i> Education</span><span className="www-legend-item"><i className="fas fa-heartbeat" style={{ color: '#ff6b00' }}></i> Healthcare</span><span className="www-legend-item"><i className="fas fa-female" style={{ color: '#e91e63' }}></i> Women Empower</span><span className="www-legend-item"><i className="fas fa-leaf" style={{ color: '#4caf50' }}></i> Sustainability</span></div></div>
+              </div>
+
+              <div className="www-impact-stats" style={{ marginTop: '24px' }}>
+                <div className="www-counter" style={{ padding: '20px 24px', gap: '24px', borderRadius: '16px', boxShadow: '0 8px 25px rgba(0,163,218,0.08)', border: '1px solid #e2e8f0' }}>
+                  <div className="www-counter-item">
+                    <span className="www-counter-num" data-target="5000">0</span><span className="www-counter-plus">+</span>
+                    <span className="www-counter-label">Volunteers</span>
+                  </div>
+                  <div className="www-counter-divider" style={{ height: '40px' }}></div>
+                  <div className="www-counter-item">
+                    <span className="www-counter-num" data-target="2500">0</span><span className="www-counter-plus">+</span>
+                    <span className="www-counter-label">Villages Reached</span>
+                  </div>
+                  <div className="www-counter-divider" style={{ height: '40px' }}></div>
+                  <div className="www-counter-item">
+                    <span className="www-counter-num" data-target="120">0</span><span className="www-counter-plus">+</span>
+                    <span className="www-counter-label">Partner NGOs</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="www-focus-card" style={{ marginTop: '20px', background: '#fff', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', border: '1px solid #e2e8f0', padding: '24px' }}>
+                <h4 style={{ fontFamily: "'Montserrat',sans-serif", fontSize: '1.1rem', fontWeight: 800, color: '#03163E', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <i className="fas fa-bullseye" style={{ color: '#00a3da', fontSize: '1.1rem' }}></i>
+                  Focus Areas
+                </h4>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#f0f8ff', borderRadius: '12px', border: '1px solid #d0e8f8' }}>
+                    <span style={{ width: '36px', height: '36px', borderRadius: '10px', background: '#00a3da', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1rem', flexShrink: 0 }}><i className="fas fa-book-open"></i></span>
+                    <div>
+                      <strong style={{ fontSize: '0.9rem', color: '#0a1a2a', display: 'block', marginBottom: '2px' }}>Education</strong>
+                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4 }}>Digital literacy, school support & skill development</span>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#fff4f0', borderRadius: '12px', border: '1px solid #fadbd0' }}>
+                    <span style={{ width: '36px', height: '36px', borderRadius: '10px', background: '#ff6b00', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1rem', flexShrink: 0 }}><i className="fas fa-heartbeat"></i></span>
+                    <div>
+                      <strong style={{ fontSize: '0.9rem', color: '#0a1a2a', display: 'block', marginBottom: '2px' }}>Healthcare</strong>
+                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4 }}>Medical camps, hygiene kits & preventive care</span>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#fdf0f5', borderRadius: '12px', border: '1px solid #f8c8dc' }}>
+                    <span style={{ width: '36px', height: '36px', borderRadius: '10px', background: '#e91e63', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1rem', flexShrink: 0 }}><i className="fas fa-female"></i></span>
+                    <div>
+                      <strong style={{ fontSize: '0.9rem', color: '#0a1a2a', display: 'block', marginBottom: '2px' }}>Women Empowerment</strong>
+                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4 }}>Livelihood training, self-help groups & financial independence</span>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#f0fdf4', borderRadius: '12px', border: '1px solid #d4edda' }}>
+                    <span style={{ width: '36px', height: '36px', borderRadius: '10px', background: '#4caf50', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1rem', flexShrink: 0 }}><i className="fas fa-leaf"></i></span>
+                    <div>
+                      <strong style={{ fontSize: '0.9rem', color: '#0a1a2a', display: 'block', marginBottom: '2px' }}>Sustainability</strong>
+                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4 }}>Environment, animal welfare & disaster resilience</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="www-list-col" id="locations">
