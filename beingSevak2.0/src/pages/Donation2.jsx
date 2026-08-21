@@ -131,22 +131,27 @@ export default function Donation2() {
         }
         .floating-card {
           position: absolute;
-          padding: 12px 18px;
+          padding: 20px 24px;
           background: #fff;
-          border-radius: 10px;
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+          border-radius: 22px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
           animation: floatUpDown 3s ease-in-out infinite;
           z-index: 10;
-          min-width: 160px;
+          width: 180px;
+          height: 90px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           text-align: center;
         }
-        .floating-card h3 { color: #00a3da; font-size: 28px; margin: 0; }
-        .floating-card p { color: #66788a; margin: 0; font-size: 12px; }
-        .card1 { top: 40px; left: -60px; }
-        .card2 { bottom: 50px; right: -40px; }
+        .floating-card h3 { color: #00a3da; font-size: 30px; margin: 0 0 4px; line-height: 1.2; }
+        .floating-card p { color: #66788a; margin: 0; font-size: 13px; font-weight: 500; line-height: 1.3; }
+        .card1 { top: 20px; left: 20px; }
+        .card2 { bottom: 20px; right: 20px; }
         @keyframes floatUpDown {
           0% { transform: translateY(0px); }
-          50% { transform: translateY(-15px); }
+          50% { transform: translateY(-8px); }
           100% { transform: translateY(0px); }
         }
         .blur { position: absolute; border-radius: 50%; filter: blur(120px); }

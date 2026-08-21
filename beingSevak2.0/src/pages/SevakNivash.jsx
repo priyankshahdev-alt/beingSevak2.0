@@ -22,7 +22,7 @@ const facilities = [
     desc: 'Providing accessible books, learning resources, and educational opportunities for all.',
     fullDesc: 'This facility provides an inclusive learning space equipped with books, study materials, Braille resources, audio learning tools, and digital educational content. Your support helps visually impaired, disabled, and underprivileged individuals access knowledge, enhance their education, and unlock new opportunities for personal and professional growth.',
     amount: '',
-    img: '/images/nivash1.jpeg',
+    img: '/images/i11.jpeg',
     side: 'left',
   },
   {
@@ -78,7 +78,7 @@ const facilities = [
     desc: 'Empowering women with skills, confidence, and opportunities for self-reliance.',
     fullDesc: 'This facility supports women through skill development, entrepreneurship training, and livelihood opportunities. Your contribution helps women become financially independent, build self-confidence, and create sustainable sources of income for themselves and their families.',
     amount: '',
-    img: '/images/nivash12.jpeg',
+    img: '/images/t2.jpg',
     side: 'right',
   },
   {
@@ -86,7 +86,7 @@ const facilities = [
     desc: 'Providing nutritious meals and food support to those in need with dignity and care.',
     fullDesc: 'This facility serves freshly prepared and nutritious meals to visually impaired individuals, persons with disabilities, underprivileged families, and those facing food insecurity. Your support helps ensure that no one goes hungry while promoting health, dignity, and community care through regular meal assistance programs.',
     amount: '',
-    img: '/images/nivash5.jpeg',
+    img: '/images/s1.jpeg',
     side: 'left',
   },
   {

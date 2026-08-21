@@ -67,6 +67,14 @@ export default function Home() {
     box.scrollTo({ left: idx * slideWidth, behavior: 'smooth' });
   };
 
+  // Featured Projects Autoplay
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentFeatured((prev) => (prev + 1) % totalFeaturedSlides);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   // Impact Stats
   const impactRef = useRef(null);
   const [impactAnimated, setImpactAnimated] = useState(false);
@@ -327,6 +335,15 @@ export default function Home() {
         .basket-empty-msg.show{display:block}
         .basket-field-err{display:block;color:#e53935;font-size:11px;margin-top:4px;font-family:'Open Sans',sans-serif;padding-left:80px}
         @media(max-width:500px){.basket-panel{width:100vw}}
+        .featured-slider-wrap{position:relative;display:flex;align-items:center;justify-content:center;gap:16px}
+        .featured-slider-box{position:relative;flex:1;min-width:0}
+        .featured-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:#fff;border:none;box-shadow:0 4px 20px rgba(0,0,0,0.15);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:10;transition:all 0.3s;color:#315371;font-size:20px;flex-shrink:0}
+        .featured-nav:hover{background:#00A3DA;color:#fff;box-shadow:0 8px 28px rgba(0,163,218,0.4)}
+        .featured-nav-prev{left:-24px}
+        .featured-nav-next{right:-24px}
+        @media(max-width:1100px){.featured-nav{width:44px;height:44px;font-size:18px}.featured-nav-prev{left:-20px}.featured-nav-next{right:-20px}}
+        @media(max-width:991px){.featured-nav{width:40px;height:40px;font-size:16px}.featured-nav-prev{left:-18px}.featured-nav-next{right:-18px}}
+        @media(max-width:768px){.featured-nav{width:36px;height:36px;font-size:14px}.featured-nav-prev{left:-16px}.featured-nav-next{right:-16px}.featured-slider-wrap{gap:8px}}
       `}</style>
 
       {/* BEING SEVAK CHARITABLE TRUST ALERT BANNER */}
@@ -941,7 +958,6 @@ export default function Home() {
                   <span className="metro-img-label">Bottle Crusher Machine</span>
                 </div>
                 <div className="metro-img-footer">
-                  <h3 className="metro-price">₹1,80,000</h3>
                   <Link to="/donate" className="metro-donate-btn">DONATE NOW</Link>
                 </div>
               </div>
@@ -951,7 +967,6 @@ export default function Home() {
                   <span className="metro-img-label">Sanitary Pad Vending Machine</span>
                 </div>
                 <div className="metro-img-footer">
-                  <h3 className="metro-price">₹7,000</h3>
                   <Link to="/donate" className="metro-donate-btn">DONATE NOW</Link>
                 </div>
               </div>
@@ -1429,8 +1444,12 @@ export default function Home() {
           <h2>Featured <span className="accent">Projects</span></h2>
           <p>Make a direct impact with these urgent campaigns</p>
         </div>
-        <div className="featured-slider-box" ref={featuredSliderRef}>
-          <div className={`featured-slide ${currentFeatured === 0 ? 'active' : ''}`}>
+        <div className="featured-slider-wrap">
+          <button className="featured-nav featured-nav-prev" onClick={() => setCurrentFeatured((prev) => (prev === 0 ? totalFeaturedSlides - 1 : prev - 1))} aria-label="Previous project">
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <div className="featured-slider-box" ref={featuredSliderRef}>
+            <div className={`featured-slide ${currentFeatured === 0 ? 'active' : ''}`}>
             <div className="featured-card">
               <div className="feat-img" style={{ backgroundImage: "url('images/Matrimonial.jpeg')" }}></div>
               <div className="feat-overlay">
@@ -1441,7 +1460,7 @@ export default function Home() {
               </div>
             </div>
             <div className="featured-card">
-              <div className="feat-img" style={{ backgroundImage: "url('images/rasaoighar.jpeg')" }}></div>
+              <div className="feat-img" style={{ backgroundImage: "url('images/r1.jpeg')" }}></div>
               <div className="feat-overlay">
                 <span className="feat-tag">FOOD</span>
                 <h3>Rasoi Ghar</h3>
@@ -1452,7 +1471,7 @@ export default function Home() {
           </div>
           <div className={`featured-slide ${currentFeatured === 1 ? 'active' : ''}`}>
             <div className="featured-card">
-              <div className="feat-img" style={{ backgroundImage: "url('images/D.E.C.jpg')" }}></div>
+              <div className="feat-img" style={{ backgroundImage: "url('images/p12.jpg')" }}></div>
               <div className="feat-overlay">
                 <span className="feat-tag">EDUCATION</span>
                 <h3>Digital Education Centre</h3>
@@ -1472,7 +1491,7 @@ export default function Home() {
           </div>
           <div className={`featured-slide ${currentFeatured === 2 ? 'active' : ''}`}>
             <div className="featured-card">
-              <div className="feat-img" style={{ backgroundImage: "url('images/i1.jpeg')" }}></div>
+              <div className="feat-img" style={{ backgroundImage: "url('images/i11.jpeg')" }}></div>
               <div className="feat-overlay">
                 <span className="feat-tag">EDUCATION</span>
                 <h3>Library Centre</h3>
@@ -1481,7 +1500,7 @@ export default function Home() {
               </div>
             </div>
             <div className="featured-card">
-              <div className="feat-img" style={{ backgroundImage: "url('images/womenempoerment.jpeg')" }}></div>
+              <div className="feat-img" style={{ backgroundImage: "url('images/t2.jpg')" }}></div>
               <div className="feat-overlay">
                 <span className="feat-tag">EMPOWERMENT</span>
                 <h3>Women Empowerment & Self Employment Unit</h3>
@@ -1490,6 +1509,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </div>
+          <button className="featured-nav featured-nav-next" onClick={() => setCurrentFeatured((prev) => (prev === totalFeaturedSlides - 1 ? 0 : prev + 1))} aria-label="Next project">
+            <i className="fas fa-chevron-right"></i>
+          </button>
         </div>
         <div className="featured-dots">
           {[...Array(totalFeaturedSlides)].map((_, i) => (
