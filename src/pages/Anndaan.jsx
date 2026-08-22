@@ -100,9 +100,9 @@ export default function Anndaan() {
           transform: translateY(-12px) scale(1.03);
         }
 
-        .anndaan-page .mealwave-highlight-box { display: flex; justify-content: center; gap: 20px; flex-wrap: nowrap; }
+        .anndaan-page .mealwave-highlight-box { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
         .anndaan-page .mealwave-highlight-box div {
-          width: 220px; min-height: 180px; padding: 35px 25px; border-radius: 25px; background: #fff;
+          width: 220px; max-width: 100%; min-height: 180px; padding: 35px 25px; border-radius: 25px; background: #fff;
           border: 1px solid #e3f2fb; box-shadow: 0 15px 35px rgba(0,163,218,0.12);
           transition: all 0.3s ease; cursor: pointer; display: flex; flex-direction: column;
           justify-content: center; align-items: center;

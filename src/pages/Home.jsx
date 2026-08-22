@@ -606,7 +606,7 @@ export default function Home() {
           <span className="small-title">
             <h3>Support Education</h3>
           </span>
-          <h1 style={{ fontSize: '36px', marginBottom: '20px', lineHeight: '1.3' }}>
+          <h1 style={{ fontSize: 'clamp(24px, 4.5vw, 36px)', marginBottom: '20px', lineHeight: '1.3' }}>
             Nourishing Lives <br />
             Through Every Meal & Ration Kit
           </h1>
