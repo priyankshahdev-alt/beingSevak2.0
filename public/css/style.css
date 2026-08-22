@@ -5263,3 +5263,6 @@ body{
   .month-modal-caption { font-size: 12px; padding: 10px 14px; }
   .floating-card { border-radius: 9px !important; }
 }
+/* Global mobile safety */
+html, body { overflow-x: hidden; max-width: 100%; }
+img { max-width: 100%; }
