@@ -593,11 +593,82 @@ export default function Home() {
         </div>
       </section>
 
+      
+
+      {/* SUPPORT EDUCATION */}
+      <section className="donation-section">
+        <div className="donation-images">
+          <div className="img-box img1">
+            <img src="images/m1.jpeg" alt="" />
+          </div>
+        </div>
+        <div className="donation-content">
+          <span className="small-title">
+            <h3>Support Education</h3>
+          </span>
+          <h1 style={{ fontSize: '36px', marginBottom: '20px', lineHeight: '1.3' }}>
+            Nourishing Lives <br />
+            Through Every Meal & Ration Kit
+          </h1>
+          <h1>
+            Help Us Transform <br />
+            A Child's Life
+          </h1>
+          <div className="info-card">
+            <h3>For only Rs.1250/- per month,</h3>
+            <p>you can keep a child in school.</p>
+          </div>
+          <div className="info-card second-card">
+            <p>Your support can give education, hope and a brighter future to a needy child.</p>
+          </div>
+          <a href="#" className="give-btn-btn">Give Now</a>
+        </div>
+      </section>
+
+      {/* EYE HEALTH PROGRAMME */}
+      <section className="eye-health-slide">
+        <div className="eye-img">
+          <img src="images/eye.jpeg" alt="Eye Health" />
+        </div>
+        <div className="eye-content">
+          <span className="tag">Sevak Eye Health Programme</span>
+          <h2>
+            Protecting Vision <br />
+            With Compassion
+          </h2>
+          <p>
+            Being Sevak Charitable Trust believes prevention is better than cure.
+            Through eye screenings, spectacles and cataract surgeries,
+            we help thousands restore better eyesight.
+          </p>
+          <div className="stats">
+            <div className="stat-box">
+              <h3>9225+</h3>
+              <span>Eye Screenings</span>
+            </div>
+            <div className="stat-box">
+              <h3>5156+</h3>
+              <span>People Refracted</span>
+            </div>
+            <div className="stat-box">
+              <h3>4389+</h3>
+              <span>Spectacles Dispensed</span>
+            </div>
+            <div className="stat-box">
+              <h3>767+</h3>
+              <span>Cataract Surgeries</span>
+            </div>
+          </div>
+          <Link to="/donate" className="donate-btn">
+            Donate Now
+          </Link>
+        </div>
+      </section>
+
       {/* URGENT APPEALS */}
       <section className="causes-section">
         <div className="section-header">
           <h2>Urgent <span className="accent">Appeals</span></h2>
-          <p>Every moment matters—people are struggling without basic needs</p>
         </div>
         <div className="causes-marquee">
           <div className="causes-track">
@@ -706,7 +777,6 @@ export default function Home() {
       <section className="being-impact-slider">
         <div className="section-header">
           <h2>Impact <span className="accent">Stories</span></h2>
-          <p>Real Change Through Our Work</p>
         </div>
         <div className="being-slider-box">
           <Link to="/impact/rozgaar-booth" className={`being-slide ${currentImpact === 0 ? 'active' : ''}`}>
@@ -786,7 +856,6 @@ export default function Home() {
       <section className="causes-section">
         <div className="section-header">
           <h2>Most <span className="accent">Needed</span></h2>
-          <p>Every moment matters—people are struggling without basic needs</p>
         </div>
         <div className="causes-grid">
           <div className="cause-card">
@@ -840,93 +909,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SUPPORT EDUCATION */}
-      <section className="donation-section">
-        <div className="donation-images">
-          <div className="img-box img1">
-            <img src="images/m1.jpeg" alt="" />
-          </div>
-        </div>
-        <div className="donation-content">
-          <span className="small-title">
-            <h3>Support Education</h3>
-          </span>
-          <h1>
-            Help Us Transform <br />
-            A Child's Life
-          </h1>
-          <div className="info-card">
-            <h3>For only Rs.1250/- per month,</h3>
-            <p>you can keep a child in school.</p>
-          </div>
-          <div className="info-card second-card">
-            <p>Your support can give education, hope and a brighter future to a needy child.</p>
-          </div>
-          <a href="#" className="give-btn-btn">Give Now</a>
-        </div>
-      </section>
-
-      {/* EYE HEALTH PROGRAMME */}
-      <section className="eye-health-slide">
-        <div className="eye-img">
-          <img src="images/eye.jpeg" alt="Eye Health" />
-        </div>
-        <div className="eye-content">
-          <span className="tag">Sevak Eye Health Programme</span>
-          <h2>
-            Protecting Vision <br />
-            With Compassion
-          </h2>
-          <p>
-            Being Sevak Charitable Trust believes prevention is better than cure.
-            Through eye screenings, spectacles and cataract surgeries,
-            we help thousands restore better eyesight.
-          </p>
-          <div className="stats">
-            <div className="stat-box">
-              <h3>9225+</h3>
-              <span>Eye Screenings</span>
-            </div>
-            <div className="stat-box">
-              <h3>5156+</h3>
-              <span>People Refracted</span>
-            </div>
-            <div className="stat-box">
-              <h3>4389+</h3>
-              <span>Spectacles Dispensed</span>
-            </div>
-            <div className="stat-box">
-              <h3>767+</h3>
-              <span>Cataract Surgeries</span>
-            </div>
-          </div>
-          <Link to="/donate" className="donate-btn">
-            Donate Now
-          </Link>
-        </div>
-      </section>
-
       {/* CELEBRITY NOTES */}
       <section className="celebrity-section">
         <div className="section-header">
           <h2>Celebrity <span className="accent">Notes</span></h2>
-          <p>Recognitions and appreciation from notable personalities</p>
         </div>
         <div className="celebrity-slider-box">
           <div className={`celebrity-slide ${currentSlide % 2 === 0 ? 'active' : ''}`}>
             <div className="celebrity-card">
-              <img src="images/p1.jpeg" alt="Celebrity Note 1" />
+              <img src="images/n1.jpeg" alt="Celebrity Note 1" />
             </div>
             <div className="celebrity-card">
-              <img src="images/p2.jpeg" alt="Celebrity Note 2" />
+              <img src="images/n2.jpeg" alt="Celebrity Note 2" />
             </div>
           </div>
           <div className={`celebrity-slide ${currentSlide % 2 === 1 ? 'active' : ''}`}>
             <div className="celebrity-card">
-              <img src="images/p3.jpeg" alt="Celebrity Note 3" />
+              <img src="images/n3.jpeg" alt="Celebrity Note 3" />
             </div>
             <div className="celebrity-card">
-              <img src="images/p4.jpeg" alt="Celebrity Note 4" />
+              <img src="images/n4.jpeg" alt="Celebrity Note 4" />
             </div>
           </div>
         </div>
@@ -941,7 +943,7 @@ export default function Home() {
         <div className="metro-box">
           <div className="metro-images">
             <div className="metro-hero-img">
-              <img src="images/bottelmetro.jpeg" alt="Metro Station Initiative" />
+              <img src="images/q.jpeg" alt="Metro Station Initiative" />
               <div className="metro-hero-overlay"></div>
             </div>
             <div className="metro-image-grid">
@@ -1029,7 +1031,6 @@ export default function Home() {
       <section className="how-we-work">
         <div className="section-header">
           <h2>Our <span className="accent">Activities</span></h2>
-          <p>Your donation reaches those who need it most</p>
         </div>
         <div className="slider-wrapper">
           <div className="slider-track">
@@ -1253,7 +1254,6 @@ export default function Home() {
           <img src="banner.jpg" alt="Our Partners" />
           <div className="overlay">
             <h1>OUR <span>PARTNERS</span></h1>
-            <p>Together with our partners, we work to bring hope, care, and support to those in need</p>
           </div>
         </div>
         <div className="partners-marquee">
@@ -1401,7 +1401,6 @@ export default function Home() {
       <section className="how-we-work">
         <div className="section-header">
           <h2>Latest <span className="accent">Updates</span></h2>
-          <p>Stay informed with our recent activities and announcements</p>
         </div>
         <div className="month-updates">
           <div className="month-tabs">
@@ -1435,7 +1434,6 @@ export default function Home() {
       <section className="featured-section">
         <div className="section-header">
           <h2>Featured <span className="accent">Projects</span></h2>
-          <p>Make a direct impact with these urgent campaigns</p>
         </div>
         <div className="featured-slider-wrap">
           <button className="featured-nav featured-nav-prev" onClick={() => setCurrentFeatured((prev) => (prev === 0 ? totalFeaturedSlides - 1 : prev - 1))} aria-label="Previous project">

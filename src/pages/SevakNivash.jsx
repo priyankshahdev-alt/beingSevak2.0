@@ -22,7 +22,7 @@ const facilities = [
     desc: 'Providing accessible books, learning resources, and educational opportunities for all.',
     fullDesc: 'This facility provides an inclusive learning space equipped with books, study materials, Braille resources, audio learning tools, and digital educational content. Your support helps visually impaired, disabled, and underprivileged individuals access knowledge, enhance their education, and unlock new opportunities for personal and professional growth.',
     amount: '',
-    img: '/images/i11.jpeg',
+    img: '/images/zz.jpeg',
     side: 'left',
   },
   {
@@ -121,7 +121,7 @@ export default function SevakNivash() {
           text-align: center; width: 100%; padding: 20px; z-index: 5;
         }
         .sevak-nivash .anndaan-content h1 { font-size: 40px; color: #fff; font-weight: 900; letter-spacing: 5px; text-shadow: 0 15px 35px rgba(0,0,0,0.4); animation: snZoomfade 1.5s ease; }
-        .sevak-nivash .anndaan-content p { color: #fff; font-size: 26px; margin-top: 15px; letter-spacing: 2px; text-shadow: 0 10px 25px rgba(0,0,0,0.4); }
+        .sevak-nivash .anndaan-content p { color: #fff; font-size: 26px; margin-top: 15px; letter-spacing: 2px; text-shadow: 0 10px 25px rgba(0,0,0,0.4); text-align: center; }
         @keyframes snZoomfade { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: scale(1); } }
 
         .sevak-nivash .sevak-food-main-wrap { width: 100%; background: #fff; }
@@ -136,7 +136,7 @@ export default function SevakNivash() {
           border-radius: 50px; font-weight: 700; letter-spacing: 2px; margin-bottom: 25px;
         }
         .sevak-nivash .annaseva-hero-content h1 { font-size: 75px; line-height: 1.1; font-weight: 900; color: #111; margin-bottom: 25px; }
-        .sevak-nivash .annaseva-hero-content p { font-size: 20px; line-height: 1.8; color: #555; margin-bottom: 40px; }
+        .sevak-nivash .annaseva-hero-content p { font-size: 20px; line-height: 1.8; color: #555; margin-bottom: 40px; text-align: justify; }
         .sevak-nivash .annaseva-hero-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
         .sevak-nivash .annaseva-btn-main {
           padding: 18px 38px; border-radius: 60px; text-decoration: none; font-weight: 700; transition: 0.4s;
@@ -152,52 +152,53 @@ export default function SevakNivash() {
         .sevak-nivash .sevak-section { padding: 20px 15px; text-align: center; }
         .sevak-nivash .sevak-container { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
         .sevak-nivash .sevak-box {
-          background: #ffffff; border: 1px solid #ddd; padding: 15px; width: 500px;
-          border-radius: 8px; transition: 0.3s ease; cursor: pointer;
+          background: linear-gradient(135deg, #009BD4, #083D8B); color: #fff; padding: 25px; width: 500px;
+          border-radius: 8px; transition: 0.3s ease; cursor: pointer; box-shadow: 0 10px 30px rgba(0,90,160,0.25);
         }
-        .sevak-nivash .sevak-box:hover { background: #00a3da; color: #fff; transform: translateY(-5px); }
-        .sevak-nivash .sevak-box:hover h3, .sevak-nivash .sevak-box:hover p { color: #fff; }
+        .sevak-nivash .sevak-box:hover { background: linear-gradient(135deg, #083D8B, #009BD4); transform: translateY(-5px); }
         .sevak-nivash .sevak-box h3 { margin-bottom: 30px; }
-        .sevak-nivash .sevak-box p { font-size: 20px; line-height: 1.5; }
+        .sevak-nivash .sevak-box h3, .sevak-nivash .sevak-box p { color: #fff; }
+        .sevak-nivash .sevak-box p { font-size: 20px; line-height: 1.5; text-align: justify; }
 
         .sevak-nivash .about-sevak { padding: 20px 4%; background: #fff; }
         .sevak-nivash .section-heading { text-align: center; max-width: 1000px; margin: auto; }
         .sevak-nivash .section-heading h2 { color: #00a3da; font-size: 42px; margin-bottom: 15px; font-weight: 700; }
-        .sevak-nivash .section-heading p { color: #555; line-height: 1.8; font-size: 16px; }
-        .sevak-nivash .facility-title { text-align: center; margin: 40px 0 25px; }
+        .sevak-nivash .section-heading p { color: #555; line-height: 1.8; font-size: 16px; text-align: justify; }
+        .sevak-nivash .facility-title { text-align: center; margin: 25px 0 15px; }
         .sevak-nivash .facility-title h2 { color: #00a3da; font-size: 36px; font-weight: 700; }
         .sevak-nivash .facility-wrapper { display: flex; gap: 30px; align-items: flex-start; }
 
         .sevak-nivash .donation-card {
-          width: 320px; flex-shrink: 0; background: #fff; border-radius: 20px; padding: 20px;
+          width: 480px; flex-shrink: 0; background: #fff; border-radius: 24px; padding: 14px;
           box-shadow: 0 15px 35px rgba(0,58,189,0.08), 0 5px 15px rgba(0,0,0,0.05);
           transition: 0.4s; position: sticky; top: 20px;
         }
         .sevak-nivash .donation-card:hover { transform: translateY(-8px); }
-        .sevak-nivash .facility-image { overflow: hidden; border-radius: 16px; margin-bottom: 18px; transform: perspective(1000px) rotateX(4deg); box-shadow: 0 20px 35px rgba(0,58,189,0.15); }
-        .sevak-nivash .facility-image img { width: 100%; display: block; transition: 0.5s; }
+        .sevak-nivash .facility-image { overflow: hidden; border-radius: 18px; }
+        .sevak-nivash .facility-image img { width: 100%; height: 380px; object-fit: cover; display: block; transition: 0.5s; }
         .sevak-nivash .donation-card:hover .facility-image img { transform: scale(1.08); }
         .sevak-nivash .donation-card h3 { color: #00a3da; font-size: 22px; margin-bottom: 12px; }
-        .sevak-nivash .donation-card p { color: #666; line-height: 1.7; }
+        .sevak-nivash .donation-card p { color: #666; line-height: 1.7; text-align: justify; }
         .sevak-nivash .amount { display: none; }
         .sevak-nivash .donate-btn {
-          display: block; text-align: center; background: #00a3da; color: #fff; text-decoration: none;
-          padding: 14px; border-radius: 10px; font-weight: 600; transition: 0.3s;
+          display: block; text-align: center; background: linear-gradient(135deg, #009BD4, #083D8B); color: #fff; text-decoration: none;
+          padding: 14px; border-radius: 12px; font-weight: 600; transition: 0.3s; margin-top: 14px;
         }
+        .sevak-nivash .donate-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0,90,160,0.35); }
 
         .sevak-nivash .facility-content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
         .sevak-nivash .facility-tag {
           display: inline-block; width: fit-content; background: #eef4ff; color: #00a3da;
-          padding: 8px 18px; border-radius: 30px; font-size: 14px; font-weight: 600; margin-bottom: 15px;
+          padding: 4px 14px; border-radius: 30px; font-size: 13px; font-weight: 600; margin-bottom: 5px;
         }
-        .sevak-nivash .facility-content h3 { font-size: 42px; color: #00a3da; line-height: 1.2; margin-bottom: 20px; font-weight: 700; }
-        .sevak-nivash .facility-content h2 { font-size: 42px; color: #00a3da; line-height: 1.2; margin-bottom: 18px; font-weight: 700; }
-        .sevak-nivash .facility-content p { font-size: 18px; line-height: 1.9; color: #555; max-width: 700px; }
+        .sevak-nivash .facility-content h3 { font-size: 30px; color: #00a3da; line-height: 1.25; margin-bottom: 8px; font-weight: 700; }
+        .sevak-nivash .facility-content h2 { font-size: 30px; color: #00a3da; line-height: 1.25; margin-bottom: 8px; font-weight: 700; }
+        .sevak-nivash .facility-content p { font-size: 18px; line-height: 1.9; color: #555; max-width: 700px; text-align: justify; }
 
         .sevak-nivash .facility-section { padding: 50px 6%; background: #fff; }
         .sevak-nivash .facility-section .facility-wrapper { align-items: center; justify-content: space-between; gap: 40px; }
         .sevak-nivash .facility-section .facility-content { padding-right: 20px; }
-        .sevak-nivash .facility-section .donation-card { width: 360px; border: 1px solid #eee; }
+        .sevak-nivash .facility-section .donation-card { width: 480px; border: 1px solid #eee; }
         .sevak-nivash .facility-section .donation-card h3 { font-size: 22px; }
         .sevak-nivash .facility-section .amount { display: none; }
 
@@ -209,14 +210,14 @@ export default function SevakNivash() {
           .sevak-nivash .annaseva-hero-content h1 { font-size: 48px; }
           .sevak-nivash .facility-wrapper { flex-direction: column; overflow: visible; }
           .sevak-nivash .donation-card { width: 100%; position: relative; top: 0; overflow: visible; }
-          .sevak-nivash .facility-content h3, .sevak-nivash .facility-content h2 { font-size: 30px; }
+          .sevak-nivash .facility-content h3, .sevak-nivash .facility-content h2 { font-size: 24px; }
           .sevak-nivash .facility-section .facility-wrapper { gap: 25px; }
           .sevak-nivash .facility-section .donation-card { width: 100%; overflow: visible; }
         }
         @media (max-width: 768px) {
           .sevak-nivash .facility-wrapper { align-items: stretch; overflow: visible; }
           .sevak-nivash .facility-content { width: 100%; padding-right: 0; }
-          .sevak-nivash .facility-content h3, .sevak-nivash .facility-content h2 { font-size: 30px; }
+          .sevak-nivash .facility-content h3, .sevak-nivash .facility-content h2 { font-size: 24px; }
           .sevak-nivash .facility-content p { font-size: 16px; }
           .sevak-nivash .facility-section .donation-card { width: 100%; }
           .sevak-nivash .about-sevak .facility-wrapper { overflow: visible; }
@@ -228,8 +229,7 @@ export default function SevakNivash() {
           .sevak-nivash .sevak-box { width: 100%; }
           .sevak-nivash .donation-card { position: relative; top: 0; overflow: visible; display: block; visibility: visible; opacity: 1; width: 100%; max-width: 100%; height: auto; transform: none; }
           .sevak-nivash .donation-card .facility-image { overflow: visible; transform: none; height: auto; }
-          .sevak-nivash .donation-card .facility-image img { height: auto; }
-          .sevak-nivash .donation-card h3 { display: block; visibility: visible; opacity: 1; overflow: visible; }
+          .sevak-nivash .donation-card .facility-image img { height: auto; }          .sevak-nivash .donation-card h3 { display: block; visibility: visible; opacity: 1; overflow: visible; }
           .sevak-nivash .donation-card p { display: block; visibility: visible; opacity: 1; overflow: visible; }
           .sevak-nivash .donation-card .amount { display: block; visibility: visible; opacity: 1; overflow: visible; }
           .sevak-nivash .donation-card .donate-btn { display: block; visibility: visible; opacity: 1; overflow: visible; }
@@ -242,7 +242,7 @@ export default function SevakNivash() {
 
       <div className="sevak-nivash">
         <section className="anndaan-hero-banner">
-          <img src="/images/sevaknivash.jpeg" alt="Sevak Nivas Banner" />
+          <img src="/images/sevaknivash.jpeg" alt="Sevak Niwas Banner" />
           <div className="anndaan-overlay"></div>
           <div className="anndaan-content">
             <br /><br />
@@ -258,16 +258,16 @@ export default function SevakNivash() {
             <div className="annaseva-floating-circle three"></div>
             <div className="annaseva-hero-content">
               <span className="annaseva-mini-title">Being Sevak Charitable Trust</span>
-              <h1>Providing Shelter <br />& Support Through Sevak Nivas</h1>
+              <h1>Providing Shelter <br />& Support Through Sevak Niwas</h1>
               <p>
-                Sevak Nivas offers a safe, accessible, and supportive temporary
+                Sevak Niwas offers a safe, accessible, and supportive temporary
                 accommodation facility for visually impaired students. By providing
                 a comfortable living environment, we help students focus on their
                 education, skill development, personal growth, and journey toward
                 an independent and dignified future.
               </p>
               <div className="annaseva-hero-buttons">
-                <Link to="/donate" className="annaseva-btn-main">Support Sevak Nivas</Link>
+                <Link to="/donate" className="annaseva-btn-main">Support Sevak Niwas</Link>
               </div>
             </div>
           </div>
@@ -297,7 +297,7 @@ export default function SevakNivash() {
             </p>
           </div>
           <div className="facility-title">
-            <h2>OUR 12 FACILITIES & PROGRAMS</h2>
+            <h2>OUR FACILITIES & PROGRAMS</h2>
           </div>
         </section>
 
@@ -313,9 +313,6 @@ export default function SevakNivash() {
                       <div className="facility-image">
                         <img src={f.img} alt={f.title} />
                       </div>
-                      <h3>{f.title}</h3>
-                      <p>{f.desc}</p>
-                      <div className="amount">{f.amount}</div>
                       <Link to="/donate" className="donate-btn">Donate Now</Link>
                     </div>
                     <div className="facility-content">
@@ -335,9 +332,6 @@ export default function SevakNivash() {
                       <div className="facility-image">
                         <img src={f.img} alt={f.title} />
                       </div>
-                      <h3>{f.title}</h3>
-                      <p>{f.desc}</p>
-                      <div className="amount">{f.amount}</div>
                       <Link to="/donate" className="donate-btn">Donate Now</Link>
                     </div>
                   </>

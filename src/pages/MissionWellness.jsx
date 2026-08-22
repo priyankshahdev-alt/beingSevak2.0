@@ -29,7 +29,7 @@ export default function MissionWellness() {
           box-shadow: 0 15px 40px rgba(0,0,0,0.15); position: relative; overflow: hidden; transition: 0.4s ease;
         }
         .mission-wellness .tax-box h1 { font-size: 28px; font-weight: 700; position: relative; z-index: 2; }
-        .mission-wellness .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; }
+        .mission-wellness .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; text-align: center; }
         .mission-wellness .tax-box::before {
           content: ""; position: absolute; width: 200%; height: 200%;
           background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
@@ -46,9 +46,9 @@ export default function MissionWellness() {
         .mission-wellness .hero-left { flex: 1; max-width: 520px; }
         .mission-wellness .mini-title {
           background: transparent; color: #00a3da; padding: 0; border-radius: 0;
-          display: inline-block; margin-bottom: 25px; font-weight: 800; font-size: 30px; letter-spacing: 1px;
+          display: inline-block; margin-bottom: 8px; font-weight: 800; font-size: 16px; letter-spacing: 1px;
         }
-        .mission-wellness .hero-left h1 { font-size: 62px; line-height: 1.1; font-weight: 800; color: #1c2b36; margin-bottom: 25px; }
+        .mission-wellness .hero-left h1 { font-size: 46px; line-height: 1.15; font-weight: 800; color: #1c2b36; margin-bottom: 14px; }
         .mission-wellness .hero-left h1 span { color: #00a3da; }
         .mission-wellness .hero-left p { font-size: 18px; line-height: 1.9; color: #66788a; margin-bottom: 35px; }
         .mission-wellness .hero-buttons { display: flex; gap: 20px; flex-wrap: wrap; }
@@ -76,13 +76,14 @@ export default function MissionWellness() {
           100% { transform: perspective(1000px) rotateY(-10deg) translateY(0); }
         }
         .mission-wellness .floating-card {
-          position: absolute; background: #fff; padding: 20px 24px; border-radius: 22px;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.08); z-index: 5; animation: mwFloat 3s ease-in-out infinite;
+          position: absolute; background: #fff; padding: 10px 14px; border-radius: 12px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.15); z-index: 5; animation: mwFloat 3s ease-in-out infinite;
+          text-align: center;
         }
-        .mission-wellness .floating-card h3 { color: #00a3da; font-size: 34px; margin-bottom: 5px; }
-        .mission-wellness .floating-card p { font-size: 14px; color: #6b7280; }
-        .mission-wellness .card1 { top: 35px; left: -35px; }
-        .mission-wellness .card2 { bottom: 35px; right: -35px; }
+        .mission-wellness .floating-card h3 { color: #00a3da; font-size: 22px; margin-bottom: 2px; line-height: 1.1; }
+        .mission-wellness .floating-card p { font-size: 11px; color: #6b7280; font-weight: 600; margin: 0; }
+        .mission-wellness .card1 { top: 16px; left: 16px; }
+        .mission-wellness .card2 { bottom: 16px; right: 16px; }
         @keyframes mwFloat { 0% { transform: translateY(0px); } 50% { transform: translateY(-12px); } 100% { transform: translateY(0px); } }
 
         .mission-wellness .about-section { width: 100%; padding: 60px 7%; display: flex; align-items: center; justify-content: space-between; gap: 70px; position: relative; z-index: 1; overflow: hidden; isolation: isolate; }
@@ -90,8 +91,9 @@ export default function MissionWellness() {
         .mission-wellness .about-image { position: relative; overflow: hidden; isolation: isolate; }
         .mission-wellness .about-image img { width: 100%; height: 450px; object-fit: cover; border-radius: 35px; transition: 0.5s; box-shadow: 0 18px 45px rgba(0,0,0,0.08); }
         .mission-wellness .about-image:hover img { transform: scale(1.04) rotate(-1deg); }
-        .mission-wellness .about-content span { color: #00a3da; font-size: 20px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 15px; }
-        .mission-wellness .about-content h2 { font-size: 52px; line-height: 1.15; margin-bottom: 20px; font-weight: 800; }
+        .mission-wellness .about-content span { color: #00a3da; font-size: 14px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 8px; }
+        .mission-wellness .about-content h2 { font-size: 34px; line-height: 1.12; margin-bottom: 12px; font-weight: 800; }
+        .mission-wellness .about-content h2 span { display: inline; color: #00a3da; font-size: inherit; font-weight: inherit; letter-spacing: normal; text-transform: none; margin-bottom: 0; }
         .mission-wellness .about-content p { color: #6b7280; line-height: 1.9; font-size: 16px; }
         .mission-wellness .about-grid { margin-top: 35px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
         .mission-wellness .about-box {
@@ -194,7 +196,7 @@ export default function MissionWellness() {
           .mission-wellness .hero-right { justify-content: center; }
           .mission-wellness .hero-left { text-align: center; }
           .mission-wellness .hero-buttons { justify-content: center; }
-          .mission-wellness .mini-title { font-size: 24px; }
+          .mission-wellness .mini-title { font-size: 15px; }
           .mission-wellness .hero-left h1 { font-size: 46px; }
           .mission-wellness .image-box { max-width: 100%; }
           .mission-wellness .image-box img { height: auto; aspect-ratio: 16/10; max-height: 420px; border-radius: 28px; transform: none; animation: none; }
@@ -210,7 +212,7 @@ export default function MissionWellness() {
           .mission-wellness .about-image:hover img { transform: none; }
           .mission-wellness .about-grid { grid-template-columns: 1fr; gap: 16px; }
           .mission-wellness .about-box { padding: 20px; border-radius: 20px; }
-          .mission-wellness .about-content h2 { font-size: 34px; }
+          .mission-wellness .about-content h2 { font-size: 28px; }
           .mission-wellness .mission-section { padding: 50px 5%; }
           .mission-wellness .section-title { margin-bottom: 35px; }
           .mission-wellness .section-title h2 { font-size: 34px; }
@@ -237,7 +239,7 @@ export default function MissionWellness() {
           .mission-wellness .hero-content { gap: 25px; }
           .mission-wellness .hero-left h1 { font-size: 28px; }
           .mission-wellness .hero-left p { font-size: 14px; }
-          .mission-wellness .mini-title { font-size: 18px; }
+          .mission-wellness .mini-title { font-size: 14px; }
           .mission-wellness .hero-buttons { flex-direction: column; align-items: center; }
           .mission-wellness .primary-btn { padding: 12px 24px; font-size: 15px; }
           .mission-wellness .image-box img { aspect-ratio: 4/3; max-height: 320px; border-radius: 18px; }
@@ -306,7 +308,7 @@ export default function MissionWellness() {
             </div>
             <div className="hero-right">
               <div className="image-box">
-                <img src="/images/arogya1.png" alt="Mission Aarogya" />
+                <img src="/images/pe.jpeg" alt="Mission Aarogya" />
                 <div className="floating-card card1">
                   <h3>3000+</h3>
                   <p>Lives Supported</p>
@@ -440,6 +442,7 @@ export default function MissionWellness() {
             <div className="gallery-item"><img src="/images/vision5.jpeg" alt="Gallery" /></div>
             <div className="gallery-item"><img src="/images/vision6.jpeg" alt="Gallery" /></div>
             <div className="gallery-item"><img src="/images/vision7.jpeg" alt="Gallery" /></div>
+<div className="gallery-item"><img src="/images/i.jpeg" alt="Gallery" /></div>
           </div>
         </section>
 

@@ -17,7 +17,7 @@ export default function Anndaan() {
           text-align: center; width: 100%; padding: 20px; z-index: 5;
         }
         .anndaan-page .anndaan-content h1 { font-size: 120px; color: #fff; font-weight: 900; letter-spacing: 5px; text-shadow: 0 15px 35px rgba(0,0,0,0.4); animation: adZoomfade 1.5s ease; }
-        .anndaan-page .anndaan-content p { color: #fff; font-size: 26px; margin-top: 15px; letter-spacing: 2px; text-shadow: 0 10px 25px rgba(0,0,0,0.4); }
+        .anndaan-page .anndaan-content p { color: #fff; font-size: 26px; margin-top: 15px; letter-spacing: 2px; text-shadow: 0 10px 25px rgba(0,0,0,0.4); text-align: center; }
         @keyframes adZoomfade { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: scale(1); } }
 
         .anndaan-page .sevak-food-main-wrap { width: 100%; background: #fff; }
@@ -31,8 +31,8 @@ export default function Anndaan() {
           display: inline-block; background: #00a3da15; color: #00a3da; padding: 12px 25px;
           border-radius: 50px; font-weight: 700; letter-spacing: 2px; margin-bottom: 25px;
         }
-        .anndaan-page .annaseva-hero-content h1 { font-size: 75px; line-height: 1.1; font-weight: 900; color: #111; margin-bottom: 25px; }
-        .anndaan-page .annaseva-hero-content p { font-size: 20px; line-height: 1.8; color: #555; margin-bottom: 40px; }
+        .anndaan-page .annaseva-hero-content h1 { font-size: 58px; line-height: 1.2; font-weight: 900; color: #111; margin-bottom: 25px; }
+        .anndaan-page .annaseva-hero-content p { font-size: 20px; line-height: 1.8; color: #555; margin-bottom: 40px; text-align: justify; }
         .anndaan-page .annaseva-hero-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
         .anndaan-page .annaseva-80g {
           margin: 35px auto 0; display: inline-block; text-align: center; padding: 14px 28px;
@@ -74,7 +74,7 @@ export default function Anndaan() {
         }
         .anndaan-page .kitcare-content p, .anndaan-page .rotiseva-content p, .anndaan-page .mealwave-left p,
         .anndaan-page .snackdrive-content p, .anndaan-page .nutritioncare-content p, .anndaan-page .sweetmeal-top p {
-          color: #666; line-height: 1.9; margin-bottom: 20px; font-size: 17px;
+          color: #666; line-height: 1.9; margin-bottom: 20px; font-size: 17px; text-align: justify;
         }
 
         .anndaan-page .kitcare-gallery, .anndaan-page .rotiseva-gallery, .anndaan-page .mealwave-gallery,
@@ -103,11 +103,14 @@ export default function Anndaan() {
         .anndaan-page .mealwave-highlight-box { display: flex; justify-content: center; gap: 20px; flex-wrap: nowrap; }
         .anndaan-page .mealwave-highlight-box div {
           width: 220px; min-height: 180px; padding: 35px 25px; border-radius: 25px; background: #fff;
+          border: 1px solid #e3f2fb; box-shadow: 0 15px 35px rgba(0,163,218,0.12);
           transition: all 0.3s ease; cursor: pointer; display: flex; flex-direction: column;
           justify-content: center; align-items: center;
         }
         .anndaan-page .mealwave-highlight-box div:hover { background: #00a3da; }
         .anndaan-page .mealwave-highlight-box div:hover h3, .anndaan-page .mealwave-highlight-box div:hover span { color: #fff; }
+        .anndaan-page .mealwave-highlight-box div h3 { font-size: 34px; font-weight: 900; color: #00a3da; margin-bottom: 8px; }
+        .anndaan-page .mealwave-highlight-box div span { font-size: 15px; color: #555; font-weight: 600; letter-spacing: 0.5px; }
 
         .anndaan-page .rotiseva-content ul { margin-top: 20px; }
         .anndaan-page .rotiseva-content ul li {
@@ -126,9 +129,10 @@ export default function Anndaan() {
         .anndaan-page .sweetmeal-section { padding: 20px 8% 40px; background: linear-gradient(to bottom, #f9fdff, #ffffff); }
         .anndaan-page .sweetmeal-top { text-align: center; }
 
-        .anndaan-page .nutritioncare-card-row { display: flex; gap: 20px; margin-top: 30px; flex-wrap: wrap; }
-        .anndaan-page .nutrition-mini-card { background: #fff; border-radius: 25px; padding: 30px 50px 30px 30px; min-width: 300px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); }
-        .anndaan-page .nutrition-mini-card h3 { color: #00a3da; font-size: 32px; margin-bottom: 10px; }
+        .anndaan-page .nutritioncare-card-row { display: flex; gap: 20px; margin-top: 30px; }
+        .anndaan-page .nutrition-mini-card { background: #fff; border-radius: 25px; padding: 30px; flex: 1; text-align: center; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid #e3f2fb; }
+        .anndaan-page .nutrition-mini-card h3 { color: #00a3da; font-size: 28px; margin-bottom: 10px; }
+        .anndaan-page .nutrition-mini-card p { font-size: 15px; }
 
         .anndaan-page .testimonial-section { padding: 25px 5% 25px; }
         .anndaan-page .section-header { text-align: center; margin-bottom: 0; }
@@ -143,7 +147,7 @@ export default function Anndaan() {
           box-shadow: 0 20px 40px rgba(0,0,0,0.07); transition: 0.4s; overflow: hidden; position: relative;
         }
         .anndaan-page .testimonial-card:hover { transform: translateY(-10px); }
-        .anndaan-page .testimonial-card p { line-height: 2; color: #6c7d8e; margin-bottom: 25px; }
+        .anndaan-page .testimonial-card p { line-height: 2; color: #6c7d8e; margin-bottom: 25px; text-align: justify; }
         .anndaan-page .testimonial-card h4 { color: #00a3da; }
         .anndaan-page .testimonial-card h4, .anndaan-page .testimonial-card p { position: relative; z-index: 3; transition: 0.4s ease; }
         .anndaan-page .testimonial-card:hover h4, .anndaan-page .testimonial-card:hover p { color: #fff !important; }
@@ -159,7 +163,7 @@ export default function Anndaan() {
           text-align: center; background: linear-gradient(135deg, #00a3da, #315270); color: #fff;
           margin: 20px 0; padding: 10px; position: relative; overflow: hidden; transition: 0.4s ease;
         }
-        .anndaan-page .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; }
+        .anndaan-page .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; text-align: center; }
         .anndaan-page .tax-box::before {
           content: ""; position: absolute; width: 200%; height: 200%;
           background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
@@ -173,7 +177,7 @@ export default function Anndaan() {
           .anndaan-page .anndaan-hero-banner img { height: 350px; }
           .anndaan-page .anndaan-content h1 { font-size: 60px; }
           .anndaan-page .anndaan-content p { font-size: 18px; }
-          .anndaan-page .annaseva-hero-content h1 { font-size: 48px; }
+          .anndaan-page .annaseva-hero-content h1 { font-size: 42px; }
           .anndaan-page .kitcare-wrapper, .anndaan-page .rotiseva-zone, .anndaan-page .mealwave-section,
           .anndaan-page .snackdrive-container, .anndaan-page .nutritioncare-wrap { grid-template-columns: 1fr; }
           .anndaan-page .sweetmeal-grid { grid-template-columns: 1fr 1fr; }
@@ -182,7 +186,7 @@ export default function Anndaan() {
           .anndaan-page .nutrition-mini-card { min-width: 0; }
         }
         @media (max-width: 600px) {
-          .anndaan-page .annaseva-hero-content h1 { font-size: 38px; }
+          .anndaan-page .annaseva-hero-content h1 { font-size: 30px; }
           .anndaan-page .kitcare-content h2, .anndaan-page .rotiseva-content h2, .anndaan-page .mealwave-left h2,
           .anndaan-page .snackdrive-content h2, .anndaan-page .nutritioncare-content h2, .anndaan-page .sweetmeal-top h2 { font-size: 34px; }
           .anndaan-page .sweetmeal-grid { grid-template-columns: 1fr; }
@@ -303,7 +307,7 @@ export default function Anndaan() {
           <section className="sweetmeal-section">
             <div className="sweetmeal-top">
               <span className="sweetmeal-tag">FESTIVE CARE</span>
-              <h2>Distribution of clothes and Sweets</h2>
+              <h2>Distribution of Clothes and Sweets</h2>
               <p>During festivals, celebrations, and special community events, we organize lunch and sweets distribution programs to spread happiness among children, elderly people, and families in need.</p>
               <Link to="/donate" className="kitcare-btn">Support Annapurna Mission</Link>
             </div>
@@ -328,6 +332,7 @@ export default function Anndaan() {
               <img src="/images/snack7.jpeg" alt="" />
               <img src="/images/snack8.jpeg" alt="" />
               <img src="/images/snack9.jpeg" alt="" />
+              <img src="/images/ai1.jpg" alt="" />
             </div>
           </section>
 

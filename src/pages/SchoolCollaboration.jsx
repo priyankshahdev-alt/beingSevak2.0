@@ -129,8 +129,8 @@ export default function SchoolCollaboration() {
           color: #fff;
           box-shadow: 0 15px 35px rgba(0,163,212,0.30);
         }
-        .school-bottom-box p { color: #fff; margin-bottom: 18px; font-size: 16px; line-height: 1.8; }
-        .school-bottom-box h4 { font-size: 28px; line-height: 1.5; font-weight: 700; margin-top: 10px; }
+        .school-bottom-box p { color: rgba(255,255,255,0.92); margin-bottom: 14px; font-size: 15px; line-height: 1.75; }
+        .school-bottom-box h4 { font-size: 20px; line-height: 1.55; font-weight: 700; margin-top: 0; letter-spacing: 0.2px; }
         .school-collab-right {
           display: flex;
           flex-direction: column;
@@ -188,7 +188,7 @@ export default function SchoolCollaboration() {
           .school-collab-section { padding: 80px 5%; }
           .school-collab-left h2 { font-size: 32px; }
           .school-highlight-box, .school-card, .school-bottom-box, .school-point { padding: 25px; }
-          .school-bottom-box h4 { font-size: 22px; }
+          .school-bottom-box h4 { font-size: 18px; }
         }
       `}</style>
 

@@ -29,7 +29,7 @@ const MissionAtmanirbhar = () => {
           box-shadow: 0 15px 40px rgba(0,0,0,0.15); position: relative; overflow: hidden; transition: 0.4s ease;
         }
         .mission-atmanirbhar .tax-box h1 { font-size: 28px; font-weight: 700; position: relative; z-index: 2; }
-        .mission-atmanirbhar .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; }
+        .mission-atmanirbhar .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; text-align: center; }
         .mission-atmanirbhar .tax-box::before {
           content: ""; position: absolute; width: 200%; height: 200%;
           background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
@@ -47,9 +47,9 @@ const MissionAtmanirbhar = () => {
         .mission-atmanirbhar .hero-right { flex: 1; display: flex; justify-content: center; }
         .mission-atmanirbhar .tag {
           background: transparent; color: #00a3da; padding: 0; border-radius: 0;
-          display: inline-block; margin-bottom: 25px; font-weight: 800; font-size: 30px; letter-spacing: 1px;
+          display: inline-block; margin-bottom: 12px; font-weight: 800; font-size: 24px; letter-spacing: 1px;
         }
-        .mission-atmanirbhar .hero-left h1 { font-size: 62px; line-height: 1.1; font-weight: 800; margin-bottom: 25px; }
+        .mission-atmanirbhar .hero-left h1 { font-size: 46px; line-height: 1.15; font-weight: 800; margin-bottom: 14px; }
         .mission-atmanirbhar .hero-left p { font-size: 18px; color: #6b7280; line-height: 1.9; margin-bottom: 35px; }
         .mission-atmanirbhar .hero-buttons { display: flex; gap: 15px; }
         .mission-atmanirbhar .primary-btn {

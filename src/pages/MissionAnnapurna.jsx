@@ -27,7 +27,7 @@ const MissionAnnapurna = () => {
           color: #fff; margin: 10px 0; padding: 10px; position: relative; overflow: hidden; transition: 0.4s ease;
         }
         .mission-annapurna .tax-box h1 { font-size: 28px; font-weight: 700; position: relative; z-index: 2; }
-        .mission-annapurna .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; }
+        .mission-annapurna .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; text-align: center; }
         .mission-annapurna .tax-box::before {
           content: ""; position: absolute; width: 200%; height: 200%;
           background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
@@ -41,8 +41,8 @@ const MissionAnnapurna = () => {
           gap: 0; position: relative; overflow: hidden; padding: 0 4%;
         }
         .mission-annapurna .hero-content { position: relative; z-index: 2; }
-        .mission-annapurna .tag { background: transparent; color: #00a3da; padding: 0; border-radius: 0; display: inline-block; margin-bottom: 25px; font-weight: 800; font-size: 30px; letter-spacing: 1px; }
-        .mission-annapurna .hero h1 { font-size: 62px; line-height: 1.1; font-weight: 800; margin-bottom: 25px; }
+        .mission-annapurna .tag { background: transparent; color: #00a3da; padding: 0; border-radius: 0; display: inline-block; margin-bottom: 12px; font-weight: 800; font-size: 24px; letter-spacing: 1px; }
+        .mission-annapurna .hero h1 { font-size: 46px; line-height: 1.15; font-weight: 800; margin-bottom: 14px; }
         .mission-annapurna .hero h1 span { color: #00a3da; }
         .mission-annapurna .hero p { font-size: 18px; line-height: 1.9; color: #66788a; margin-bottom: 35px; }
         .mission-annapurna .hero-buttons { display: flex; gap: 20px; }
@@ -67,13 +67,14 @@ const MissionAnnapurna = () => {
           z-index: -1; filter: blur(10px);
         }
         .mission-annapurna .floating-card {
-          position: absolute; padding: 15px 20px; background: #fff; border-radius: 12px;
-          box-shadow: 0 10px 25px rgba(0,0,0,0.15); animation: anFloatCard 3s ease-in-out infinite; z-index: 10;
+          position: absolute; padding: 8px 12px; background: #fff; border-radius: 10px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.18); animation: anFloatCard 3s ease-in-out infinite; z-index: 10;
+          text-align: center;
         }
-        .mission-annapurna .floating-card h3 { color: #00a3da; font-size: 34px; }
-        .mission-annapurna .floating-card p { font-size: 12px; font-weight: 600; color: #315270; }
-        .mission-annapurna .card1 { top: 40px; left: -60px; }
-        .mission-annapurna .card2 { bottom: 50px; right: -40px; }
+        .mission-annapurna .floating-card h3 { color: #00a3da; font-size: 22px; margin: 0; line-height: 1.1; }
+        .mission-annapurna .floating-card p { font-size: 11px; font-weight: 600; color: #315270; margin: 0; line-height: 1.3; }
+        .mission-annapurna .card1 { top: 14px; left: 14px; }
+        .mission-annapurna .card2 { bottom: 16px; right: 16px; }
         @keyframes anFloatCard { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
         .mission-annapurna .blur { position: absolute; border-radius: 50%; filter: blur(120px); }
         .mission-annapurna .blur1 { width: 350px; height: 350px; background: #00a3da33; top: 0; left: 0; }
@@ -173,7 +174,7 @@ const MissionAnnapurna = () => {
           .mission-annapurna .about-section { margin-top: 0; }
           .mission-annapurna .hero-content { order: 1; }
           .mission-annapurna .hero-image { order: 2; margin: 0 auto; }
-          .mission-annapurna .hero h1 { font-size: 42px; }
+          .mission-annapurna .hero h1 { font-size: 36px; }
           .mission-annapurna .hero p { font-size: 16px; }
           .mission-annapurna .hero-buttons { justify-content: center; }
           .mission-annapurna .hero-image img { height: 280px; max-width: 100%; transform: perspective(800px) rotateY(-5deg); }
@@ -331,8 +332,8 @@ const MissionAnnapurna = () => {
             </div>
             <div className="highlight-card">
               <div className="number">04</div>
-              <h3>Family Food-Grain Kits</h3>
-              <p>Providing essential food-grain kits in small, medium, and large sizes to support struggling families based on their needs.</p>
+              <h3>Sevak Meal Drive</h3>
+              <p>Distributing fresh and hygienic meals to needy families, laborers, senior citizens, and homeless individuals to ensure that no person sleeps hungry.</p>
             </div>
           </div>
         </section>

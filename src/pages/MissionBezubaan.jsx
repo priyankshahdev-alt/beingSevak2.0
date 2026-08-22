@@ -29,7 +29,7 @@ const MissionBezubaan = () => {
           box-shadow: 0 15px 40px rgba(0,0,0,0.15); position: relative; overflow: hidden; transition: 0.4s ease;
         }
         .mission-bezubaan .tax-box h1 { font-size: 28px; font-weight: 700; position: relative; z-index: 2; }
-        .mission-bezubaan .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; }
+        .mission-bezubaan .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; text-align: center; }
         .mission-bezubaan .tax-box::before {
           content: ""; position: absolute; width: 200%; height: 200%;
           background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
@@ -39,8 +39,8 @@ const MissionBezubaan = () => {
         @keyframes bzShine { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
         .mission-bezubaan .hero-section {
-          width: 100%; min-height: 100vh;
-          padding: 30px 7% 80px;
+          width: 100%; min-height: 92vh;
+          padding: 150px 7% 80px;
           background: radial-gradient(circle at top left, #dff6ff 0%, transparent 35%),
           radial-gradient(circle at bottom right, #d8f4ff 0%, transparent 35%),
           #ffffff;
@@ -52,11 +52,11 @@ const MissionBezubaan = () => {
         .mission-bezubaan .hero-left, .mission-bezubaan .hero-right { flex: 1; }
         .mission-bezubaan .mini-title {
           background: transparent; color: #00a3da; padding: 0; border-radius: 0;
-          display: inline-block; margin-bottom: 25px; font-weight: 800; font-size: 30px; letter-spacing: 1px;
+          display: inline-block; margin-bottom: 8px; font-weight: 800; font-size: 16px; letter-spacing: 1px;
         }
-        .mission-bezubaan .hero-left h1 { font-size: 68px; line-height: 1.08; font-weight: 800; margin-bottom: 24px; }
+        .mission-bezubaan .hero-left h1 { font-size: 42px; line-height: 1.15; font-weight: 800; margin-bottom: 14px; letter-spacing: -0.5px; }
         .mission-bezubaan .hero-left h1 span { color: #00a3da; }
-        .mission-bezubaan .hero-left p { font-size: 18px; line-height: 1.9; color: #6b7280; max-width: 620px; margin-bottom: 35px; }
+        .mission-bezubaan .hero-left p { font-size: 15px; line-height: 1.7; color: #6b7280; max-width: 540px; margin-bottom: 28px; }
         .mission-bezubaan .hero-buttons { display: flex; gap: 18px; flex-wrap: wrap; }
         .mission-bezubaan .primary-btn {
           text-decoration: none; padding: 16px 34px; border-radius: 50px; font-weight: 700;
@@ -71,7 +71,7 @@ const MissionBezubaan = () => {
           width: 100%; max-width: 560px; margin: auto; position: relative;
         }
         .mission-bezubaan .image-box img {
-          width: 100%; height: 680px; object-fit: cover; border-radius: 40px;
+          width: 100%; height: 520px; object-fit: cover; border-radius: 40px;
           transition: 0.6s ease; transform: perspective(1000px) rotateY(-10deg);
           box-shadow: 0 30px 60px rgba(0,0,0,0.18); animation: bzFloatImage 4s ease-in-out infinite;
         }
@@ -101,7 +101,7 @@ const MissionBezubaan = () => {
           transition: 0.5s; box-shadow: 0 18px 45px rgba(0,0,0,0.08);
         }
         .mission-bezubaan .about-image:hover img { transform: scale(1.04) rotate(-1deg); }
-        .mission-bezubaan .about-content h2 { font-size: 52px; line-height: 1.15; margin-bottom: 20px; font-weight: 800; }
+        .mission-bezubaan .about-content h2 { font-size: 34px; line-height: 1.12; margin-bottom: 12px; font-weight: 800; }
         .mission-bezubaan .about-content h2 span { color: #00a3da; }
         .mission-bezubaan .about-content p { color: #6b7280; line-height: 1.9; font-size: 16px; }
         .mission-bezubaan .about-grid {
@@ -117,8 +117,8 @@ const MissionBezubaan = () => {
 
         .mission-bezubaan .mission-section { width: 100%; padding: 0px 7%; background: #f8fbfd; }
         .mission-bezubaan .section-title { text-align: center; margin-bottom: 60px; }
-        .mission-bezubaan .section-title h2 { font-size: 52px; line-height: 1.15; margin-bottom: 20px; font-weight: 800; }
-        .mission-bezubaan .section-title span { color: #00a3da; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 15px; }
+        .mission-bezubaan .section-title h2 { font-size: 34px; line-height: 1.12; margin-bottom: 12px; font-weight: 800; }
+        .mission-bezubaan .section-title span { color: #00a3da; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 8px; }
         .mission-bezubaan .mission-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
         .mission-bezubaan .mission-card {
           background: #fff; padding: 40px 30px; border-radius: 30px; transition: 0.4s;
@@ -150,8 +150,8 @@ const MissionBezubaan = () => {
           transition: 0.5s; box-shadow: 0 18px 45px rgba(0,0,0,0.08);
         }
         .mission-bezubaan .impact-image:hover img { transform: scale(1.04); }
-        .mission-bezubaan .impact-content h2 { font-size: 52px; line-height: 1.15; margin-bottom: 20px; font-weight: 800; }
-        .mission-bezubaan .impact-content span { color: #00a3da; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 15px; }
+        .mission-bezubaan .impact-content h2 { font-size: 36px; line-height: 1.12; margin-bottom: 10px; font-weight: 800; }
+        .mission-bezubaan .impact-content span { color: #00a3da; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 8px; }
         .mission-bezubaan .impact-content p { color: #6b7280; line-height: 1.8; font-size: 16px; }
         .mission-bezubaan .impact-stats { display: flex; gap: 22px; margin-top: 35px; flex-wrap: wrap; }
         .mission-bezubaan .impact-stats div {
@@ -165,8 +165,8 @@ const MissionBezubaan = () => {
 
         .mission-bezubaan .gallery-section { width: 100%; padding: 10px 7%; background: #f8fbfd; }
         .mission-bezubaan .gallery-title { text-align: center; margin-bottom: 60px; }
-        .mission-bezubaan .gallery-title span { color: #00a3da; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 15px; }
-        .mission-bezubaan .gallery-title h2 { font-size: 52px; line-height: 1.15; margin-bottom: 20px; font-weight: 800; }
+        .mission-bezubaan .gallery-title span { color: #00a3da; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 8px; }
+        .mission-bezubaan .gallery-title h2 { font-size: 34px; line-height: 1.12; margin-bottom: 12px; font-weight: 800; }
         .mission-bezubaan .gallery-grid {
           max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px;
         }
@@ -191,11 +191,11 @@ const MissionBezubaan = () => {
         .mission-bezubaan .pawzen-gallery-row img:hover { transform: translateY(-5px); }
         .mission-bezubaan .pawzen-content-side { flex: 1; min-width: 320px; }
         .mission-bezubaan .pawzen-mini-title {
-          display: inline-block; padding: 10px 18px; background: #e8f0ff; color: #00a3da;
-          border-radius: 50px; font-size: 14px; font-weight: 600; margin-bottom: 20px;
+          display: inline-block; padding: 7px 16px; background: #e8f0ff; color: #00a3da;
+          border-radius: 50px; font-size: 14px; font-weight: 600; margin-bottom: 10px;
         }
         .mission-bezubaan .pawzen-content-side h2 {
-          font-size: 56px; line-height: 1.1; color: #00a3da; margin-bottom: 25px; font-weight: 800;
+          font-size: 34px; line-height: 1.12; color: #00a3da; margin-bottom: 12px; font-weight: 800;
         }
         .mission-bezubaan .pawzen-content-side p { font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 18px; }
         .mission-bezubaan .pawzen-feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 35px; }
@@ -252,9 +252,9 @@ const MissionBezubaan = () => {
           .mission-bezubaan .hero-content, .mission-bezubaan .about-section, .mission-bezubaan .impact-wrapper, .mission-bezubaan .pawzen-container { flex-direction: column; text-align: center; }
           .mission-bezubaan .hero-left, .mission-bezubaan .about-content, .mission-bezubaan .impact-content, .mission-bezubaan .pawzen-content-side { max-width: 100%; }
           .mission-bezubaan .hero-buttons { justify-content: center; }
-          .mission-bezubaan .hero-left h1 { font-size: 46px; }
-          .mission-bezubaan .mini-title { font-size: 24px; }
-          .mission-bezubaan .about-content h2, .mission-bezubaan .section-title h2, .mission-bezubaan .impact-content h2, .mission-bezubaan .gallery-title h2, .mission-bezubaan .pawzen-content-side h2 { font-size: 36px; }
+          .mission-bezubaan .hero-left h1 { font-size: 32px; }
+          .mission-bezubaan .mini-title { font-size: 15px; }
+          .mission-bezubaan .about-content h2, .mission-bezubaan .section-title h2, .mission-bezubaan .impact-content h2, .mission-bezubaan .gallery-title h2, .mission-bezubaan .pawzen-content-side h2 { font-size: 26px; }
           .mission-bezubaan .about-grid { grid-template-columns: 1fr; }
           .mission-bezubaan .impact-stats { justify-content: center; }
           .mission-bezubaan .mission-cards { grid-template-columns: 1fr; }
@@ -273,7 +273,7 @@ const MissionBezubaan = () => {
         @media (max-width: 600px) {
           .mission-bezubaan .hero-section { padding: 30px 5% 40px; min-height: auto; }
           .mission-bezubaan .hero-content { gap: 30px; }
-          .mission-bezubaan .hero-left h1 { font-size: 34px; }
+          .mission-bezubaan .hero-left h1 { font-size: 30px; }
           .mission-bezubaan .hero-left p { font-size: 15px; max-width: 100%; }
           .mission-bezubaan .hero-buttons { flex-direction: column; align-items: center; }
           .mission-bezubaan .primary-btn { padding: 12px 24px; font-size: 15px; }
@@ -287,7 +287,7 @@ const MissionBezubaan = () => {
           .mission-bezubaan .floating-card { padding: 5px 8px; }
           .mission-bezubaan .floating-card h3 { font-size: 14px; line-height: 1.1; }
           .mission-bezubaan .floating-card p { font-size: 10px; margin: 0; }
-          .mission-bezubaan .about-content h2, .mission-bezubaan .section-title h2, .mission-bezubaan .impact-content h2, .mission-bezubaan .gallery-title h2, .mission-bezubaan .pawzen-content-side h2 { font-size: 28px; }
+          .mission-bezubaan .about-content h2, .mission-bezubaan .section-title h2, .mission-bezubaan .impact-content h2, .mission-bezubaan .gallery-title h2, .mission-bezubaan .pawzen-content-side h2 { font-size: 26px; }
           .mission-bezubaan .mission-section { padding: 40px 5%; }
           .mission-bezubaan .mission-cards { gap: 18px; }
           .mission-bezubaan .mission-card { padding: 25px 20px; border-radius: 22px; }
@@ -296,7 +296,7 @@ const MissionBezubaan = () => {
           .mission-bezubaan .pawzen-main-image { height: 260px; }
           .mission-bezubaan .pawzen-gallery-row { grid-template-columns: 1fr 1fr; gap: 10px; }
           .mission-bezubaan .pawzen-gallery-row img { height: 100px; }
-          .mission-bezubaan .pawzen-content-side h2 { font-size: 34px; }
+          .mission-bezubaan .pawzen-content-side h2 { font-size: 26px; }
           .mission-bezubaan .pawzen-content-side p { font-size: 15px; }
           .mission-bezubaan .gallery-grid { grid-template-columns: 1fr; gap: 12px; }
           .mission-bezubaan .gallery-card { height: 220px; border-radius: 20px; }

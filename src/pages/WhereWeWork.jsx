@@ -190,29 +190,25 @@ const WhereWeWork = () => {
         body{font-family:'Open Sans',sans-serif;color:var(--text-dark);scroll-behavior:smooth}
         .tax-box{width:100%;height:70px;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#009BD4 0%,#0285C3 25%,#046FB1 50%,#074D97 75%,#083D8B 100%);color:#fff;border-radius:0;margin:20px 0;padding:10px}
         .tax-box h1{font-family:'Montserrat',sans-serif;font-size:28px;font-weight:800;letter-spacing:2px;color:#fff;margin:0}
-        .hero{min-height:80vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0;position:relative;overflow:hidden;padding:10px 8%}
-        .hero-content{position:relative;z-index:2;overflow:visible;display:flex;flex-direction:column;align-items:flex-start;text-align:left}
-        .hero-content .tag{background:transparent;color:#00a3da;padding:0;border-radius:0;display:inline-block;margin-bottom:25px;font-weight:800;font-size:30px;letter-spacing:1px}
-        .hero h1{font-size:62px;line-height:1.1;margin-bottom:25px;color:var(--navy)}
-        .hero h1 span{color:#00a3da}
-        .hero p{font-size:18px;line-height:1.9;color:#66788a;margin-bottom:35px}
-        .hero-buttons{display:flex;gap:18px;flex-wrap:wrap}
-        .hero-buttons .donate-btn{display:inline-block;padding:15px 36px;background:#00a3da;color:#fff;text-decoration:none;border-radius:6px;font-weight:700;transition:0.4s;box-shadow:0 10px 25px rgba(11,77,120,0.25)}
+        .hero{position:relative;min-height:72vh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:100px 8%}
+        .hero-bg-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
+        .hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(8,25,60,0.45),rgba(8,25,60,0.65));z-index:1}
+        .hero-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center}
+        .hero-content .tag{background:rgba(255,255,255,0.15);color:#fff;padding:10px 26px;border-radius:50px;display:inline-block;margin-bottom:22px;font-weight:800;font-size:20px;letter-spacing:1px;text-shadow:0 2px 10px rgba(0,0,0,0.35)}
+        .hero h1{font-size:62px;line-height:1.1;margin-bottom:25px;color:#fff;text-shadow:0 10px 30px rgba(0,0,0,0.4)}
+        .hero h1 span{color:#7fdcff}
+        .hero p{font-size:18px;line-height:1.9;color:#e6eefc;margin-bottom:35px;max-width:720px}
+        .hero-buttons{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+        .hero-buttons .donate-btn{display:inline-block;padding:15px 36px;background:#00a3da;color:#fff;text-decoration:none;border-radius:6px;font-weight:700;transition:0.4s;box-shadow:0 10px 25px rgba(11,77,120,0.45)}
         .hero-buttons .donate-btn:hover{background:#007d94;transform:translateY(-1px)}
-        .hero-image{position:relative;z-index:2;display:flex;justify-content:center;align-items:center}
-        .hero-image img{width:100%;max-width:650px;border-radius:30px;box-shadow:0 25px 50px rgba(0,0,0,0.15);transition:0.5s ease}
-        .hero-image img:hover{transform:scale(1.02)}
-        .floating-card{position:absolute;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);padding:14px 20px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.15);text-align:center;z-index:3;animation:floatCard 3s ease-in-out infinite alternate}
-        .floating-card.card1{top:20px;left:20px}
-        .floating-card.card2{bottom:20px;right:20px;animation-delay:2s}
-        .floating-card h3{font-size:22px;font-weight:800;color:#00a3da}
-        .floating-card p{font-size:12px;color:#555;margin:0}
+        .floating-card{position:absolute;min-width:180px;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);padding:20px 24px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.3);text-align:center;z-index:3;animation:floatCard 3s ease-in-out infinite alternate;display:flex;flex-direction:column;align-items:center;justify-content:center}
+        .floating-card.card1{top:14%;left:4%}
+        .floating-card.card2{bottom:14%;right:4%;animation-delay:2s}
+        .floating-card h3{font-size:28px;font-weight:800;color:#00a3da;margin-bottom:4px}
+        .floating-card p{font-size:14px;font-weight:600;color:#333;margin:0}
         @keyframes floatCard{0%{transform:translateY(0);}100%{transform:translateY(-15px);}}
-        .blur{position:absolute;width:500px;height:500px;border-radius:50%;filter:blur(120px);opacity:0.15;z-index:0;pointer-events:none}
-        .blur1{background:#00a3da;top:-100px;left:-100px}
-        .blur2{background:#315270;bottom:-100px;right:-100px}
-        @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center;gap:50px}.hero-content{align-items:center;text-align:center}.hero h1{font-size:42px}.hero p{font-size:16px}.hero-buttons{justify-content:center}.hero-image img{max-width:90%}.floating-card.card1{top:10px;left:10px}.floating-card.card2{bottom:10px;right:10px}}
-        @media(max-width:550px){.hero h1{font-size:32px}.hero p{font-size:14px}.floating-card{padding:10px 14px;border-radius:10px}.floating-card h3{font-size:18px}.floating-card p{font-size:10px}.floating-card.card1{top:8px;left:8px}.floating-card.card2{bottom:8px;right:8px}}
+        @media(max-width:900px){.hero{min-height:auto;padding:100px 6% 70px}.hero h1{font-size:42px}.hero p{font-size:16px}.floating-card.card1{top:12px;left:12px}.floating-card.card2{bottom:12px;right:12px}}
+        @media(max-width:550px){.hero{padding:90px 5% 60px}.hero-content .tag{font-size:14px;padding:8px 18px}.hero h1{font-size:32px}.hero p{font-size:14px}.floating-card{min-width:130px;padding:14px 16px;border-radius:12px}.floating-card h3{font-size:20px}.floating-card p{font-size:11px}.floating-card.card1{top:10px;left:10px}.floating-card.card2{bottom:10px;right:10px}}
         .www-section{width:100%;background:#ffffff;padding:80px 6%;position:relative;overflow:hidden}
         .www-container{max-width:1300px;margin:0 auto}
         .www-header{text-align:center;margin-bottom:50px}
@@ -316,18 +312,16 @@ const WhereWeWork = () => {
       <section className="tax-box"><h1>Where We Work</h1></section>
 
       <section className="hero" id="home">
+        <img className="hero-bg-img" src="/images/Where We Work1.jpeg" alt="Where We Work" />
+        <div className="hero-overlay"></div>
         <div className="hero-content">
           <span className="tag">BEING SEVAK CHARITABLE TRUST</span>
           <h1>Where We <span>Work</span></h1>
           <p>Actively working across multiple states in India through initiatives focused on education, nourishment, healthcare, empowerment and social welfare.</p>
           <div className="hero-buttons"><a href="#locations" className="donate-btn">Explore Locations</a></div>
-          <div className="blur blur1"></div><div className="blur blur2"></div>
         </div>
-        <div className="hero-image">
-          <div className="floating-card card1"><h3>12</h3><p>States</p></div>
-          <div className="floating-card card2"><h3>5,000+</h3><p>Volunteers Connected</p></div>
-          <img src="/images/Where We Work1.jpeg" alt="Where We Work" />
-        </div>
+        <div className="floating-card card1"><h3>12</h3><p>States</p></div>
+        <div className="floating-card card2"><h3>5,000+</h3><p>Volunteers Connected</p></div>
       </section>
 
       <section className="www-section">

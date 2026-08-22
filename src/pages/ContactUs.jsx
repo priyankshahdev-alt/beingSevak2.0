@@ -235,7 +235,6 @@ const ContactUs = () => {
                 <div className="icon-box"><i className="fas fa-university"></i></div>
                 <div>
                   <h4>Bank Details 1</h4>
-                  <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>Name: Being Sevak Charitable Trust</p>
                   <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>Bank: Axis Bank, Kandivali (West), Mumbai</p>
                   <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>A/C No: 920010066029137</p>
                   <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>IFSC: UTIB0000201</p>
@@ -245,7 +244,6 @@ const ContactUs = () => {
                 <div className="icon-box"><i className="fas fa-university"></i></div>
                 <div>
                   <h4>Bank Details 2</h4>
-                  <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>Name: Being Sevak Charitable Trust</p>
                   <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>Bank: Saraswat Bank, Kandivali (West), Mumbai</p>
                   <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>A/C No: 130200100119387</p>
                   <p style={{fontSize:'0.8rem',color:'var(--text-mid)',lineHeight:1.6,margin:0}}>IFSC: SRCB0000130</p>

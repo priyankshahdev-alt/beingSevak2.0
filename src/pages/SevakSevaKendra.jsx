@@ -14,7 +14,7 @@ export default function SevakSevaKendra() {
           color: #fff; margin: 10px 0; padding: 10px; position: relative; overflow: hidden; transition: 0.4s ease;
         }
         .sevak-seva-kendra .tax-box h1 { font-size: 28px; font-weight: 700; position: relative; z-index: 2; }
-        .sevak-seva-kendra .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; }
+        .sevak-seva-kendra .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; text-align: center; }
         .sevak-seva-kendra .tax-box::before {
           content: ""; position: absolute; width: 200%; height: 200%;
           background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
@@ -24,17 +24,17 @@ export default function SevakSevaKendra() {
         @keyframes sskShine { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
         .sevak-seva-kendra .hero-section {
-          width: 100%; min-height: 100vh; display: flex; align-items: center; justify-content: center;
-          gap: 40px; padding: 50px 5%; overflow: hidden;
+          width: 100%; min-height: auto; display: flex; align-items: center; justify-content: center;
+          gap: 40px; padding: 70px 5%; overflow: hidden;
           background: radial-gradient(circle at top left, #dff6ff 0%, transparent 35%),
           radial-gradient(circle at bottom right, #c7ecff 0%, transparent 35%),
           linear-gradient(135deg, #ffffff, #eef8ff);
         }
         .sevak-seva-kendra .hero-left { flex: 1; max-width: 520px; }
-        .sevak-seva-kendra .tag { color: #00a3da; display: inline-block; margin-bottom: 25px; font-weight: 800; font-size: 30px; letter-spacing: 1px; background: none; }
-        .sevak-seva-kendra .hero-left h1 { font-size: 62px; line-height: 1.1; font-weight: 800; margin-bottom: 22px; color: #1c2b36; }
+        .sevak-seva-kendra .tag { color: #00a3da; display: inline-block; margin-bottom: 8px; font-weight: 800; font-size: 16px; letter-spacing: 1px; background: none; }
+        .sevak-seva-kendra .hero-left h1 { font-size: 38px; line-height: 1.08; font-weight: 800; margin-bottom: 10px; color: #1c2b36; letter-spacing: -0.5px; }
         .sevak-seva-kendra .hero-left h1 span { color: #00a3da; }
-        .sevak-seva-kendra .hero-left p { font-size: 18px; line-height: 1.9; color: #51606d; margin-bottom: 30px; }
+        .sevak-seva-kendra .hero-left p { font-size: 15px; line-height: 1.65; color: #51606d; max-width: 480px; margin-bottom: 26px; }
         .sevak-seva-kendra .hero-buttons { display: flex; gap: 15px; flex-wrap: wrap; }
         .sevak-seva-kendra .primary-btn {
           text-decoration: none; padding: 14px 26px; border-radius: 50px; font-size: 18px; font-weight: 700;
@@ -104,8 +104,9 @@ export default function SevakSevaKendra() {
         .sevak-seva-kendra .section-heading h2 { font-size: 40px; margin-top: 10px; }
         .sevak-seva-kendra .impact-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
         .sevak-seva-kendra .impact-card {
-          background: #fff; padding: 28px 18px; text-align: center; border-radius: 24px;
+          background: #fff; padding: 24px 16px; border-radius: 24px;
           box-shadow: 0 10px 30px rgba(0,0,0,0.06); transition: 0.3s ease; position: relative; overflow: hidden; cursor: pointer;
+          display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 120px;
         }
         .sevak-seva-kendra .impact-card::before {
           content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 0%;
@@ -113,6 +114,8 @@ export default function SevakSevaKendra() {
         }
         .sevak-seva-kendra .impact-card:hover::before { height: 100%; }
         .sevak-seva-kendra .impact-card h3, .sevak-seva-kendra .impact-card p { position: relative; z-index: 2; transition: 0.3s ease; }
+        .sevak-seva-kendra .impact-card h3 { font-size: 26px; color: #00a3da; font-weight: 800; margin-bottom: 4px; line-height: 1.2; }
+        .sevak-seva-kendra .impact-card p { font-size: 13px; color: #666; line-height: 1.4; }
         .sevak-seva-kendra .impact-card:hover h3, .sevak-seva-kendra .impact-card:hover p { color: #fff; }
 
         .sevak-seva-kendra .techvision-wrap { width: 100%; padding: 70px 7%; background: #fff; overflow: hidden; }
@@ -193,7 +196,7 @@ export default function SevakSevaKendra() {
           .sevak-seva-kendra .hero-section, .sevak-seva-kendra .about-section { flex-direction: column; text-align: center; }
           .sevak-seva-kendra .hero-left, .sevak-seva-kendra .about-content { max-width: 100%; }
           .sevak-seva-kendra .hero-buttons { justify-content: center; }
-          .sevak-seva-kendra .hero-left h1 { font-size: 46px; }
+          .sevak-seva-kendra .hero-left h1 { font-size: 32px; }
           .sevak-seva-kendra .about-content h2, .sevak-seva-kendra .section-heading h2, .sevak-seva-kendra .techvision-content-side h3 { font-size: 34px; }
           .sevak-seva-kendra .impact-grid { grid-template-columns: repeat(2,1fr); }
           .sevak-seva-kendra .feature-boxes { flex-direction: column; }
@@ -204,7 +207,7 @@ export default function SevakSevaKendra() {
           .sevak-seva-kendra .testimonial-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 600px) {
-          .sevak-seva-kendra .hero-left h1 { font-size: 38px; }
+          .sevak-seva-kendra .hero-left h1 { font-size: 30px; }
           .sevak-seva-kendra .hero-buttons { flex-direction: column; }
           .sevak-seva-kendra .hero-right { min-height: auto; padding-bottom: 40px; }
           .sevak-seva-kendra .main-image-card { max-width: 100%; }
@@ -226,10 +229,7 @@ export default function SevakSevaKendra() {
         <section className="hero-section">
           <div className="hero-left">
             <span className="tag">Sevak Seva Kendra</span>
-            <h1>
-              Building A Better <span>Community</span><br />
-              Through Care & Development
-            </h1>
+            <h1>Building A Better <span>Community</span><br />Through Care &amp; Development</h1>
             <p>
               Sevak Niwas Kendra by Being Sevak Charitable Trust provides education,
               digital learning, healthcare, women empowerment and skill development
@@ -241,7 +241,7 @@ export default function SevakSevaKendra() {
           </div>
           <div className="hero-right">
             <div className="main-image-card">
-              <img src="/images/sevak1.jpeg" alt="Sevak Niwas Kendra" />
+              <img src="/images/ro.jpeg" alt="Sevak Niwas Kendra" />
               <div className="floating-card card1">
                 <h3>5000+</h3>
                 <p>Lives Empowered</p>
@@ -297,7 +297,7 @@ export default function SevakSevaKendra() {
           <div className="techvision-container">
             <div className="techvision-image-side">
               <div className="techvision-image-box">
-                <img src="/images/ai2.jpg" alt="AI Digital Centre" />
+                <img src="/images/ui.jpeg" alt="AI Digital Centre" />
               </div>
             </div>
             <div className="techvision-content-side">
@@ -353,7 +353,7 @@ export default function SevakSevaKendra() {
             </div>
           </div>
           <div className="about-image">
-            <img src="/images/physio.jpeg" alt="Physiotherapy" />
+            <img src="/images/y1.jpeg" alt="Physiotherapy" />
           </div>
         </section>
 
@@ -374,7 +374,7 @@ export default function SevakSevaKendra() {
           <div className="techvision-container">
             <div className="techvision-image-side">
               <div className="techvision-image-box">
-                <img src="/images/rasoi.jpeg" alt="Rasoi Ghar" />
+                <img src="/images/r1.jpeg" alt="Rasoi Ghar" />
               </div>
             </div>
             <div className="techvision-content-side">

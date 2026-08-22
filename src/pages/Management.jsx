@@ -129,6 +129,8 @@ const Management = () => {
           <div className="team-member"><img src="/images/vaishalisawant.jpeg" alt="Vaishali Sawant" className="team-member-img"/><div className="team-member-name">Vaishali Sawant</div><div className="team-member-role">Core Team Member</div><div className="team-member-divider"></div></div>
           <div className="team-member"><img src="/images/SakshiSingh.jpeg" alt="Sakshi Singh" className="team-member-img"/><div className="team-member-name">Sakshi Singh</div><div className="team-member-role">Core Team Member</div><div className="team-member-divider"></div></div>
           <div className="team-member"><img src="/images/jatinnirmal.PNG" alt="Jatin Nirmal" className="team-member-img"/><div className="team-member-name">Jatin Nirmal</div><div className="team-member-role">Core Team Member</div><div className="team-member-divider"></div></div>
+          <div className="team-member"><img src="/images/v1.jpeg" alt="Mahima Redkar" className="team-member-img"/><div className="team-member-name">Mahima Redkar</div><div className="team-member-role">Core Team Member</div><div className="team-member-divider"></div></div>
+          <div className="team-member"><img src="/images/v2.jpeg" alt="Kanchan Gupta" className="team-member-img" style={{objectPosition:'center 15%'}}/><div className="team-member-name">Kanchan Gupta</div><div className="team-member-role">Core Team Member</div><div className="team-member-divider"></div></div>
         </div>
       </section>
 
