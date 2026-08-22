@@ -95,6 +95,9 @@ const Press = () => {
         .press-empty{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--text-mid);}
         .press-empty i{font-size:48px;color:#ddd;margin-bottom:16px;display:block;}
         .press-empty p{font-size:18px;}
+        .upcoming-card{background:linear-gradient(135deg,#f2faff,#e6f5ff);border:2px dashed rgba(0,162,217,0.45);}
+        .upcoming-icon{width:70px;height:70px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--cyan);box-shadow:0 8px 25px rgba(0,163,218,0.18);}
+        .upcoming-badge{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:#fff;background:var(--cyan);padding:7px 18px;border-radius:22px;letter-spacing:0.6px;text-transform:uppercase;}
         @media(max-width:1024px){.press-grid{grid-template-columns:repeat(auto-fill, minmax(310px, 1fr));gap:24px;}}
         @media(max-width:768px){.press-section{padding:20px 24px 50px;}.press-header{flex-direction:column;align-items:stretch;}.press-search input{width:100%;}.press-grid{grid-template-columns:1fr;gap:22px;}.press-card-img-wrap{height:140px;padding:12px;}.press-card-body{padding:16px 18px 18px;}.press-card-title{font-size:17px;}}
         @media(max-width:550px){.press-section{padding:20px 16px 40px;}.press-card-img-wrap{height:120px;padding:10px;}.press-card-body{padding:14px 16px 16px;}.press-card-title{font-size:16px;}}
@@ -175,6 +178,18 @@ const Press = () => {
               </div>
             ))
           )}
+          <div className="press-card upcoming-card">
+            <div className="press-card-img-wrap">
+              <div className="upcoming-icon"><i className="fas fa-bullhorn"></i></div>
+            </div>
+            <div className="press-card-body">
+              <h3 className="press-card-title">Upcoming Coverage</h3>
+              <p className="press-card-desc">New press releases and media features are on the way. Stay tuned for updates!</p>
+              <div className="press-card-footer">
+                <span className="upcoming-badge"><i className="far fa-clock"></i> Upcoming</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

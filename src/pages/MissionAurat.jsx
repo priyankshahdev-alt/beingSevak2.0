@@ -27,7 +27,7 @@ const MissionAurat = () => {
           color: #fff; margin: 10px 0; padding: 10px; position: relative; overflow: hidden; transition: 0.4s ease;
         }
         .mission-aurat .tax-box h1 { font-size: 28px; font-weight: 700; position: relative; z-index: 2; }
-        .mission-aurat .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; }
+        .mission-aurat .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; text-align: center; }
         .mission-aurat .tax-box::before {
           content: ""; position: absolute; width: 200%; height: 200%;
           background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
@@ -39,8 +39,8 @@ const MissionAurat = () => {
         .mission-aurat .hero { width: 100%; padding: 7px 20px 40px; background: #fff; }
         .mission-aurat .hero-content { max-width: 1200px; margin: auto; min-height: 85vh; display: flex; align-items: center; justify-content: space-between; gap: 60px; }
         .mission-aurat .hero-left, .mission-aurat .hero-right { flex: 1; }
-        .mission-aurat .mini-title { background: transparent; color: #00a3da; padding: 0; border-radius: 0; display: inline-block; margin-bottom: 25px; font-weight: 800; font-size: 30px; letter-spacing: 1px; }
-        .mission-aurat .hero-left h1 { font-size: 62px; line-height: 1.1; margin-bottom: 25px; font-weight: 800; }
+        .mission-aurat .mini-title { background: transparent; color: #00a3da; padding: 0; border-radius: 0; display: inline-block; margin-bottom: 12px; font-weight: 800; font-size: 24px; letter-spacing: 1px; }
+        .mission-aurat .hero-left h1 { font-size: 40px; line-height: 1.08; margin-bottom: 10px; font-weight: 800; letter-spacing: -0.5px; }
         .mission-aurat .hero-left h1 span { color: #00a3da; }
         .mission-aurat .hero-left p { font-size: 18px; line-height: 1.9; color: #4b5563; margin-bottom: 35px; max-width: 600px; }
         .mission-aurat .hero-buttons { display: flex; gap: 18px; flex-wrap: wrap; }
@@ -77,10 +77,10 @@ const MissionAurat = () => {
         .mission-aurat .about-image img:hover { transform: scale(1.03); }
         .mission-aurat .about-content { flex: 1; }
         .mission-aurat .about-content span {
-          display: inline-block; background: #e8f9ff; color: #00a3da; padding: 8px 18px;
-          border-radius: 50px; font-size: x-large; font-weight: 700; letter-spacing: 1px; margin-bottom: 18px;
+          display: inline-block; background: #e8f9ff; color: #00a3da; padding: 7px 16px;
+          border-radius: 50px; font-size: 15px; font-weight: 700; letter-spacing: 1px; margin-bottom: 10px;
         }
-        .mission-aurat .about-content h2 { font-size: 42px; line-height: 1.2; color: #111827; margin-bottom: 18px; font-weight: 800; }
+        .mission-aurat .about-content h2 { font-size: 34px; line-height: 1.15; color: #111827; margin-bottom: 12px; font-weight: 800; }
         .mission-aurat .about-content p { font-size: 15px; line-height: 1.9; color: #6b7280; margin-bottom: 30px; }
         .mission-aurat .about-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
         .mission-aurat .about-box { background: #f8fbfd; padding: 22px; border-radius: 22px; transition: 0.3s; border: 1px solid #edf2f7; }
@@ -109,16 +109,16 @@ const MissionAurat = () => {
         .mission-aurat .impact-wrapper { width: 100%; max-width: 1400px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 70px; }
         .mission-aurat .impact-content { flex: 1; max-width: 550px; }
         .mission-aurat .impact-content span {
-          display: inline-block; background: #e8f9ff; color: #00a3da; padding: 8px 18px;
-          border-radius: 50px; font-size: x-large; font-weight: 700; letter-spacing: 1px; margin-bottom: 20px;
+          display: inline-block; background: #e8f9ff; color: #00a3da; padding: 7px 16px;
+          border-radius: 50px; font-size: 15px; font-weight: 700; letter-spacing: 1px; margin-bottom: 10px;
         }
-        .mission-aurat .impact-content h2 { font-size: 50px; line-height: 1.2; color: #111827; margin-bottom: 20px; font-weight: 800; }
-        .mission-aurat .impact-content p { font-size: 16px; line-height: 1.9; color: #6b7280; }
-        .mission-aurat .impact-stats { display: flex; gap: 22px; margin-top: 35px; flex-wrap: wrap; }
-        .mission-aurat .impact-stats div { background: #ffffff; padding: 22px 26px; border-radius: 22px; min-width: 150px; text-align: center; box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: 0.3s; }
+        .mission-aurat .impact-content h2 { font-size: 36px; line-height: 1.15; color: #111827; margin-bottom: 10px; font-weight: 800; }
+        .mission-aurat .impact-content p { font-size: 15px; line-height: 1.7; color: #6b7280; }
+        .mission-aurat .impact-stats { display: flex; gap: 16px; margin-top: 20px; flex-wrap: wrap; }
+        .mission-aurat .impact-stats div { background: #ffffff; padding: 14px 18px; border-radius: 14px; min-width: 120px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.06); transition: 0.3s; }
         .mission-aurat .impact-stats div:hover { transform: translateY(-5px); }
-        .mission-aurat .impact-stats h3 { font-size: 34px; color: #00a3da; margin-bottom: 8px; font-weight: 800; }
-        .mission-aurat .impact-stats p { font-size: 14px; color: #6b7280; line-height: 1.5; }
+        .mission-aurat .impact-stats h3 { font-size: 24px; color: #00a3da; margin-bottom: 2px; font-weight: 800; line-height: 1.2; }
+        .mission-aurat .impact-stats p { font-size: 12px; color: #6b7280; line-height: 1.3; margin: 0; }
         .mission-aurat .impact-image { flex: 1; display: flex; justify-content: center; }
         .mission-aurat .impact-image img { width: 100%; max-width: 560px; height: 600px; object-fit: cover; border-radius: 35px; box-shadow: 0 12px 35px rgba(0,0,0,0.08); }
 

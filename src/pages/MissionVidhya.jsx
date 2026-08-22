@@ -27,7 +27,7 @@ const MissionVidhya = () => {
           color: #fff; margin: 10px 0; padding: 10px; position: relative; overflow: hidden; transition: 0.4s ease;
         }
         .mission-vidhya .tax-box h1 { font-size: 28px; font-weight: 700; position: relative; z-index: 2; }
-        .mission-vidhya .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; }
+        .mission-vidhya .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; text-align: center; }
         .mission-vidhya .tax-box::before {
           content: ""; position: absolute; width: 200%; height: 200%;
           background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
@@ -44,8 +44,8 @@ const MissionVidhya = () => {
           linear-gradient(135deg, #ffffff, #eef8ff);
         }
         .mission-vidhya .hero-left { flex: 1; max-width: 520px; }
-        .mission-vidhya .tag { color: #00a3da; display: inline-block; margin-bottom: 25px; font-weight: 800; font-size: 30px; letter-spacing: 1px; background: none; }
-        .mission-vidhya .hero-left h1 { font-size: 62px; line-height: 1.1; font-weight: 800; margin-bottom: 22px; color: #1c2b36; }
+        .mission-vidhya .tag { color: #00a3da; display: inline-block; margin-bottom: 12px; font-weight: 800; font-size: 24px; letter-spacing: 1px; background: none; }
+        .mission-vidhya .hero-left h1 { font-size: 46px; line-height: 1.15; font-weight: 800; margin-bottom: 14px; color: #1c2b36; }
         .mission-vidhya .hero-left h1 span { color: #00a3da; }
         .mission-vidhya .hero-left p { font-size: 18px; line-height: 1.9; color: #51606d; margin-bottom: 30px; }
         .mission-vidhya .hero-buttons { display: flex; gap: 15px; flex-wrap: wrap; }
@@ -139,13 +139,13 @@ const MissionVidhya = () => {
 
         .mission-vidhya .sevak-donation {
           width: 100%; background: linear-gradient(to right, #009BD4 0%, #0285C3 25%, #046FB1 50%, #074D97 75%, #083D8B 100%);
-          padding: 55px 4%; min-height: 120px; display: flex; align-items: center;
+          padding: 55px 8%; margin: 70px auto; display: flex; align-items: center;
         }
-        .mission-vidhya .sevak-donation-content { width: 100%; display: flex; justify-content: space-between; align-items: center; min-height: 120px; padding: 0; }
-        .mission-vidhya .sevak-left { display: flex; flex-direction: column; gap: 4px; }
-        .mission-vidhya .sevak-tag { font-size: 20px; font-weight: 700; color: #fff; }
-        .mission-vidhya .sevak-title { font-size: 41px; margin: 0; line-height: 1.2; color: #fff; }
-        .mission-vidhya .sevak-desc { font-size: 15px; margin: 0; color: #fff; }
+        .mission-vidhya .sevak-donation-content { width: 100%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 30px; }
+        .mission-vidhya .sevak-left { display: flex; flex-direction: column; gap: 6px; }
+        .mission-vidhya .sevak-tag { font-size: 14px; font-weight: 700; color: #cfe9ff; letter-spacing: 1px; text-transform: uppercase; }
+        .mission-vidhya .sevak-title { font-size: 32px; margin: 0; line-height: 1.2; color: #fff; }
+        .mission-vidhya .sevak-desc { font-size: 14px; margin: 0; color: #e3f2fc; line-height: 1.5; max-width: 560px; }
         .mission-vidhya .sevak-btn {
           display: inline-block; padding: 15px 36px; background: #00a3da; color: #fff; text-decoration: none;
           border-radius: 6px; font-weight: 700; font-size: 16px; white-space: nowrap; transition: 0.3s;
@@ -192,7 +192,7 @@ const MissionVidhya = () => {
           .mission-vidhya .feature-boxes { flex-direction: column; }
           .mission-vidhya .floating-card { min-width: 130px; }
           .mission-vidhya .sevak-donation-content { flex-direction: column; text-align: center; gap: 20px; min-height: auto; }
-          .mission-vidhya .sevak-title { font-size: 34px; }
+          .mission-vidhya .sevak-title { font-size: 28px; }
           .mission-vidhya .testimonial-grid { grid-template-columns: 1fr; }
           .mission-vidhya .about-image img { box-shadow: none; }
         }
@@ -214,7 +214,7 @@ const MissionVidhya = () => {
           .mission-vidhya .card1 { top: 0; left: 0; border-radius: 0 0 12px 0; }
           .mission-vidhya .card2 { bottom: 0; right: 0; border-radius: 12px 0 0 0; }
           .mission-vidhya .about-image::before { display: none; }
-          .mission-vidhya .sevak-donation { padding: 40px 5%; }
+          .mission-vidhya .sevak-donation { padding: 40px 5%; margin: 40px auto; }
           .mission-vidhya .sevak-donation-content { flex-direction: column; text-align: center; gap: 20px; min-height: auto; }
           .mission-vidhya .sevak-title { font-size: 24px; }
           .mission-vidhya .sevak-desc { font-size: 14px; }

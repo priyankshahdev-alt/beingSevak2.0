@@ -46,6 +46,7 @@ const CSR = () => {
         .bs-initiative__icon--art{background:linear-gradient(135deg,#f0b429,#e65100)}
         .bs-initiative__icon--health{background:linear-gradient(135deg,#00a3da,#007d94)}
         .bs-initiative__icon--tech{background:linear-gradient(135deg,#1565c0,#0d47a1)}
+        .bs-initiative__icon--women{background:linear-gradient(135deg,#ab47bc,#6a1b9a)}
         .bs-initiative__label{font-size:1.1rem;font-weight:700;color:#1a1a2e;margin:0 0 8px}
         .bs-initiative__desc{font-size:0.88rem;color:#777;line-height:1.5;margin:0}
         @media(max-width:900px){.bs-initiatives__grid{grid-template-columns:repeat(2,1fr)}}
@@ -134,6 +135,13 @@ const CSR = () => {
                 </div>
                 <h3 className="bs-initiative__label">Assistive Technology</h3>
                 <p className="bs-initiative__desc">Enabling independence through innovative support tools</p>
+              </div>
+              <div className="bs-initiative">
+                <div className="bs-initiative__icon bs-initiative__icon--women">
+                  <i className="fas fa-hand-holding-heart"></i>
+                </div>
+                <h3 className="bs-initiative__label">Women Empowerment</h3>
+                <p className="bs-initiative__desc">Supporting women with skills, dignity &amp; self-reliance</p>
               </div>
             </div>
           </div>

@@ -254,7 +254,7 @@ export default function Donation2() {
           0% { transform: rotate(0deg); }
           100% { transform: rotate(360deg); }
         }
-        .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; }
+        .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; text-align: center; }
         .tax-box:hover {
           transform: translateY(-5px) scale(1.01);
           box-shadow: 0 25px 60px rgba(0, 163, 218, 0.35);
@@ -390,14 +390,12 @@ export default function Donation2() {
         <div style={{maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px'}}>
           <div style={{background: '#fff', borderRadius: '20px', padding: '30px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid #e2ecf5'}}>
             <h3 style={{fontFamily: "'Montserrat',sans-serif", fontWeight: 800, fontSize: '1.3rem', color: '#03163E', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px'}}><i className="fas fa-university" style={{color: '#00a3da'}}></i>Bank Details 1</h3>
-            <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: 0}}>Name: Being Sevak Charitable Trust</p>
             <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>Bank: Axis Bank, Kandivali (West), Mumbai</p>
             <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>A/C No: 920010066029137</p>
             <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>IFSC: UTIB0000201</p>
           </div>
           <div style={{background: '#fff', borderRadius: '20px', padding: '30px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', border: '1px solid #e2ecf5'}}>
             <h3 style={{fontFamily: "'Montserrat',sans-serif", fontWeight: 800, fontSize: '1.3rem', color: '#03163E', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px'}}><i className="fas fa-university" style={{color: '#00a3da'}}></i>Bank Details 2</h3>
-            <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: 0}}>Name: Being Sevak Charitable Trust</p>
             <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>Bank: Saraswat Bank, Kandivali (West), Mumbai</p>
             <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>A/C No: 130200100119387</p>
             <p style={{fontSize: '0.95rem', color: '#4a5568', lineHeight: 1.8, margin: '8px 0 0 0'}}>IFSC: SRCB0000130</p>

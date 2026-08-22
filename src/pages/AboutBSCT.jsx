@@ -57,7 +57,7 @@ const AboutBSCT = () => {
         }
         .about-page .hero h1 { font-size: 62px; line-height: 1.1; margin-bottom: 25px; color: var(--navy); font-weight: 800; }
         .about-page .hero h1 span { color: #00a3da; }
-        .about-page .hero p { font-size: 18px; line-height: 1.9; color: #66788a; margin-bottom: 35px; }
+        .about-page .hero p { font-size: 18px; line-height: 1.9; color: #66788a; margin-bottom: 35px; text-align: justify; }
         .about-page .hero-buttons { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-start; padding: 0; }
         .about-page .hero-buttons .donate-btn {
           display: inline-block; padding: 15px 36px; background: #00a3da; color: #fff; text-decoration: none;
@@ -79,7 +79,7 @@ const AboutBSCT = () => {
         .about-page .floating-card.card1 { top: 5%; left: -10px; --float-rot: -4deg; }
         .about-page .floating-card.card2 { bottom: 10%; right: -10px; animation-delay: 2s; --float-rot: 4deg; }
         .about-page .floating-card h3 { font-size: 28px; font-weight: 800; color: #00a3da; }
-        .about-page .floating-card p { font-size: 13px; color: #555; margin: 0; }
+        .about-page .floating-card p { font-size: 13px; color: #555; margin: 0; text-align: center; }
         .about-page .blur {
           position: absolute; width: 500px; height: 500px; border-radius: 50%;
           filter: blur(120px); opacity: 0.15; z-index: 0; pointer-events: none;
@@ -119,7 +119,7 @@ const AboutBSCT = () => {
         }
         .about-page .about-content-col h2 span { color: var(--cyan); }
         .about-page .about-content-col p {
-          font-size: 1rem; line-height: 1.85; color: var(--text-mid); margin-bottom: 16px;
+          font-size: 1rem; line-height: 1.85; color: var(--text-mid); margin-bottom: 16px; text-align: justify;
         }
 
         .about-page .values-section { background: var(--light-bg); padding: 80px 24px; }
@@ -143,7 +143,7 @@ const AboutBSCT = () => {
         .about-page .value-card h3 {
           font-family: 'Montserrat', sans-serif; font-size: 1.15rem; color: var(--navy); margin-bottom: 12px;
         }
-        .about-page .value-card p { font-size: 0.88rem; line-height: 1.7; color: var(--text-mid); }
+        .about-page .value-card p { font-size: 0.88rem; line-height: 1.7; color: var(--text-mid); text-align: justify; }
         .about-page .value-card:hover .val-icon,
         .about-page .value-card:hover h3,
         .about-page .value-card:hover p { color: #fff; }
@@ -153,7 +153,8 @@ const AboutBSCT = () => {
           display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;
         }
         .about-page .stat-item {
-          display: flex; flex-direction: column; align-items: center; gap: 10px; min-width: 130px;
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
+          gap: 12px; min-width: 150px; text-align: center;
         }
         .about-page .stat-icon {
           width: 80px; height: 80px; border-radius: 50%; background: var(--navy);
@@ -161,10 +162,11 @@ const AboutBSCT = () => {
           color: white; box-shadow: 0 4px 16px rgba(13, 33, 97, 0.25);
         }
         .about-page .stat-num {
-          font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--green);
+          font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 2.2rem;
+          color: var(--green); line-height: 1; letter-spacing: 0.5px;
         }
         .about-page .stat-label {
-          font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.82rem;
+          font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.9rem;
           color: var(--navy); text-align: center;
         }
 
@@ -187,7 +189,7 @@ const AboutBSCT = () => {
         .about-page .testimonial-card:hover { transform: translateY(-10px); }
         .about-page .testimonial-card > * { position: relative; z-index: 2; }
         .about-page .testimonial-card p {
-          line-height: 1.9; color: var(--text-mid); margin-bottom: 20px; font-size: 0.92rem;
+          line-height: 1.9; color: var(--text-mid); margin-bottom: 20px; font-size: 0.92rem; text-align: justify;
         }
         .about-page .testimonial-card h4 {
           font-family: 'Montserrat', sans-serif; color: var(--cyan); font-size: 1rem;
@@ -207,7 +209,7 @@ const AboutBSCT = () => {
         }
         .about-page .tax-banner p {
           font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.35rem;
-          color: white; margin: 0 auto; line-height: 1.5;
+          color: white; margin: 0 auto; line-height: 1.5; text-align: center;
         }
         .about-page .tax-banner span { color: var(--gold); }
 
@@ -261,11 +263,11 @@ const AboutBSCT = () => {
           .about-page .value-card h3 { font-size: 1rem; }
           .about-page .value-card p { font-size: 0.8rem; }
           .about-page .stats-section { padding: 28px 12px; }
-          .about-page .stats-grid { gap: 12px; }
-          .about-page .stat-item { gap: 4px; min-width: 80px; }
-          .about-page .stat-icon { width: 40px; height: 40px; font-size: 1rem; }
-          .about-page .stat-num { font-size: 0.95rem; }
-          .about-page .stat-label { font-size: 0.6rem; }
+          .about-page .stats-grid { gap: 16px; }
+          .about-page .stat-item { gap: 6px; min-width: 100px; }
+          .about-page .stat-icon { width: 48px; height: 48px; font-size: 1.2rem; }
+          .about-page .stat-num { font-size: 1.35rem; }
+          .about-page .stat-label { font-size: 0.72rem; }
         }
 
         @media (max-width: 768px) {

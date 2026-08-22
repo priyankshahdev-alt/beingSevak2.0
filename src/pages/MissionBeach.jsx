@@ -14,7 +14,7 @@ export default function MissionBeach() {
           margin: 20px 0; padding: 10px; position: relative; overflow: hidden; transition: 0.4s ease;
         }
         .mission-beach .tax-box h1 { font-size: 28px; font-weight: 700; position: relative; z-index: 2; }
-        .mission-beach .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; }
+        .mission-beach .tax-box p { font-size: 16px; line-height: 1.6; position: relative; z-index: 2; text-align: center; }
         .mission-beach .tax-box::before {
           content: ""; position: absolute; width: 200%; height: 200%;
           background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
@@ -41,8 +41,8 @@ export default function MissionBeach() {
           50% { transform: perspective(1000px) rotateY(-10deg) translateY(-12px); }
           100% { transform: perspective(1000px) rotateY(-10deg) translateY(0); }
         }
-        .mission-beach .tag { color: #00a3da; display: inline-block; margin-bottom: 25px; font-weight: 800; font-size: 30px; letter-spacing: 1px; }
-        .mission-beach .hero-left h1 { font-size: 62px; line-height: 1.1; margin-bottom: 25px; }
+        .mission-beach .tag { color: #00a3da; display: inline-block; margin-bottom: 12px; font-weight: 800; font-size: 24px; letter-spacing: 1px; }
+        .mission-beach .hero-left h1 { font-size: 46px; line-height: 1.15; margin-bottom: 14px; }
         .mission-beach .hero-left p { font-size: 18px; color: #6b7280; line-height: 1.9; margin-bottom: 35px; }
         .mission-beach .btns { display: flex; gap: 15px; flex-wrap: wrap; }
         .mission-beach .btn { padding: 16px 34px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 18px; transition: 0.3s; }
