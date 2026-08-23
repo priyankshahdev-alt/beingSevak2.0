@@ -44,7 +44,7 @@ const MissionVidhya = () => {
           linear-gradient(135deg, #ffffff, #eef8ff);
         }
         .mission-vidhya .hero-left { flex: 1; max-width: 520px; }
-        .mission-vidhya .tag { color: #00a3da; display: inline-block; margin-bottom: 12px; font-weight: 800; font-size: 24px; letter-spacing: 1px; background: none; }
+        .mission-vidhya .tag { color: #00a3da; display: inline-block; margin-bottom: 12px; font-weight: 800; font-size: 36px; letter-spacing: 1px; background: none; }
         .mission-vidhya .hero-left h1 { font-size: 46px; line-height: 1.15; font-weight: 800; margin-bottom: 14px; color: #1c2b36; }
         .mission-vidhya .hero-left h1 span { color: #00a3da; }
         .mission-vidhya .hero-left p { font-size: 18px; line-height: 1.9; color: #51606d; margin-bottom: 30px; }
@@ -63,16 +63,16 @@ const MissionVidhya = () => {
         .mission-vidhya .main-image-card {
           width: 100%; max-width: 480px; border-radius: 30px; overflow: visible;
           position: relative; z-index: 2;
-          transform: perspective(1000px) rotate(-3deg);
+          transform: perspective(1000px);
           box-shadow: 0 20px 50px rgba(0,0,0,0.15), 0 10px 25px rgba(0,163,218,0.12);
           transition: 0.6s ease; animation: viFloatCard 4s ease-in-out infinite;
         }
         .mission-vidhya .main-image-card img { width: 100%; display: block; object-fit: cover; transition: 0.6s ease; }
-        .mission-vidhya .main-image-card:hover { transform: perspective(1000px) rotate(0deg) scale(1.05); box-shadow: 0 40px 90px rgba(0,0,0,0.25); }
+        .mission-vidhya .main-image-card:hover { transform: perspective(1000px) scale(1.05); box-shadow: 0 40px 90px rgba(0,0,0,0.25); }
         @keyframes viFloatCard {
-          0% { transform: perspective(1000px) rotate(-3deg) translateY(0); }
-          50% { transform: perspective(1000px) rotate(-3deg) translateY(-12px); }
-          100% { transform: perspective(1000px) rotate(-3deg) translateY(0); }
+          0% { transform: perspective(1000px) translateY(0); }
+          50% { transform: perspective(1000px) translateY(-12px); }
+          100% { transform: perspective(1000px) translateY(0); }
         }
         .mission-vidhya .floating-card {
           position: absolute; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
