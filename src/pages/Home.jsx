@@ -23,7 +23,7 @@ export default function Home() {
 
   // Hero Slider
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 8;
+  const totalSlides = 10;
 
   // Impact Stories
   const [currentImpact, setCurrentImpact] = useState(0);
@@ -424,6 +424,12 @@ export default function Home() {
         </div>
         <div className={`slide ${currentSlide === 7 ? 'active' : ''}`} id="slide8">
           <div className="slide-bg slide-bg-8"></div>
+        </div>
+        <div className={`slide ${currentSlide === 8 ? 'active' : ''}`} id="slide9">
+          <div className="slide-bg slide-bg-9"></div>
+        </div>
+        <div className={`slide ${currentSlide === 9 ? 'active' : ''}`} id="slide10">
+          <div className="slide-bg slide-bg-10"></div>
         </div>
         <div className="slider-controls">
           <button className="slider-arrow prev" onClick={() => setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides)}>
