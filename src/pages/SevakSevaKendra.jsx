@@ -47,21 +47,22 @@ export default function SevakSevaKendra() {
         }
         .sevak-seva-kendra .main-image-card {
           width: 100%; max-width: 480px; position: relative; z-index: 2;
-          transform: perspective(1000px) rotate(-3deg);
+          transform: perspective(1000px);
           box-shadow: 0 20px 50px rgba(0,0,0,0.15), 0 10px 25px rgba(0,163,218,0.12);
           transition: 0.6s ease; animation: sskFloatCard 4s ease-in-out infinite;
         }
         .sevak-seva-kendra .main-image-card img { width: 100%; display: block; object-fit: cover; border-radius: 30px; transition: 0.6s ease; }
-        .sevak-seva-kendra .main-image-card:hover { transform: perspective(1000px) rotate(0deg) scale(1.05); box-shadow: 0 40px 90px rgba(0,0,0,0.25); }
+        .sevak-seva-kendra .main-image-card:hover { transform: perspective(1000px) scale(1.05); box-shadow: 0 40px 90px rgba(0,0,0,0.25); }
         @keyframes sskFloatCard {
-          0% { transform: perspective(1000px) rotate(-3deg) translateY(0); }
-          50% { transform: perspective(1000px) rotate(-3deg) translateY(-12px); }
-          100% { transform: perspective(1000px) rotate(-3deg) translateY(0); }
+          0% { transform: perspective(1000px) translateY(0); }
+          50% { transform: perspective(1000px) translateY(-12px); }
+          100% { transform: perspective(1000px) translateY(0); }
         }
         .sevak-seva-kendra .floating-card {
           position: absolute; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
           padding: 15px 18px; border-radius: 20px; min-width: 160px;
           box-shadow: 0 12px 30px rgba(0,0,0,0.10); z-index: 5; animation: sskFloat 3s ease-in-out infinite;
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
         }
         .sevak-seva-kendra .floating-card h3 { color: #00a3da; font-size: 34px; margin-bottom: 4px; }
         .sevak-seva-kendra .floating-card p { font-size: 12px; font-weight: 600; color: #51606d; }
@@ -229,7 +230,7 @@ export default function SevakSevaKendra() {
         <section className="hero-section">
           <div className="hero-left">
             <span className="tag">Sevak Seva Kendra</span>
-            <h1>Building A Better <span>Community</span><br />Through Care &amp; Development</h1>
+            <h1>Building A Better Community Through Care &amp; Development</h1>
             <p>
               Sevak Niwas Kendra by Being Sevak Charitable Trust provides education,
               digital learning, healthcare, women empowerment and skill development
