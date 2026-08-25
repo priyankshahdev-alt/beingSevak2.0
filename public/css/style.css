@@ -1587,9 +1587,9 @@ body{
 }
 
 .cause-img-1{
-  background-image: url("../images/img1.jpg");
+  background-image: url("../images/sss.png");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   height: 300px;
   width: 100%;
@@ -1607,7 +1607,7 @@ body{
 }
 
 .cause-img-3 {
-  background-image: url("../images/medicalemer.jpeg");
+  background-image: url("../images/uy.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3907,7 +3907,8 @@ body{
 
 .metro-img-box img {
   width: 100%;
-  height: 300px;
+  height: 100%;
+  min-height: 250px;
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
@@ -3922,20 +3923,21 @@ body{
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 12px 14px;
-  background: linear-gradient(0deg, rgba(0,59,115,0.85) 0%, transparent 100%);
+  padding: 10px 12px;
+  background: linear-gradient(0deg, rgba(0,59,115,0.95) 0%, transparent 100%);
   color: #fff;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   z-index: 3;
   text-align: center;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
   backdrop-filter: blur(2px);
+  text-transform: uppercase;
 }
 
 /* IMAGE FOOTER */
 .metro-img-footer {
-  padding: 20px;
+  padding: 12px 16px;
   background: #fff;
   position: relative;
   z-index: 3;

@@ -242,7 +242,7 @@ export default function SevakSevaKendra() {
           </div>
           <div className="hero-right">
             <div className="main-image-card">
-              <img src="/images/ro.jpeg" alt="Sevak Niwas Kendra" />
+              <img src="/images/ro.jpeg" alt="Sevak Niwas Kendra" style={{ borderTopLeftRadius: '16px', borderTopRightRadius: '16px' }} />
               <div className="floating-card card1">
                 <h3>5000+</h3>
                 <p>Lives Empowered</p>

@@ -278,7 +278,7 @@ const MissionAnnapurna = () => {
 
         <section className="about-section" id="about">
           <div className="about-image">
-            <img src="/images/a2.jpg" alt="food distribution" />
+            <img src="/images/hj.png" alt="food distribution" style={{ borderRadius: '12px' }} />
           </div>
           <div className="about-content">
             <span className="small-title">ABOUT THE MISSION</span>
@@ -340,8 +340,8 @@ const MissionAnnapurna = () => {
 
         <section className="gallery-section">
           <div className="gallery-grid">
-            <div className="gallery-card"><img src="/images/a3.jpg" alt="gallery" /></div>
             <div className="gallery-card"><img src="/images/a6.jpg" alt="gallery" /></div>
+            <div className="gallery-card"><img src="/images/a3.jpg" alt="gallery" /></div>
             <div className="gallery-card"><img src="/images/snackKit.jpeg" alt="gallery" /></div>
             <div className="gallery-card"><img src="/images/rotidrive.jpeg" alt="gallery" /></div>
           </div>
