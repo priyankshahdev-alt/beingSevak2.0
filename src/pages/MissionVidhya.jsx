@@ -244,7 +244,7 @@ const MissionVidhya = () => {
           </div>
           <div className="hero-right">
             <div className="main-image-card">
-              <img src="/images/v1.jpg" alt="Children Education" />
+              <img src="/images/v1.jpg" alt="Children Education" style={{ borderRadius: '20px' }} />
               <div className="floating-card card1">
                 <h3>12K+</h3>
                 <p>Students Helped</p>

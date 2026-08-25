@@ -242,7 +242,7 @@ export default function SevakSevaKendra() {
           </div>
           <div className="hero-right">
             <div className="main-image-card">
-              <img src="/images/ro.jpeg" alt="Sevak Niwas Kendra" />
+              <img src="/images/ro.jpeg" alt="Sevak Niwas Kendra" style={{ borderTopLeftRadius: '16px', borderTopRightRadius: '16px' }} />
               <div className="floating-card card1">
                 <h3>5000+</h3>
                 <p>Lives Empowered</p>
@@ -298,7 +298,7 @@ export default function SevakSevaKendra() {
           <div className="techvision-container">
             <div className="techvision-image-side">
               <div className="techvision-image-box">
-                <img src="/images/ui.jpeg" alt="AI Digital Centre" />
+                <img src="/images/III.png" alt="AI Digital Centre" />
               </div>
             </div>
             <div className="techvision-content-side">

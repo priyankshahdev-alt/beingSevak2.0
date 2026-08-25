@@ -62,7 +62,7 @@ const facilities = [
     desc: 'Empowering future innovators through AI, technology, and digital skill development.',
     fullDesc: 'This facility provides access to emerging technologies, artificial intelligence, digital tools, and innovation-driven learning opportunities. Your support helps individuals develop future-ready skills, explore digital careers, and participate in a technology-enabled world with confidence and independence.',
     amount: '',
-    img: '/images/ui.jpeg',
+    img: '/images/III.png',
     side: 'right',
   },
   {

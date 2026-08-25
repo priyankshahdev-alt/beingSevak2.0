@@ -244,7 +244,7 @@ export default function Anndaan() {
               <img src="/images/a1.jpeg" alt="" />
               <img src="/images/a4.jpeg" alt="" />
               <img src="/images/a3.jpg" alt="" />
-              <img src="/images/a2.jpg" alt="" />
+              <img src="/images/hj.png" alt="" style={{ borderRadius: '12px' }} />
             </div>
           </section>
 
@@ -313,9 +313,9 @@ export default function Anndaan() {
             </div>
             <div className="sweetmeal-grid">
               <img src="/images/shi1.jpg" alt="" />
-              <img src="/images/shi2.jpg" alt="" />
+              <img src="/images/dd.jpeg" alt="" />
               <img src="/images/shi3.jpg" alt="" />
-              <img src="/images/shi5.jpg" alt="" />
+              <img src="/images/f1.jpeg" alt="" />
             </div>
           </section>
 

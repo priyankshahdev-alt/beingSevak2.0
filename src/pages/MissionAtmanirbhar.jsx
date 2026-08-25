@@ -225,7 +225,7 @@ const MissionAtmanirbhar = () => {
               </div>
             </div>
             <div className="hero-right">
-              <img src="/images/at7.jpeg" alt="Atmanirbhar" />
+              <img src="/images/wqe.jpeg" alt="Atmanirbhar" />
             </div>
           </div>
         </section>
@@ -293,9 +293,9 @@ const MissionAtmanirbhar = () => {
           </div>
           <div className="gallery-grid">
             <div className="gallery-item large"><img src="/images/at1.jpg" alt="" /><div className="gallery-overlay"><h3>Awareness Drive</h3></div></div>
-            <div className="gallery-item"><img src="/images/wheelchairman.jpg" alt="" /><div className="gallery-overlay"><h3>Wheelchair Support</h3></div></div>
+            <div className="gallery-item"><img src="/images/wh1.jpg" alt="" /><div className="gallery-overlay"><h3>Wheelchair Support</h3></div></div>
             <div className="gallery-item"><img src="/images/at3.jpeg" alt="" /><div className="gallery-overlay"><h3>Skill Training</h3></div></div>
-            <div className="gallery-item"><img src="/images/at8.jpeg" alt="" /><div className="gallery-overlay"><h3>Community Care</h3></div></div>
+            <div className="gallery-item"><img src="/images/2a1.jpeg" alt="" /><div className="gallery-overlay"><h3>Community Care</h3></div></div>
             <div className="gallery-item"><img src="/images/at5.jpg" alt="" /><div className="gallery-overlay"><h3>Empowering Together</h3></div></div>
           </div>
         </section>
