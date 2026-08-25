@@ -842,7 +842,7 @@ export default function Home() {
             </div>
           </Link>
           <Link to="/impact/dialysis-center" className={`being-slide ${currentImpact === 8 ? 'active' : ''}`}>
-            <img src="/images/h22 (1).png" alt="Dialysis Center" />
+            <img src="/images/imdv4.png" alt="Dialysis Center" />
             <div className="being-text">
               <h3>Dialysis Center</h3>
               <p>Read More</p>

@@ -2750,9 +2750,9 @@ body{
 }
 
 .about-right h2{
-  font-size: 42px;
+  font-size: 30px;
   color: #00a3da;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   line-height: 1.2;
 }
 
@@ -2760,15 +2760,14 @@ body{
   font-size: 15px;
   line-height: 1.9;
   color: #555;
-  margin-bottom: 20px;
-  text-align: justify;
+  margin-bottom: 12px;
 }
 
 /* BOXES */
 .about-boxes{
   display: flex;
   gap: 25px;
-  margin-top: 35px;
+  margin-top: 20px;
   flex-wrap: wrap;
 }
 
@@ -2829,7 +2828,6 @@ body{
   font-size: 15px;
   line-height: 1.8;
   transition: 0.4s;
-  text-align: justify;
 }
 
 /*.about-box{
