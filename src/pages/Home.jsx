@@ -828,7 +828,7 @@ export default function Home() {
             </div>
           </Link>
           <Link to="/impact/health-to-hygiene" className={`being-slide ${currentImpact === 6 ? 'active' : ''}`}>
-            <img src="/images/qqq.jpeg" alt="Health To Hygiene(H2)" />
+            <img src="/images/PO2.jpeg" alt="Health To Hygiene(H2)" />
             <div className="being-text">
               <h3>Health To Hygiene(H2)</h3>
               <p>Read More</p>
@@ -1059,7 +1059,7 @@ export default function Home() {
               <a href="#" className="circle-read-more">Read More →</a>
             </div>
             <div className="circle-card">
-              <img src="images/ReliefforDialysisPatients.jpg" alt="" />
+              <img src="/images/MG.jpg" alt="" />
               <h3>Relief for Dialysis Patients</h3>
               <p className="circle-desc">To add happiness to the lives of dialysis patients, we</p>
               <a href="#" className="circle-read-more">Read More →</a>
@@ -1131,7 +1131,7 @@ export default function Home() {
               <a href="#" className="circle-read-more">Read More →</a>
             </div>
             <div className="circle-card">
-              <img src="images/Mid-DayMealProgram.jpg" alt="" />
+              <img src="/images/aq.jpeg" alt="" />
               <h3>Mid-Day Meal</h3>
               <p className="circle-desc">Nutritious meals for underprivileged and visually impaired individuals.</p>
               <a href="#" className="circle-read-more">Read More →</a>
@@ -1143,7 +1143,7 @@ export default function Home() {
               <a href="#" className="circle-read-more">Read More →</a>
             </div>
             <div className="circle-card">
-              <img src="/images/ui.jpeg" alt="" />
+              <img src="/images/III.png" alt="" />
               <h3>Digital Education Centre</h3>
               <p className="circle-desc">Empowering children through free digital learning access.</p>
               <a href="#" className="circle-read-more">Read More →</a>

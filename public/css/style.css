@@ -3012,7 +3012,7 @@ body{
 
   width:420px;
 
-  padding:40px;
+  padding:30px;
 
   border-radius:30px;
 
@@ -3028,13 +3028,13 @@ body{
 
 /* HEADING */
 .being-text h3{
-  font-size:24px;
+  font-size:22px;
   line-height:1.2;
   font-weight:700;
 
   color: #fff;
 
-  margin-bottom:12px;
+  margin-bottom:6px;
 
   text-shadow:
   0 3px 12px rgba(0,0,0,0.35);
@@ -3894,6 +3894,7 @@ body{
 .metro-img-wrapper {
   position: relative;
   overflow: hidden;
+  flex: 1;
 }
 
 .metro-img-wrapper::before {
@@ -3923,10 +3924,10 @@ body{
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px 12px;
+  padding: 6px 10px;
   background: linear-gradient(0deg, rgba(0,59,115,0.95) 0%, transparent 100%);
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   z-index: 3;
   text-align: center;

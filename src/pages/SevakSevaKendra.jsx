@@ -298,7 +298,7 @@ export default function SevakSevaKendra() {
           <div className="techvision-container">
             <div className="techvision-image-side">
               <div className="techvision-image-box">
-                <img src="/images/ui.jpeg" alt="AI Digital Centre" />
+                <img src="/images/III.png" alt="AI Digital Centre" />
               </div>
             </div>
             <div className="techvision-content-side">
