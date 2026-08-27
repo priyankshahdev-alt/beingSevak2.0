@@ -19,7 +19,7 @@ const MissionBezubaan = () => {
       <style>{`
         .mission-bezubaan * { margin: 0; padding: 0; box-sizing: border-box; }
         .mission-bezubaan { font-family: 'Montserrat', sans-serif; background: #ffffff; color: #111827; overflow-x: hidden; }
-        .mission-bezubaan img { width: 100%; display: block; }
+        .mission-bezubaan img { width: 100%; max-width: 100%; height: auto; display: block; }
         .mission-bezubaan section { overflow: hidden; }
 
         .mission-bezubaan .tax-box {
@@ -97,7 +97,7 @@ const MissionBezubaan = () => {
         .mission-bezubaan .about-image, .mission-bezubaan .about-content { flex: 1; }
         .mission-bezubaan .about-image { position: relative; overflow: hidden; isolation: isolate; }
         .mission-bezubaan .about-image img {
-          width: 100%; height: 600px; object-fit: cover; border-radius: 35px;
+          width: 100%; max-width: 100%; height: 600px; object-fit: cover; border-radius: 35px;
           transition: 0.5s; box-shadow: 0 18px 45px rgba(0,0,0,0.08);
         }
         .mission-bezubaan .about-image:hover img { transform: scale(1.04) rotate(-1deg); }
@@ -173,7 +173,7 @@ const MissionBezubaan = () => {
         .mission-bezubaan .gallery-card {
           overflow: hidden; border-radius: 30px; height: 420px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
-        .mission-bezubaan .gallery-card img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+        .mission-bezubaan .gallery-card img { width: 100%; max-width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
         .mission-bezubaan .gallery-card:hover img { transform: scale(1.12); }
 
         .mission-bezubaan .pawzen-wrap { width: 100%; padding: 90px 7%; background: #ffffff; overflow: hidden; }
@@ -279,7 +279,7 @@ const MissionBezubaan = () => {
           .mission-bezubaan .primary-btn { padding: 12px 24px; font-size: 15px; }
           .mission-bezubaan .image-box { max-width: 100%; }
           .mission-bezubaan .image-box img { height: 280px; border-radius: 20px; transform: none; animation: none; }
-          .mission-bezubaan .about-image img { height: 320px; border-radius: 22px; }
+          .mission-bezubaan .about-image img { height: 320px; border-radius: 22px; width: 100%; max-width: 100%; }
           .mission-bezubaan .about-section { gap: 30px; margin-top: 50px; clip-path: inset(0); }
           .mission-bezubaan #donate { margin-bottom: 30px; }
           .mission-bezubaan .card1 { top: 0; left: 0; border-radius: 0 0 12px 0; }
