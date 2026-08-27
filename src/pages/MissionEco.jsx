@@ -228,8 +228,8 @@ export default function MissionEco() {
             <div className="item"><img src="/images/eco3.jpeg" alt="" /></div>
             <div className="item"><img src="/images/eco2.jpeg" alt="" /></div>
             <div className="item"><img src="/images/eco7.jpeg" alt="" /></div>
-            <div className="item"><img src="/images/eco6.jpeg" alt="" /></div>
-            <div className="item"><img src="/images/eco4.jpeg" alt="" /></div>
+            <div className="item"><img src="/images/eco66.jpeg" alt="" /></div>
+            <div className="item"><img src="/images/eco44.jpeg" alt="" /></div>
           </div>
         </section>
 
