@@ -262,7 +262,7 @@ const ContactUs = () => {
                   </div>
                   <div className="visit-item">
                     <strong>Mumbai Office</strong>
-                    <p>New Delight CHS Ltd, A Wing, 4th Floor, Office No 401, Chandavarkar Road, Borivali West, Mumbai, Maharashtra, 400092.</p>
+                    <p>New Delite CHS Ltd, A Wing, 4th Floor, Office No 401, Chandavarkar Road, Borivali West, Mumbai, Maharashtra, 400092.</p>
                   </div>
                   <div className="visit-item">
                     <strong>Gujarat Office</strong>
