@@ -14,7 +14,7 @@ const facilities = [
     desc: 'Supporting skill development and livelihood opportunities for a brighter future.',
     fullDesc: 'This facility provides vocational education, practical skill training, and career guidance to youth and individuals from underserved communities. Your contribution helps create employment opportunities, encourage self-reliance, and empower beneficiaries with the skills needed for a sustainable future.',
     amount: '',
-    img: '/images/j11.jpeg',
+    img: '/images/e1.jpeg',
     side: 'right',
   },
   {
