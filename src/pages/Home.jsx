@@ -618,7 +618,7 @@ export default function Home() {
             Nourishing Lives <br />
             Through Every Meal & Ration Kit
           </h1>
-          <h1 style={{ margin: '0 0 8px', lineHeight: '1.15' }}>
+          <h1 style={{ margin: '0 0 8px', lineHeight: '1.15', color: '#00a3da' }}>
             Help Us Transform <br />
             A Child's Life
           </h1>
