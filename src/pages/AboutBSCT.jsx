@@ -53,11 +53,11 @@ const AboutBSCT = () => {
         .about-page .hero-content .tag,
         .about-page .hero-content > span {
           background: transparent; color: #00a3da; padding: 0; border-radius: 0;
-          display: inline-block; margin: 35px 0 25px 0; font-weight: 800; font-size: 30px; letter-spacing: 1px;
+          display: inline-block; margin: 0 0 25px 0; font-weight: 800; font-size: 30px; letter-spacing: 1px;
         }
         .about-page .hero h1 { font-size: 62px; line-height: 1.1; margin-bottom: 25px; color: var(--navy); font-weight: 800; }
         .about-page .hero h1 span { color: #00a3da; }
-        .about-page .hero p { font-size: 18px; line-height: 1.9; color: #66788a; margin-bottom: 35px; text-align: justify; }
+        .about-page .hero p { font-size: 18px; line-height: 1.9; color: #66788a; margin-bottom: 35px; text-align: left; word-spacing: normal; hyphens: none; }
         .about-page .hero-buttons { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-start; padding: 0; }
         .about-page .hero-buttons .donate-btn {
           display: inline-block; padding: 15px 36px; background: #00a3da; color: #fff; text-decoration: none;
@@ -89,7 +89,7 @@ const AboutBSCT = () => {
 
         .about-page .about-grid-wrap {
           display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
-          padding: 80px 24px;
+          padding: 40px 24px;
         }
         .about-page .about-image-col { position: relative; }
         .about-page .about-image-col img {
@@ -119,11 +119,11 @@ const AboutBSCT = () => {
         }
         .about-page .about-content-col h2 span { color: var(--cyan); }
         .about-page .about-content-col p {
-          font-size: 1rem; line-height: 1.85; color: var(--text-mid); margin-bottom: 16px; text-align: justify;
+          font-size: 1rem; line-height: 1.85; color: var(--text-mid); margin-bottom: 16px; text-align: left; word-spacing: normal; hyphens: none;
         }
 
-        .about-page .values-section { background: var(--light-bg); padding: 80px 24px; }
-        .about-page .values-inner { padding: 80px 24px; }
+        .about-page .values-section { background: var(--light-bg); padding: 20px 24px 80px; }
+        .about-page .values-inner { padding: 0 24px; }
         .about-page .values-grid {
           display: grid; grid-template-columns: repeat(5, 1fr); gap: 25px; margin-top: 50px;
         }
@@ -141,9 +141,9 @@ const AboutBSCT = () => {
         .about-page .value-card > * { position: relative; z-index: 2; transition: 0.4s ease; }
         .about-page .value-card .val-icon { font-size: 2.4rem; color: var(--cyan); margin-bottom: 16px; }
         .about-page .value-card h3 {
-          font-family: 'Montserrat', sans-serif; font-size: 1.15rem; color: var(--navy); margin-bottom: 12px;
+          font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 800; color: var(--navy); margin-bottom: 12px;
         }
-        .about-page .value-card p { font-size: 0.88rem; line-height: 1.7; color: var(--text-mid); text-align: justify; }
+        .about-page .value-card p { font-size: 0.88rem; line-height: 1.7; color: var(--text-mid); text-align: left; word-spacing: normal; hyphens: none; }
         .about-page .value-card:hover .val-icon,
         .about-page .value-card:hover h3,
         .about-page .value-card:hover p { color: #fff; }
@@ -189,7 +189,7 @@ const AboutBSCT = () => {
         .about-page .testimonial-card:hover { transform: translateY(-10px); }
         .about-page .testimonial-card > * { position: relative; z-index: 2; }
         .about-page .testimonial-card p {
-          line-height: 1.9; color: var(--text-mid); margin-bottom: 20px; font-size: 0.92rem; text-align: justify;
+          line-height: 1.9; color: var(--text-mid); margin-bottom: 20px; font-size: 0.92rem; text-align: left; word-spacing: normal; hyphens: none;
         }
         .about-page .testimonial-card h4 {
           font-family: 'Montserrat', sans-serif; color: var(--cyan); font-size: 1rem;
@@ -225,11 +225,12 @@ const AboutBSCT = () => {
         }
 
         @media(max-width: 991px) {
+          .about-page .tax-box { margin: 0; }
           .about-page .hero {
             grid-template-columns: 1fr; min-height: auto; padding: 60px 5% 40px;
             gap: 40px; text-align: center; align-items: center !important;
           }
-          .about-page .hero-content { padding-left: 0; text-align: center; }
+          .about-page .hero-content { padding-left: 0; margin: 0; text-align: center; }
           .about-page .hero h1 { font-size: 42px; }
           .about-page .hero p { font-size: 16px; }
           .about-page .hero-buttons { justify-content: center; }
@@ -237,7 +238,7 @@ const AboutBSCT = () => {
           .about-page .floating-card.card1 { left: 5%; }
           .about-page .floating-card.card2 { right: 5%; }
           .about-page .about-grid-wrap {
-            grid-template-columns: 1fr; gap: 40px; text-align: center; padding: 60px 24px;
+            grid-template-columns: 1fr; gap: 40px; text-align: center; padding: 30px 24px;
           }
           .about-page .about-content-col { padding-right: 0; }
           .about-page .about-content-col .section-label-custom { margin: 0 auto 18px; }
@@ -256,7 +257,7 @@ const AboutBSCT = () => {
           .about-page .floating-card p { font-size: 10px; }
           .about-page .floating-card.card1 { top: 0; left: 0; border-radius: 0 0 12px 0; }
           .about-page .floating-card.card2 { bottom: 0; right: 0; border-radius: 12px 0 0 0; }
-          .about-page .values-section { padding: 40px 14px; }
+          .about-page .values-section { padding: 20px 14px; }
           .about-page .values-grid { gap: 14px; margin-top: 30px; }
           .about-page .value-card { padding: 20px 16px; border-radius: 18px; }
           .about-page .value-card .val-icon { font-size: 1.6rem; margin-bottom: 10px; }
@@ -349,7 +350,7 @@ const AboutBSCT = () => {
                 letterSpacing: '1px', display: 'block', marginBottom: '8px'
               }}>OUR VALUES</span>
               <h2 style={{
-                fontFamily: "'Montserrat', sans-serif", fontSize: '2rem', color: 'var(--navy)'
+                fontFamily: "'Montserrat', sans-serif", fontSize: '2rem', fontWeight: 800, color: 'var(--navy)'
               }}>What Drives Us</h2>
             </div>
             <div className="values-grid">
