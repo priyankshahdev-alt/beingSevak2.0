@@ -89,7 +89,8 @@ export default function Home() {
     { id: 'month-jun', label: 'Jun 2026', img: 'images/JUNE.jpeg' },
     { id: 'month-jul', label: 'Jul 2026', img: 'images/JULY.jpeg' },
     { id: 'month-aug', label: 'Aug 2026', img: 'images/agust report.jpeg' },
-    { id: 'month-sep', label: 'Sep 2026', img: 'images/SEPT.jpeg' }
+    { id: 'month-sep', label: 'Sep 2026', img: 'images/SEPT.jpeg' },
+    { id: 'month-oct', label: 'Oct 2026', img: 'latesUpdates/OCT.jpeg' }
   ];
 
   // Hero Slider Autoplay
@@ -684,7 +685,7 @@ export default function Home() {
               <div className="cause-img cause-img-1"></div>
               <div className="cause-body">
                 <h3>Mission Annapurna</h3>
-                <p>Dry Ration Kit , Mid-Day Meal , Snacks kit. Meals With Care.</p>
+                <p>Food Grain Kit, Mid-Day Meal, Snacks kit. Meals With Care.</p>
                 <div className="progress-bar">
                   <div className="progress-fill" style={{ width: '78%' }}></div>
                 </div>
@@ -733,7 +734,7 @@ export default function Home() {
               <div className="cause-img cause-img-1"></div>
               <div className="cause-body">
                 <h3>Mission Annapurna</h3>
-                <p>Dry Ration Kit , Mid-Day Meal , Snacks kit. Meals With Care.</p>
+                <p>Food Grain Kit, Mid-Day Meal, Snacks kit. Meals With Care.</p>
                 <div className="progress-bar">
                   <div className="progress-fill" style={{ width: '78%' }}></div>
                 </div>
