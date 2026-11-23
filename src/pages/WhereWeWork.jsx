@@ -194,10 +194,10 @@ const WhereWeWork = () => {
         .hero-bg-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
         .hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(8,25,60,0.45),rgba(8,25,60,0.65));z-index:1}
         .hero-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center}
-        .hero-content .tag{background:rgba(255,255,255,0.15);color:#fff;padding:10px 26px;border-radius:50px;display:inline-block;margin-bottom:22px;font-weight:800;font-size:20px;letter-spacing:1px;text-shadow:0 2px 10px rgba(0,0,0,0.35)}
+        .hero-content .tag{background:rgba(255,255,255,0.15);color:#fff;padding:10px 26px;border-radius:50px;display:inline-block;margin-bottom:5px;font-weight:800;font-size:20px;letter-spacing:1px;text-shadow:0 2px 10px rgba(0,0,0,0.35)}
         .hero h1{font-size:62px;line-height:1.1;margin-bottom:25px;color:#fff;text-shadow:0 10px 30px rgba(0,0,0,0.4)}
         .hero h1 span{color:#7fdcff}
-        .hero p{font-size:18px;line-height:1.9;color:#e6eefc;margin-bottom:35px;max-width:720px}
+        .hero p{font-size:18px;line-height:1.5;color:#e6eefc;margin-bottom:35px;max-width:720px;text-align:center;text-justify:auto;hyphens:none;word-spacing:normal}
         .hero-buttons{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
         .hero-buttons .donate-btn{display:inline-block;padding:15px 36px;background:#00a3da;color:#fff;text-decoration:none;border-radius:6px;font-weight:700;transition:0.4s;box-shadow:0 10px 25px rgba(11,77,120,0.45)}
         .hero-buttons .donate-btn:hover{background:#007d94;transform:translateY(-1px)}
@@ -208,13 +208,13 @@ const WhereWeWork = () => {
         .floating-card p{font-size:14px;font-weight:600;color:#333;margin:0}
         @keyframes floatCard{0%{transform:translateY(0);}100%{transform:translateY(-15px);}}
         @media(max-width:900px){.hero{min-height:auto;padding:100px 6% 70px}.hero h1{font-size:42px}.hero p{font-size:16px}.floating-card.card1{top:12px;left:12px}.floating-card.card2{bottom:12px;right:12px}}
-        @media(max-width:550px){.hero{padding:90px 5% 60px}.hero-content .tag{font-size:14px;padding:8px 18px}.hero h1{font-size:32px}.hero p{font-size:14px}.floating-card{min-width:130px;padding:14px 16px;border-radius:12px}.floating-card h3{font-size:20px}.floating-card p{font-size:11px}.floating-card.card1{top:10px;left:10px}.floating-card.card2{bottom:10px;right:10px}}
-        .www-section{width:100%;background:#ffffff;padding:80px 6%;position:relative;overflow:hidden}
+        @media(max-width:550px){.hero{padding:90px 5% 60px}.hero-overlay{height:100%}.hero-content .tag{font-size:14px;padding:8px 18px}.hero h1{font-size:32px}.hero p{font-size:14px}.floating-card{min-width:130px;padding:14px 16px;border-radius:12px}.floating-card h3{font-size:20px}.floating-card p{font-size:11px}.floating-card.card1{top:10px;left:10px}.floating-card.card2{bottom:-10px;right:10px}}
+        .www-section{width:100%;background:#ffffff;padding:20px 6%;position:relative;overflow:hidden}
         .www-container{max-width:1300px;margin:0 auto}
         .www-header{text-align:center;margin-bottom:50px}
         .www-title{font-family:'Montserrat',sans-serif;font-size:3rem;font-weight:900;color:var(--navy,#03163E);margin-bottom:16px;letter-spacing:1px}
         .www-title span{color:#00a3da}
-        .www-subtitle{font-size:1.1rem;color:#4a5568;max-width:750px;margin:0 auto;line-height:1.8}
+        .www-subtitle{font-size:1.1rem;color:#4a5568;max-width:750px;margin:0 auto;line-height:1.8;text-align:center;text-justify:auto;hyphens:none;word-spacing:normal}
         .www-counter{display:flex;align-items:center;justify-content:center;gap:40px;margin-bottom:50px;padding:30px 40px;background:linear-gradient(135deg,#f0f8ff,#e8f4fd);border-radius:20px;box-shadow:0 8px 30px rgba(0,163,218,0.1)}
         .www-counter-item{display:flex;align-items:baseline;gap:2px;flex-wrap:wrap;justify-content:center}
         .www-counter-num{font-family:'Montserrat',sans-serif;font-size:2.8rem;font-weight:900;color:#00a3da;line-height:1}
@@ -222,10 +222,10 @@ const WhereWeWork = () => {
         .www-counter-suffix{font-family:'Montserrat',sans-serif;font-size:1.8rem;font-weight:700;color:#00a3da}
         .www-counter-label{display:block;width:100%;font-size:0.9rem;font-weight:600;color:#4a5568;text-align:center;margin-top:4px}
         .www-counter-divider{width:2px;height:50px;background:linear-gradient(180deg,transparent,#00a3da,transparent)}
-        .www-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+        .www-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;align-items:start}
         .www-map-col{position:relative}
         .www-map-wrap{position:relative;width:100%;border-radius:24px;box-shadow:0 20px 50px rgba(0,0,0,0.1);background:#f8fafc;border:2px solid #e2e8f0}
-        .www-map-img{width:100%;display:block}
+        .www-map-img{width:100%;height:auto;max-width:100%;display:block;object-fit:contain}
         .www-pin{position:absolute;width:22px;height:22px;transform:translate(-50%,-50%);cursor:pointer;z-index:5;transition:opacity 0.4s ease}
         .www-pin-dot{width:100%;height:100%;border-radius:50% 50% 50% 0;background:#e53e3e;border:2.5px solid #fff;box-shadow:0 3px 12px rgba(229,62,62,0.6);position:relative;z-index:2;transition:all 0.3s ease;transform:rotate(-45deg);display:flex;align-items:center;justify-content:center}
         .www-pin-dot i{font-size:11px;color:#fff;transform:rotate(45deg)}
@@ -276,8 +276,8 @@ const WhereWeWork = () => {
         .www-card:hover .www-card-icon,.www-card.active-card .www-card-icon{background:rgba(255,255,255,0.3);color:#fff;box-shadow:none}
         .www-card:hover .www-card-text h4,.www-card:hover .www-card-text p,.www-card.active-card .www-card-text h4,.www-card.active-card .www-card-text p{color:#ffffff}
         @media(max-width:1024px){.www-title{font-size:2.4rem}.www-counter{gap:20px;padding:20px;flex-wrap:wrap}.www-counter-num{font-size:2.2rem}.www-counter-divider{display:none}.www-counter-item{flex:1;min-width:120px}.www-list-scroll{max-height:500px}}
-        @media(max-width:768px){.www-section{padding:50px 16px}.www-title{font-size:1.8rem}.www-subtitle{font-size:0.95rem}.www-counter{flex-direction:row;gap:20px;padding:20px}.www-counter-num{font-size:2rem}.www-list-scroll{max-height:400px}.www-legend{position:relative;bottom:auto;left:auto;margin-top:12px;border-radius:12px;padding:12px 14px}.www-grid{grid-template-columns:1fr;gap:24px}.www-pin-tooltip{min-width:180px;max-width:200px;font-size:0.85rem}}
-        @media(max-width:600px){.www-section{padding:40px 14px}.www-title{font-size:1.6rem}.www-subtitle{font-size:0.9rem}.www-counter{padding:16px;gap:14px}.www-counter-num{font-size:1.6rem}.www-counter-label{font-size:0.78rem}.www-list-header h3{font-size:1.1rem}.www-card{padding:10px 12px;min-height:50px;gap:10px}.www-card-icon{width:36px;height:36px;font-size:1rem}.www-card-text h4{font-size:14px}.www-card-text p{font-size:11px}.www-list-scroll{max-height:320px;padding:6px 8px}.www-pin{width:16px;height:16px}.www-pin-dot{border-width:2px}.www-pin-dot i{font-size:9px}.www-pin-tooltip{min-width:160px;max-width:180px;padding:0}.www-pin.active .www-pin-tooltip{opacity:1;visibility:visible}.www-tip-head{padding:10px 12px;gap:8px}.www-tip-icon{width:28px;height:28px;font-size:12px}.www-tip-name{font-size:0.9rem}.www-tip-desc{padding:8px 12px 6px;font-size:0.72rem}.www-tip-stats{padding:8px 12px 10px}.www-tip-stats span{font-size:0.65rem}.www-tip-stats strong{font-size:0.85rem}.www-map-wrap.zoomed{transform:scale(1.1)}}
+        @media(max-width:768px){.www-section{padding:20px 16px;overflow:visible}.www-map-wrap{overflow:visible}.www-title{font-size:1.8rem}.www-subtitle{font-size:0.95rem}.www-counter{flex-direction:row;gap:20px;padding:20px}.www-counter-num{font-size:2rem}.www-list-scroll{max-height:400px}.www-legend{position:relative;bottom:auto;left:auto;margin-top:12px;border-radius:12px;padding:12px 14px}.www-grid{grid-template-columns:minmax(0,1fr);gap:24px}.www-map-col,.www-map-wrap{min-width:0;max-width:100%}.www-pin-tooltip{min-width:180px;max-width:200px;font-size:0.85rem}}
+        @media(max-width:600px){.www-section{padding:20px 14px;overflow:visible}.www-title{font-size:1.6rem}.www-subtitle{font-size:0.9rem}.www-counter{padding:16px;gap:14px}.www-counter-num{font-size:1.6rem}.www-counter-label{font-size:0.78rem}.www-list-header h3{font-size:1.1rem}.www-card{padding:10px 12px;min-height:50px;gap:10px}.www-card-icon{width:36px;height:36px;font-size:1rem}.www-card-text h4{font-size:14px}.www-card-text p{font-size:11px}.www-list-scroll{max-height:320px;padding:6px 8px}.www-pin{width:16px;height:16px}.www-pin-dot{border-width:2px}.www-pin-dot i{font-size:9px}.www-pin-tooltip{min-width:160px;max-width:180px;padding:0}.www-pin.active .www-pin-tooltip{opacity:1;visibility:visible}.www-tip-head{padding:10px 12px;gap:8px}.www-tip-icon{width:28px;height:28px;font-size:12px}.www-tip-name{font-size:0.9rem}.www-tip-desc{padding:8px 12px 6px;font-size:0.72rem}.www-tip-stats{padding:8px 12px 10px}.www-tip-stats span{font-size:0.65rem}.www-tip-stats strong{font-size:0.85rem}.www-map-wrap.zoomed{transform:none}.www-pin.tip-right .www-pin-tooltip{left:auto;right:0;top:auto;bottom:calc(100% + 16px);transform:translateX(0) translateY(8px)}.www-pin.tip-right.active .www-pin-tooltip{transform:translateX(0) translateY(0)}.www-pin.tip-left .www-pin-tooltip{left:0;right:auto;top:auto;bottom:calc(100% + 16px);transform:translateX(0) translateY(8px)}.www-pin.tip-left.active .www-pin-tooltip{transform:translateX(0) translateY(0)}}
         .values-section{background:var(--light-bg);padding:30px 24px}
         .values-inner{max-width:1200px;margin:0 auto}
         .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;margin-top:50px}
@@ -288,9 +288,9 @@ const WhereWeWork = () => {
         .value-card>*{position:relative;z-index:2;transition:0.4s ease}
         .value-card .val-icon{font-size:2.4rem;color:var(--cyan);margin-bottom:16px}
         .value-card h3{font-family:'Montserrat',sans-serif;font-size:1.15rem;color:var(--navy);margin-bottom:12px}
-        .value-card p{font-size:0.88rem;line-height:1.7;color:var(--text-mid)}
+        .value-card p{font-size:0.88rem;line-height:1.7;color:var(--text-mid);text-align:center;text-justify:auto;hyphens:none;word-spacing:normal}
         .value-card:hover .val-icon,.value-card:hover h3,.value-card:hover p{color:#fff}
-        .testimonials-section{padding:80px 24px;background:#fff}
+        .testimonials-section{padding:20px 24px;background:#fff}
         .testimonials-inner{max-width:1200px;margin:0 auto}
         .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:50px;align-items:stretch}
         .testimonial-card{background:#fff;padding:30px;border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,0.07);transition:0.4s ease;overflow:hidden;position:relative;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between}
@@ -298,8 +298,8 @@ const WhereWeWork = () => {
         .testimonial-card:hover::before{height:100%}
         .testimonial-card:hover{transform:translateY(-10px)}
         .testimonial-card>*{position:relative;z-index:2}
-        .testimonial-card p{line-height:1.9;color:var(--text-mid);margin-bottom:20px;font-size:0.92rem}
-        .testimonial-card h4{font-family:'Montserrat',sans-serif;color:var(--cyan);font-size:1rem}
+        .testimonial-card p{line-height:1.9;color:var(--text-mid);margin-bottom:20px;font-size:0.92rem;text-align:left;text-justify:auto;hyphens:none;word-spacing:normal}
+        .testimonial-card h4{font-family:'Montserrat',sans-serif;color:var(--cyan);font-size:1rem;font-weight:800}
         .testimonial-card span{font-size:0.8rem;color:var(--text-mid)}
         .testimonial-card:hover p,.testimonial-card:hover h4,.testimonial-card:hover span{color:#fff !important}
         .testimonial-card .quote-icon{font-size:1.6rem;color:var(--cyan-light);margin-bottom:12px;opacity:0.5}
@@ -307,6 +307,14 @@ const WhereWeWork = () => {
         .reveal{opacity:0;transform:translateY(40px);transition:opacity 0.7s ease,transform 0.7s ease}
         .reveal.visible{opacity:1;transform:translateY(0);width:fit-content}
         @media(max-width:768px){.values-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr}}
+        .www-focus-grid>div{min-width:0}
+        .www-focus-grid>div>div{min-width:0;overflow-wrap:anywhere}
+        .www-focus-grid strong,.www-focus-grid span{word-spacing:normal;letter-spacing:0;text-align:left;text-justify:auto;hyphens:none}
+        .www-focus-grid>div>div>span{word-spacing:-0.6px !important;letter-spacing:-0.1px !important;line-height:1.35 !important;text-align:left !important;text-justify:auto !important;hyphens:none !important}
+        .www-focus-grid>.www-focus-women>div>span{display:block !important;word-spacing:-1px !important;letter-spacing:-0.3px !important;line-height:1.2 !important;text-align:left !important;text-justify:auto !important;hyphens:none !important;white-space:normal !important}
+        .www-focus-grid>.www-focus-tight>div>span{display:block !important;word-spacing:-1px !important;letter-spacing:-0.3px !important;line-height:1.2 !important;text-align:left !important;text-justify:auto !important;hyphens:none !important;white-space:normal !important}
+        @media(max-width:768px){.www-focus-card{padding:18px !important}.www-focus-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important}}
+        @media(max-width:600px){.www-focus-card{padding:16px !important}.www-focus-grid{grid-template-columns:1fr !important;gap:10px !important}}
       `}</style>
 
       <section className="tax-box"><h1>Where We Work</h1></section>
@@ -391,33 +399,33 @@ const WhereWeWork = () => {
                   <i className="fas fa-bullseye" style={{ color: '#00a3da', fontSize: '1.1rem' }}></i>
                   Focus Areas
                 </h4>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
-                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#f0f8ff', borderRadius: '12px', border: '1px solid #d0e8f8' }}>
+                <div className="www-focus-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+                  <div className="www-focus-tight" style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#f0f8ff', borderRadius: '12px', border: '1px solid #d0e8f8' }}>
                     <span style={{ width: '36px', height: '36px', borderRadius: '10px', background: '#00a3da', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1rem', flexShrink: 0 }}><i className="fas fa-book-open"></i></span>
                     <div>
                       <strong style={{ fontSize: '0.9rem', color: '#0a1a2a', display: 'block', marginBottom: '2px' }}>Education</strong>
-                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4 }}>Digital literacy, school support & skill development</span>
+                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4, textAlign: 'left', textJustify: 'auto', wordSpacing: 'normal', hyphens: 'none', display: 'block' }}>Digital literacy, school support & skill development</span>
                     </div>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#fff4f0', borderRadius: '12px', border: '1px solid #fadbd0' }}>
+                  <div className="www-focus-tight" style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#fff4f0', borderRadius: '12px', border: '1px solid #fadbd0' }}>
                     <span style={{ width: '36px', height: '36px', borderRadius: '10px', background: '#ff6b00', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1rem', flexShrink: 0 }}><i className="fas fa-heartbeat"></i></span>
                     <div>
                       <strong style={{ fontSize: '0.9rem', color: '#0a1a2a', display: 'block', marginBottom: '2px' }}>Healthcare</strong>
-                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4 }}>Medical camps, hygiene kits & preventive care</span>
+                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4, textAlign: 'left', textJustify: 'auto', wordSpacing: 'normal', hyphens: 'none', display: 'block' }}>Medical camps, hygiene kits & preventive care</span>
                     </div>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#fdf0f5', borderRadius: '12px', border: '1px solid #f8c8dc' }}>
+                  <div className="www-focus-women" style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#fdf0f5', borderRadius: '12px', border: '1px solid #f8c8dc' }}>
                     <span style={{ width: '36px', height: '36px', borderRadius: '10px', background: '#e91e63', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1rem', flexShrink: 0 }}><i className="fas fa-female"></i></span>
                     <div>
                       <strong style={{ fontSize: '0.9rem', color: '#0a1a2a', display: 'block', marginBottom: '2px' }}>Women Empowerment</strong>
-                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4 }}>Livelihood training, self-help groups & financial independence</span>
+                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4, textAlign: 'left', textJustify: 'auto', wordSpacing: 'normal', hyphens: 'none', display: 'block' }}>Livelihood training, self-help groups & financial independence</span>
                     </div>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#f0fdf4', borderRadius: '12px', border: '1px solid #d4edda' }}>
+                  <div className="www-focus-tight" style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px', background: '#f0fdf4', borderRadius: '12px', border: '1px solid #d4edda' }}>
                     <span style={{ width: '36px', height: '36px', borderRadius: '10px', background: '#4caf50', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1rem', flexShrink: 0 }}><i className="fas fa-leaf"></i></span>
                     <div>
                       <strong style={{ fontSize: '0.9rem', color: '#0a1a2a', display: 'block', marginBottom: '2px' }}>Sustainability</strong>
-                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4 }}>Environment, animal welfare & disaster resilience</span>
+                      <span style={{ fontSize: '0.78rem', color: '#66788a', lineHeight: 1.4, textAlign: 'left', textJustify: 'auto', wordSpacing: 'normal', hyphens: 'none', display: 'block' }}>Environment, animal welfare & disaster resilience</span>
                     </div>
                   </div>
                 </div>

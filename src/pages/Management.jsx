@@ -41,7 +41,6 @@ const Management = () => {
         .leadership-section{padding:30px 28px}
         .section-title{font-family:'Montserrat',sans-serif;font-weight:900;font-size:2.2rem;color:var(--cyan);text-align:center;margin-bottom:12px}
         .section-subtitle{text-align:center;font-size:0.95rem;color:var(--text-mid);margin-bottom:56px;line-height:1.7}
-        .section-subtitle::after{content:'';display:block;width:60px;height:4px;background:var(--cyan);margin:18px auto 0;border-radius:2px}
         .team-circles{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:40px 30px;margin-top:10px}
         .team-member{text-align:center;transition:transform 0.4s ease}
         .team-member:hover{transform:translateY(-8px)}
@@ -51,11 +50,11 @@ const Management = () => {
         .team-member-role{font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.82rem;color:var(--cyan);text-transform:uppercase;letter-spacing:0.5px}
         .team-member-divider{width:40px;height:3px;background:var(--cyan);margin:10px auto 0;border-radius:2px}
         @media(max-width:768px){.team-circles{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:30px 20px}.team-member-img{width:120px;height:120px}.team-member-name{font-size:1rem}}
-        .founder-section{max-width:1140px;margin:0 auto;padding:60px 20px;text-align:center;font-family:Arial,sans-serif;overflow:hidden}
+        .founder-section{max-width:1140px;margin:0 auto;padding:20px 20px 0;text-align:center;font-family:Arial,sans-serif;overflow:hidden}
         .founder-heading{display:flex;align-items:center;justify-content:center;gap:15px;margin-bottom:10px}
         .heading-line{width:50px;height:3px;background-color:#00a3da;display:inline-block}
         .founder-heading h2{font-size:26px;color:#222;margin:0;font-weight:bold}
-        .founder-subtitle{font-size:18px;color:#444;margin-bottom:50px}
+        .founder-subtitle{font-size:18px;color:#444;margin-bottom:50px;text-align:center;text-justify:auto;hyphens:none;word-spacing:normal}
         .founder-grid{display:flex;justify-content:space-between;align-items:center;gap:20px}
         .founder-col{flex:1;display:flex;flex-direction:column;gap:60px}
         .founder-item{text-align:center}
@@ -68,7 +67,7 @@ const Management = () => {
         .animate-up.show{opacity:1;transform:translateY(0)}
         .animate-zoom.show{opacity:1;transform:scale(1)}
         @media(max-width:768px){.founder-grid{flex-direction:column}.founder-col{gap:40px}}
-        .values-section{background:var(--light-bg);padding:80px 24px}
+        .values-section{background:var(--light-bg);padding:20px 24px}
         .values-inner{padding:30px 28px}
         .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;margin-top:50px}
         .value-card{background:#fff;padding:35px 28px;border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,0.05);text-align:center;position:relative;overflow:hidden;cursor:pointer;transition:0.5s ease}
@@ -78,17 +77,17 @@ const Management = () => {
         .value-card>*{position:relative;z-index:2;transition:0.4s ease}
         .value-card .val-icon{font-size:2.4rem;color:var(--cyan);margin-bottom:16px}
         .value-card h3{font-family:'Montserrat',sans-serif;font-size:1.15rem;color:var(--navy);margin-bottom:12px}
-        .value-card p{font-size:0.88rem;line-height:1.7;color:var(--text-mid)}
+        .value-card p{font-size:0.88rem;line-height:1.7;color:var(--text-mid);text-align:left;text-justify:auto;hyphens:none;word-spacing:normal}
         .value-card:hover .val-icon,.value-card:hover h3,.value-card:hover p{color:#fff}
-        .testimonials-section{padding:80px 24px;background:#fff}
+        .testimonials-section{padding:20px 24px 80px;background:#fff}
         .testimonials-inner{padding:30px 28px}
         .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:50px;align-items:stretch}
-        .testimonial-card{background:#fff;padding:30px;border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,0.07);transition:0.4s ease;overflow:hidden;position:relative;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between}
+        .testimonial-card{background:#fff;padding:0 30px 30px;border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,0.07);transition:0.4s ease;overflow:hidden;position:relative;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between}
         .testimonial-card::before{content:'';position:absolute;left:0;bottom:0;width:100%;height:0%;background:var(--cyan);transition:0.4s ease;z-index:1;border-radius:28px}
         .testimonial-card:hover::before{height:100%}
         .testimonial-card:hover{transform:translateY(-10px)}
         .testimonial-card>*{position:relative;z-index:2}
-        .testimonial-card p{line-height:1.9;color:var(--text-mid);margin-bottom:20px;font-size:0.92rem}
+        .testimonial-card p{line-height:1.9;color:var(--text-mid);margin-bottom:20px;font-size:0.92rem;text-align:left;text-justify:auto;hyphens:none;word-spacing:normal}
         .testimonial-card h4{font-family:'Montserrat',sans-serif;color:var(--cyan);font-size:1rem}
         .testimonial-card span{font-size:0.8rem;color:var(--text-mid)}
         .testimonial-card:hover p,.testimonial-card:hover h4,.testimonial-card:hover span{color:#fff !important}
@@ -96,13 +95,13 @@ const Management = () => {
         .testimonial-card:hover .quote-icon{color:rgba(255,255,255,0.6)}
         .reveal{opacity:0;transform:translateY(40px);transition:opacity 0.7s ease,transform 0.7s ease}
         .reveal.visible{opacity:1;transform:translateY(0)}
-        @media(max-width:768px){.values-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr}}
+        @media(max-width:768px){.values-section{padding:0 24px 30px}.testimonials-section{padding:0 24px 30px}.testimonials-inner{padding:0 28px 30px}.values-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr}}
       `}</style>
 
       <section className="tax-box"><h1>Our Management</h1></section>
 
       <section className="founder-section">
-        <div className="founder-heading"><span className="heading-line"></span><h2>Priyank Shah</h2></div>
+        <div className="founder-heading"><h2>Priyank Shah</h2></div>
         <p className="founder-subtitle">Founder Chairman – BEING SEVAK CHARITABLE TRUST</p>
         <div className="founder-grid">
           <div className="founder-col left">
