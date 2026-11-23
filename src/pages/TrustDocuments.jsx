@@ -115,7 +115,7 @@ const TrustDocuments = () => {
         body{font-family:'Open Sans',sans-serif;background:#f6fbff;color:var(--text)}
         .tax-box{width:100%;height:70px;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#009BD4 0%,#0285C3 25%,#046FB1 50%,#074D97 75%,#083D8B 100%);color:#fff;border-radius:0;margin:20px 0;padding:10px}
         .tax-box h1{font-family:'Montserrat',sans-serif;font-size:28px;font-weight:800;letter-spacing:2px;color:#fff;margin:0}
-        .hero{min-height:auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;position:relative;overflow:hidden;padding:40px 6%}
+        .hero{min-height:auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;position:relative;overflow:hidden;padding:20px 6%}
         .hero-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-start;text-align:left}
         .hero-content .tag{background:transparent;color:#00a3da;padding:0;border-radius:0;display:inline-block;margin-bottom:25px;font-weight:800;font-size:30px;letter-spacing:1px}
         .hero h1{font-size:62px;line-height:1.1;margin-bottom:25px;color:var(--navy)}
@@ -137,8 +137,8 @@ const TrustDocuments = () => {
         .blur1{background:#00a3da;top:-100px;left:-100px}
         .blur2{background:#315270;bottom:-100px;right:-100px}
         @media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center;gap:40px}.hero-content{align-items:center;text-align:center}.hero h1{font-size:42px}.hero p{font-size:16px}.hero-buttons{justify-content:center}.hero-image img{max-width:90%}.floating-card.card1{top:10px;left:10px}.floating-card.card2{bottom:10px;right:10px}}
-        @media(max-width:550px){.hero h1{font-size:28px}.hero p{font-size:13px}.hero-image img{max-width:100%;border-radius:16px}.floating-card{padding:6px 10px;border-radius:12px}.floating-card h3{font-size:14px}.floating-card p{font-size:10px}.floating-card.card1{top:8px;left:8px}.floating-card.card2{bottom:8px;right:8px}.blur{display:none}}
-        .doc-portal{padding:80px 6%;background:#f4f7fb}
+        @media(max-width:550px){.hero-content .tag{font-size:22px;line-height:1.2;letter-spacing:0.5px}.hero h1{font-size:28px}.hero p{font-size:13px}.hero-image img{max-width:100%;border-radius:16px}.floating-card{padding:6px 10px;border-radius:12px}.floating-card h3{font-size:14px}.floating-card p{font-size:10px}.floating-card.card1{top:8px;left:8px}.floating-card.card2{bottom:8px;right:8px}.blur{display:none}}
+        .doc-portal{padding:80px 6% 20px;background:#f4f7fb}
         .doc-portal-inner{max-width:1100px;margin:0 auto}
         .doc-portal-title{text-align:center;margin-bottom:40px}
         .doc-portal-title h2{font-family:'Montserrat',sans-serif;font-size:36px;font-weight:800;color:var(--navy);margin-bottom:8px}
@@ -167,7 +167,7 @@ const TrustDocuments = () => {
         .booklet-overlay .year{font-family:'Montserrat',sans-serif;font-weight:700;font-size:22px;color:#fff;letter-spacing:2px}
         .booklet-overlay .status{font-size:11px;color:rgba(255,255,255,0.6);font-style:italic;margin-top:2px}
         @media(max-width:900px){.booklet-grid{grid-template-columns:repeat(3,1fr);gap:16px}}
-        @media(max-width:768px){.doc-portal{padding:50px 4%}.doc-tabs{flex-direction:column;gap:2px;border-radius:10px}.doc-tab{font-size:12px;padding:12px}.doc-card{padding:12px 14px}.doc-card-icon{width:40px;height:40px}.doc-card-body h4{font-size:13px}.doc-card-body p{font-size:12px}.doc-card-arrow{width:30px;height:30px}.doc-portal-title h2{font-size:28px}.booklet-grid{gap:14px}}
+        @media(max-width:768px){.doc-portal{padding:50px 4% 20px}.doc-tabs{flex-direction:column;gap:2px;border-radius:10px}.doc-tab{font-size:12px;padding:12px}.doc-card{padding:12px 14px}.doc-card-icon{width:40px;height:40px}.doc-card-body h4{font-size:13px}.doc-card-body p{font-size:12px}.doc-card-arrow{width:30px;height:30px}.doc-portal-title h2{font-size:28px}.booklet-grid{gap:14px}}
         .values-section{background:var(--light-bg);padding:80px 6%}
         .values-inner{max-width:1200px;margin:0 auto}
         .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;margin-top:50px}
@@ -178,18 +178,18 @@ const TrustDocuments = () => {
         .value-card>*{position:relative;z-index:2;transition:0.4s ease}
         .value-card .val-icon{font-size:2.4rem;color:var(--cyan);margin-bottom:16px}
         .value-card h3{font-family:'Montserrat',sans-serif;font-size:1.15rem;color:var(--navy);margin-bottom:12px}
-        .value-card p{font-size:0.88rem;line-height:1.7;color:var(--text-mid)}
+        .value-card p{font-size:0.88rem;line-height:1.7;color:var(--text-mid);text-align:left;text-justify:auto;hyphens:none;word-spacing:normal}
         .value-card:hover .val-icon,.value-card:hover h3,.value-card:hover p{color:#fff}
-        .testimonials-section{padding:80px 6%;background:#fff}
+        .testimonials-section{padding:20px 6%;background:#fff}
         .testimonials-inner{max-width:1200px;margin:0 auto}
         .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:50px;align-items:stretch}
-        .testimonial-card{background:#fff;padding:30px;border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,0.07);transition:0.4s ease;overflow:hidden;position:relative;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between}
+        .testimonial-card{background:#fff;padding:0 30px 30px;border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,0.07);transition:0.4s ease;overflow:hidden;position:relative;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between}
         .testimonial-card::before{content:'';position:absolute;left:0;bottom:0;width:100%;height:0%;background:var(--cyan);transition:0.4s ease;z-index:1;border-radius:28px}
         .testimonial-card:hover::before{height:100%}
         .testimonial-card:hover{transform:translateY(-10px)}
         .testimonial-card>*{position:relative;z-index:2}
-        .testimonial-card p{line-height:1.9;color:var(--text-mid);margin-bottom:20px;font-size:0.92rem}
-        .testimonial-card h4{font-family:'Montserrat',sans-serif;color:var(--cyan);font-size:1rem}
+        .testimonial-card p{line-height:1.9;color:var(--text-mid);margin-bottom:20px;font-size:0.92rem;text-align:left;text-justify:auto;hyphens:none;word-spacing:normal}
+        .testimonial-card h4{font-family:'Montserrat',sans-serif;color:var(--cyan);font-size:1rem;font-weight:800}
         .testimonial-card span{font-size:0.8rem;color:var(--text-mid)}
         .testimonial-card:hover p,.testimonial-card:hover h4,.testimonial-card:hover span{color:#fff !important}
         .testimonial-card .quote-icon{font-size:1.6rem;color:var(--cyan-light);margin-bottom:12px;opacity:0.5}
@@ -210,7 +210,7 @@ const TrustDocuments = () => {
         .pdf-modal-body{flex:1;position:relative}
         .pdf-modal-body iframe{width:100%;height:100%;border:none}
         @media(max-width:768px){.pdf-modal-content{width:95%;height:75vh}.pdf-modal-btn{width:32px;height:32px;font-size:14px}}
-        @media(max-width:768px){.values-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr}}
+        @media(max-width:768px){.values-section{padding:20px 5%}.values-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr}}
       `}</style>
 
       <section className="tax-box"><h1>Trust Documents</h1></section>

@@ -171,13 +171,13 @@ const AboutBSCT = () => {
         }
 
         .about-page .testimonials-section { background: #fff; }
-        .about-page .testimonials-inner { padding: 80px 24px; }
+        .about-page .testimonials-inner { padding: 20px 24px 80px; }
         .about-page .testimonial-grid {
           display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
           gap: 25px; margin-top: 50px; align-items: stretch;
         }
         .about-page .testimonial-card {
-          background: #fff; padding: 30px; border-radius: 28px;
+          background: #fff; padding: 0 30px 30px; border-radius: 28px;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07); transition: 0.4s ease; overflow: hidden;
           position: relative; cursor: pointer; display: flex; flex-direction: column; justify-content: space-between;
         }
